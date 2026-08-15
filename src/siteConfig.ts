@@ -7,6 +7,5 @@ export const siteConfig = {
     phoneHref: '',
     location: 'Ubicación pendiente de validar',
   },
-  statusNote: 'Sitio demostrativo / proyecto en desarrollo',
+  statusNote: 'Sitio demostrativo · Proyecto en desarrollo',
 } as const
-
