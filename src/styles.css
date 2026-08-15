@@ -189,7 +189,7 @@ a {
 }
 
 .hero__image {
-  background: url('/assets/xavier-hero-concept.png') center center / cover no-repeat;
+  background: url('./assets/xavier-hero-concept.png') center center / cover no-repeat;
   transform: scale(1.015);
   animation: hero-settle 1.8s ease-out both;
 }

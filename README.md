@@ -52,7 +52,11 @@ Los datos provisionales de marca y contacto viven en `src/siteConfig.ts`. Los te
 
 ## Deployment
 
-El sitio genera archivos estáticos en `dist/`. El despliegue del MVP se realiza desde el commit publicado en GitHub mediante el proveedor de hosting conectado al entorno. No requiere variables de entorno ni servicios de pago.
+El sitio genera archivos estáticos en `dist/` y se publica con GitHub Actions en GitHub Pages. No requiere variables de entorno ni servicios de pago.
+
+URL del MVP: <https://sergiodavidvale-sketch.github.io/xavier-ingenieria-civil-web/>
+
+El workflow `.github/workflows/deploy.yml` ejecuta instalación reproducible, lint, typecheck, build y deployment desde la rama predeterminada.
 
 ## Decisiones
 
@@ -68,4 +72,3 @@ El sitio genera archivos estáticos en `dist/`. El despliegue del MVP se realiza
 2. Confirmar datos reales de contacto y cobertura geográfica.
 3. Incorporar proyectos reales con permisos, fichas e imágenes verificadas.
 4. Definir el canal de captación antes de habilitar un formulario.
-
