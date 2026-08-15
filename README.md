@@ -2,7 +2,7 @@
 
 Landing page visual y funcional para presentar cómo podría verse la futura web de **XAVIER Ingeniería Civil**.
 
-> Estado: **MVP / demo**. No representa todavía un sitio corporativo definitivo ni confirma la constitución legal, experiencia, clientes, proyectos o datos de contacto de la iniciativa.
+> Estado: **MVP / demo — refinamiento visual V2**. No representa todavía un sitio corporativo definitivo ni confirma la constitución legal, experiencia, clientes, proyectos o datos de contacto de la iniciativa.
 
 ## Alcance
 
@@ -61,7 +61,7 @@ El workflow `.github/workflows/deploy.yml` ejecuta instalación reproducible, li
 ## Decisiones
 
 - No se muestran proyectos, clientes, trayectoria, certificaciones o testimonios inventados.
-- El portafolio se mantiene como placeholder explícito hasta validar material real.
+- El portafolio muestra tres conceptos visuales explícitos, sin atribuir obras ejecutadas a XAVIER, hasta validar material real.
 - El formulario se sustituye por datos provisionales para no simular un canal activo.
 - La marca tipográfica y la X son una interpretación visual inicial, no un logotipo definitivo aprobado.
 - La fotografía hero es un recurso conceptual generado para el demo y no prueba experiencia ejecutada.

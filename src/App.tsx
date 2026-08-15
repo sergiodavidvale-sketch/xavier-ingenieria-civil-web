@@ -37,7 +37,31 @@ const differentiators = [
   ['04', 'Ejecución', 'Convertir el proyecto en resultados.'],
 ] as const
 
-const process = ['Evaluación', 'Proyecto', 'Planeación', 'Ejecución', 'Supervisión', 'Entrega']
+const portfolioConcepts = [
+  {
+    category: 'Obra civil',
+    title: 'Estructuras que responden al contexto',
+    variant: 'portfolio-card--image',
+  },
+  {
+    category: 'Supervisión técnica',
+    title: 'Control técnico en cada etapa',
+    variant: 'portfolio-card--grid',
+  },
+  {
+    category: 'Infraestructura',
+    title: 'Soluciones pensadas para durar',
+    variant: 'portfolio-card--structure',
+  },
+] as const
+
+const process = [
+  ['Evaluamos', 'Entendemos el alcance y las condiciones.'],
+  ['Planeamos', 'Trazamos una ruta técnica y operativa.'],
+  ['Ejecutamos', 'Coordinamos recursos, tiempos y actividades.'],
+  ['Supervisamos', 'Verificamos avance, calidad y cumplimiento.'],
+  ['Entregamos', 'Cerramos con orden y trazabilidad.'],
+] as const
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -88,8 +112,8 @@ function App() {
           <div className="hero__veil" />
           <div className="technical-grid" />
           <div className="container hero__content">
-            <p className="eyebrow eyebrow--light"><span /> Ingeniería civil con dirección</p>
-            <h1>Construimos sobre<br /><em>ideas sólidas.</em></h1>
+            <h1 className="hero__brand"><strong>XAVIER</strong><span>INGENIERÍA CIVIL</span></h1>
+            <p className="hero__claim">Construimos sobre <em>ideas sólidas.</em></p>
             <p className="hero__lead">Ingeniería y ejecución para convertir ideas en proyectos sólidos.</p>
             <p className="hero__descriptor">{siteConfig.descriptor}</p>
             <div className="hero__actions">
@@ -97,8 +121,7 @@ function App() {
               <a className="button button--ghost" href="#contacto">Contáctanos</a>
             </div>
           </div>
-          <div className="hero__index" aria-hidden="true"><b>X</b><span>01 / 06</span></div>
-          <p className="hero__caption">Imagen conceptual generada para este demo</p>
+          <div className="hero__index" aria-hidden="true"><b>X</b><span>ING / CIV</span></div>
         </section>
 
         <section className="services section" id="servicios">
@@ -118,7 +141,6 @@ function App() {
                 </article>
               ))}
             </div>
-            <p className="demo-label">Contenido descriptivo preliminar · editable</p>
           </div>
         </section>
 
@@ -134,7 +156,6 @@ function App() {
               <h2>Una iniciativa profesional con <em>visión técnica.</em></h2>
               <p className="about__lead">XAVIER Ingeniería Civil es una iniciativa profesional enfocada en proyectos, supervisión y construcción de ingeniería civil.</p>
               <p>Estamos construyendo una forma de trabajo basada en la planeación, la precisión y el seguimiento responsable de cada etapa.</p>
-              <div className="about__note"><span>Nota</span><p>La identidad, oferta y datos corporativos se encuentran en proceso de definición.</p></div>
             </div>
           </div>
         </section>
@@ -157,16 +178,23 @@ function App() {
           <div className="container">
             <SectionHeading
               kicker="Portafolio"
-              title={<>El trabajo hablará<br /><span>por nosotros.</span></>}
-              copy="Este espacio está preparado para integrar proyectos reales una vez que la información y los permisos de publicación sean validados."
+              title={<>Una visión del<br /><span>portafolio futuro.</span></>}
+              copy="Tres líneas visuales para anticipar cómo podrán presentarse proyectos reales cuando exista material validado."
             />
-            <div className="portfolio__placeholder">
-              <div className="portfolio__drawing" aria-hidden="true"><span /><span /><span /><b>X</b></div>
-              <div className="portfolio__copy">
-                <span className="status-pill">En preparación</span>
-                <p>Portafolio en construcción</p>
-                <small>Proyecto demostrativo · Sin atribución a obra real</small>
-              </div>
+            <div className="portfolio__grid">
+              {portfolioConcepts.map((concept, index) => (
+                <article className={`portfolio-card ${concept.variant}`} key={concept.category}>
+                  <div className="portfolio-card__visual" aria-hidden="true">
+                    <span className="portfolio-card__number">0{index + 1}</span>
+                    <span className="portfolio-card__x">X</span>
+                  </div>
+                  <div className="portfolio-card__body">
+                    <span>Concepto de proyecto</span>
+                    <p>{concept.category}</p>
+                    <h3>{concept.title}</h3>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
         </section>
@@ -174,15 +202,14 @@ function App() {
         <section className="process section" id="proceso">
           <div className="container">
             <div className="process__heading">
-              <div><p className="eyebrow"><span /> Proceso preliminar</p><h2>Del planteamiento<br /><em>a la entrega.</em></h2></div>
-              <p>Un flujo de trabajo demostrativo para visualizar la continuidad técnica del proyecto.</p>
+              <div><p className="eyebrow"><span /> Nuestro proceso</p><h2>Claridad en cada<br /><em>etapa del proyecto.</em></h2></div>
+              <p>Una secuencia simple para mantener continuidad técnica, control y comunicación.</p>
             </div>
             <ol className="process__flow">
-              {process.map((step, index) => (
-                <li key={step}><span>{String(index + 1).padStart(2, '0')}</span><strong>{step}</strong>{index < process.length - 1 && <ArrowIcon />}</li>
+              {process.map(([step, copy], index) => (
+                <li key={step}><span>{String(index + 1).padStart(2, '0')}</span><strong>{step}</strong><p>{copy}</p>{index < process.length - 1 && <ArrowIcon />}</li>
               ))}
             </ol>
-            <p className="demo-label">Flujo preliminar / sujeto a validación</p>
           </div>
         </section>
 
@@ -191,14 +218,13 @@ function App() {
           <div className="container contact__grid">
             <div>
               <p className="eyebrow eyebrow--light"><span /> Hablemos</p>
-              <h2>Todo proyecto sólido<br />empieza con una <em>conversación.</em></h2>
-              <p>Cuéntanos qué tienes en mente. Los canales definitivos de contacto se publicarán después de su validación.</p>
+              <h2>¿Tienes un proyecto<br /><em>en mente?</em></h2>
+              <p>Hablemos de cómo llevarlo a obra.</p>
             </div>
             <div className="contact__details">
               <ContactRow label="Correo" value={siteConfig.contact.email} />
               <ContactRow label="Teléfono" value={siteConfig.contact.phoneDisplay} />
               <ContactRow label="Ubicación" value={siteConfig.contact.location} />
-              <span className="contact__pending">Datos provisionales · No utilizar para comunicación real</span>
             </div>
           </div>
         </section>
@@ -245,4 +271,3 @@ function BuildIcon() {
 }
 
 export default App
-
