@@ -1,8 +1,8 @@
-# XAVIER Ingeniería Civil — web MVP
+# XAVA Ingeniería Civil — web MVP
 
-Landing page visual y funcional para presentar cómo podría verse la futura web de **XAVIER Ingeniería Civil**.
+Landing page visual y funcional para presentar cómo podría verse la futura web de **XAVA Ingeniería Civil**.
 
-> Estado: **MVP / demo — V4-A storytelling visual**. No representa todavía un sitio corporativo definitivo ni confirma la constitución legal, experiencia, clientes, proyectos o datos de contacto de la iniciativa.
+> Estado: **MVP / demo — V4-B storytelling y oferta técnica**. No representa todavía un sitio corporativo definitivo ni confirma la constitución legal, experiencia, clientes, proyectos o datos de contacto de la iniciativa.
 
 ## Alcance
 
@@ -11,8 +11,9 @@ Landing page visual y funcional para presentar cómo podría verse la futura web
 - Identidad inicial basada en azul marino, blanco, turquesa y amarillo como acento.
 - Diseño responsive para escritorio, tablet y móvil.
 - Contenido y contacto centralizados y fáciles de editar.
-- Hero con clip WebM temporal derivado de la imagen conceptual original; no corresponde a una obra real de XAVIER.
+- Hero secuencial con cuatro escenas conceptuales; no corresponde a obras reales de XAVA.
 - Render y tres escenarios de proyecto estrictamente demostrativos, sin clientes, ubicaciones o resultados atribuidos.
+- Oferta complementaria de renderizado, topografía, presupuestos, cuantificación, planeación y documentación técnica.
 
 Fuera de alcance: backend, base de datos, CMS, autenticación, formularios con envío, dominio personalizado y cualquier infraestructura productiva.
 
@@ -72,14 +73,23 @@ La V4-A cambia la lectura de “capacidades de una empresa” a “cómo se pien
 
 La sección independiente de **Capacidades** se retiró para evitar repetir lo que ya comunican Servicios y Proyectos destacados. Sus tres ámbitos —obra civil, supervisión e infraestructura— se integraron como categorías de los proyectos conceptuales.
 
+## V4-B — marca, secuencia hero y oferta técnica
+
+- La marca visible vigente de la demo es **XAVA Ingeniería Civil**. El isotipo X se conserva temporalmente.
+- El repositorio, la ruta local y la URL de GitHub Pages mantienen el nombre técnico heredado `xavier-ingenieria-civil-web`; este nombre no representa la marca pública actual.
+- El hero usa un crossfade de cuatro escenas: levantamiento topográfico, render, desarrollo estructural e infraestructura civil.
+- Solo la primera escena se solicita en el render inicial. Las otras tres se montan después de una pausa breve y únicamente en escritorio sin movimiento reducido.
+- Servicios amplía su alcance técnico y Visualización evoluciona a **Visualización y planeación técnica**, con cuatro capacidades complementarias compactas.
+
 ### Assets temporales
 
-- `src/assets/xavier-hero-concept.webp`: imagen conceptual generada para la demo. Funciona como fondo/fallback del hero y no documenta una obra real.
-- `src/assets/xavier-hero-demo.webm`: clip VP9 de cinco segundos, sin audio, generado localmente a partir de la imagen conceptual. Usa `autoplay`, `muted`, `loop` y `playsInline`; se monta solo en pantallas mayores a 760 px y cuando el usuario no solicita movimiento reducido.
-- `src/assets/xavier-render-demo.webp`: render conceptual generado para V4-A. Se reutiliza con carga diferida en Proyectos y Visualización; no documenta una obra real.
-- El video final aún no está disponible. Para no descargar material de procedencia o licencia dudosa, V4-A usa el clip simulado anterior. En móvil y con `prefers-reduced-motion` se muestra únicamente el poster. El `source` del `<video>` queda listo para sustituirse por material propio.
+- `src/assets/xava-hero-topography-demo.webp`: levantamiento topográfico conceptual y primera escena/fallback del hero.
+- `src/assets/xava-render-demo.webp`: render conceptual usado en hero, Proyectos y Visualización.
+- `src/assets/xava-hero-structure-demo.webp`: desarrollo estructural conceptual heredado de V4-A.
+- `src/assets/xava-hero-infrastructure-demo.webp`: infraestructura vial y drenaje conceptuales.
+- En móvil y con `prefers-reduced-motion` se monta únicamente la escena topográfica estática. No se descargan las otras escenas.
 
-Antes de una publicación corporativa deben sustituirse el hero, los tres proyectos conceptuales y el render por video, casos e imágenes propios con permisos y datos verificados.
+Antes de una publicación corporativa deben sustituirse las escenas del hero, los tres proyectos conceptuales, el render y las referencias técnicas por video, casos, topografía e imágenes propios con permisos y datos verificados.
 
 ## Decisiones
 
@@ -92,9 +102,9 @@ Antes de una publicación corporativa deben sustituirse el hero, los tres proyec
 
 ## Roadmap inmediato
 
-1. Sustituir la simulación del hero por video propio optimizado y sin audio.
-2. Incorporar proyectos y renders reales con permisos, fichas e imágenes verificadas.
-3. Validar identidad, logotipo, contacto y cobertura definitivos.
+1. Sustituir la secuencia demo por video o fotografía propios optimizados.
+2. Incorporar proyectos, renders y levantamientos reales con permisos y fichas verificadas.
+3. Validar isotipo, contacto y cobertura definitivos.
 4. Definir el canal de captación antes de habilitar un formulario.
 
-La comparación interactiva Render vs Obra y cualquier interacción avanzada quedan expresamente fuera de V4-A y reservadas para una posible V4-B.
+La comparación interactiva Render vs Obra y cualquier interacción avanzada permanecen fuera de esta versión.

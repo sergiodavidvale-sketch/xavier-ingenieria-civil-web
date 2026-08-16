@@ -1,5 +1,5 @@
 export const siteConfig = {
-  brand: 'XAVIER Ingeniería Civil',
+  brand: 'XAVA Ingeniería Civil',
   descriptor: 'Proyectos · Supervisión · Construcción',
   contact: {
     email: '',
