@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
-import heroPoster from './assets/xavier-hero-concept.webp'
-import heroVideo from './assets/xavier-hero-demo.webm'
-import renderDemo from './assets/xavier-render-demo.webp'
+import heroInfrastructure from './assets/xava-hero-infrastructure-demo.webp'
+import heroTopography from './assets/xava-hero-topography-demo.webp'
+import heroStructure from './assets/xava-hero-structure-demo.webp'
+import renderDemo from './assets/xava-render-demo.webp'
 import { siteConfig } from './siteConfig'
 
 const navItems = [
@@ -16,21 +17,35 @@ const services = [
   {
     number: '01',
     title: 'Proyectos',
-    copy: 'Planeación, desarrollo técnico, presupuestos y documentación de ingeniería.',
+    copy: 'Planeación, desarrollo técnico, presupuestos, cuantificación, documentación y visualización.',
     icon: <DraftingIcon />,
   },
   {
     number: '02',
     title: 'Supervisión',
-    copy: 'Seguimiento técnico, control de avance, calidad y coordinación de obra.',
+    copy: 'Seguimiento técnico, control de avance, calidad, coordinación y verificación en obra.',
     icon: <SurveyIcon />,
   },
   {
     number: '03',
     title: 'Construcción',
-    copy: 'Ejecución de proyectos de ingeniería civil con planeación y control.',
+    copy: 'Ejecución de obra civil, adecuaciones e infraestructura con control constructivo.',
     icon: <BuildIcon />,
   },
+] as const
+
+const heroScenes = [
+  { src: heroTopography, alt: 'Levantamiento topográfico conceptual sobre un terreno en análisis' },
+  { src: renderDemo, alt: 'Render conceptual de una estructura civil antes de su ejecución' },
+  { src: heroStructure, alt: 'Desarrollo estructural conceptual de una obra vertical' },
+  { src: heroInfrastructure, alt: 'Infraestructura vial conceptual con pavimento y drenaje en desarrollo' },
+] as const
+
+const technicalCapabilities = [
+  ['Renderizados y previsualización', 'Anticipar espacios, materiales y criterios de diseño.', <RenderCapabilityIcon />],
+  ['Levantamientos topográficos', 'Leer el sitio y documentar sus condiciones de partida.', <TopographyCapabilityIcon />],
+  ['Presupuestos y cuantificación', 'Ordenar alcances, conceptos y cantidades del proyecto.', <BudgetCapabilityIcon />],
+  ['Planeación y documentación técnica', 'Dar estructura a decisiones, entregables y etapas.', <DocumentationCapabilityIcon />],
 ] as const
 
 const differentiators = [
@@ -71,14 +86,14 @@ const conceptStages = [
   {
     number: '01',
     title: 'Conceptualización',
-    copy: 'Alcance, necesidades, criterios técnicos y planeación.',
+    copy: 'Levantamiento, alcance, criterios técnicos y planeación.',
     label: 'Plano',
     visual: <BlueprintStageVisual />,
   },
   {
     number: '02',
     title: 'Visualización',
-    copy: 'Modelado, representación y renderizado.',
+    copy: 'Modelado, renderizado, cuantificación y representación.',
     label: 'Render',
     visual: <ModelStageVisual />,
   },
@@ -102,7 +117,9 @@ const process = [
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [heroVideoEnabled, setHeroVideoEnabled] = useState(false)
+  const [heroSequenceEnabled, setHeroSequenceEnabled] = useState(false)
+  const [heroAssetsReady, setHeroAssetsReady] = useState(false)
+  const [activeHeroScene, setActiveHeroScene] = useState(0)
   const menuToggleRef = useRef<HTMLButtonElement>(null)
   const navigationRef = useRef<HTMLElement>(null)
 
@@ -114,12 +131,32 @@ function App() {
   }, [])
 
   useEffect(() => {
-    const videoQuery = window.matchMedia('(min-width: 761px) and (prefers-reduced-motion: no-preference)')
-    const updateVideo = () => setHeroVideoEnabled(videoQuery.matches)
-    updateVideo()
-    videoQuery.addEventListener('change', updateVideo)
-    return () => videoQuery.removeEventListener('change', updateVideo)
+    const sequenceQuery = window.matchMedia('(min-width: 761px) and (prefers-reduced-motion: no-preference)')
+    const updateSequence = () => {
+      setHeroSequenceEnabled(sequenceQuery.matches)
+      if (!sequenceQuery.matches) {
+        setActiveHeroScene(0)
+        setHeroAssetsReady(false)
+      }
+    }
+    updateSequence()
+    sequenceQuery.addEventListener('change', updateSequence)
+    return () => sequenceQuery.removeEventListener('change', updateSequence)
   }, [])
+
+  useEffect(() => {
+    if (!heroSequenceEnabled) return
+
+    const preloadTimer = window.setTimeout(() => setHeroAssetsReady(true), 900)
+    const sequenceTimer = window.setInterval(() => {
+      setActiveHeroScene((current) => (current + 1) % heroScenes.length)
+    }, 5200)
+
+    return () => {
+      window.clearTimeout(preloadTimer)
+      window.clearInterval(sequenceTimer)
+    }
+  }, [heroSequenceEnabled])
 
   useEffect(() => {
     if (!menuOpen) return
@@ -159,10 +196,10 @@ function App() {
   return (
     <>
       <header className={`site-header${scrolled ? ' site-header--scrolled' : ''}`}>
-        <a className="brand" href="#inicio" aria-label="XAVIER Ingeniería Civil, inicio">
+        <a className="brand" href="#inicio" aria-label="XAVA Ingeniería Civil, inicio">
           <BrandMark />
           <span className="brand__text">
-            <strong>XAVIER</strong>
+            <strong>XAVA</strong>
             <small>INGENIERÍA CIVIL</small>
           </span>
         </a>
@@ -191,18 +228,25 @@ function App() {
 
       <main>
         <section className="hero" id="inicio">
-          <div className="hero__media" role="img" aria-label="Simulación visual conceptual de infraestructura civil en construcción">
-            <div className="hero__image" />
-            {heroVideoEnabled && (
-              <video className="hero__video" autoPlay muted loop playsInline poster={heroPoster} preload="metadata" aria-hidden="true" tabIndex={-1}>
-                <source src={heroVideo} type="video/webm" />
-              </video>
-            )}
+          <div className="hero__media" role="img" aria-label={heroScenes[activeHeroScene].alt} aria-live="off">
+            {heroScenes.map((scene, index) => (
+              (index === 0 || (heroSequenceEnabled && heroAssetsReady)) && (
+                <img
+                  className={`hero__scene hero__scene--${index + 1}${activeHeroScene === index ? ' hero__scene--active' : ''}`}
+                  src={scene.src}
+                  alt=""
+                  aria-hidden="true"
+                  decoding="async"
+                  fetchPriority={index === 0 ? 'high' : 'auto'}
+                  key={scene.src}
+                />
+              )
+            ))}
           </div>
           <div className="hero__veil" />
           <div className="technical-grid" />
           <div className="container hero__content">
-            <h1 className="hero__brand"><strong>XAVIER</strong><span>INGENIERÍA CIVIL</span></h1>
+            <h1 className="hero__brand"><strong>XAVA</strong><span>INGENIERÍA CIVIL</span></h1>
             <p className="hero__claim">Construimos sobre <em>ideas sólidas.</em></p>
             <p className="hero__descriptor">{siteConfig.descriptor}</p>
             <div className="hero__actions">
@@ -210,7 +254,7 @@ function App() {
               <a className="button button--ghost" href="#servicios">Nuestros servicios</a>
             </div>
           </div>
-          <div className="hero__index" aria-hidden="true"><b>X</b><span>ING / CIV</span></div>
+          <div className="hero__index" aria-hidden="true"><b>X</b><span>{String(activeHeroScene + 1).padStart(2, '0')} / {String(heroScenes.length).padStart(2, '0')}</span></div>
         </section>
 
         <section className="services section" id="servicios">
@@ -301,16 +345,25 @@ function App() {
               <div className="visualization__reticle" aria-hidden="true"><span /><span /></div>
             </div>
             <div className="visualization__content">
-              <p className="eyebrow eyebrow--light"><span /> Visualización y renderizado</p>
+              <p className="eyebrow eyebrow--light"><span /> Visualización y planeación técnica</p>
               <h2 id="visualization-title">Visualización antes de <em>construir.</em></h2>
-              <p>Los modelos y renders permiten anticipar espacios, materiales y decisiones antes de entrar a obra.</p>
+              <p>La preparación técnica reúne información, representación y criterios para tomar decisiones antes de entrar a obra.</p>
               <dl className="visualization__details">
-                <div><dt>01</dt><dd>Lectura espacial</dd></div>
-                <div><dt>02</dt><dd>Materialidad</dd></div>
-                <div><dt>03</dt><dd>Decisiones técnicas</dd></div>
+                <div><dt>01</dt><dd>Análisis y levantamientos</dd></div>
+                <div><dt>02</dt><dd>Presupuesto y cuantificación</dd></div>
+                <div><dt>03</dt><dd>Modelado y decisiones técnicas</dd></div>
               </dl>
               <small>Visual conceptual temporal · pendiente de sustituir por material propio</small>
             </div>
+          </div>
+          <div className="container technical-capabilities" aria-label="Capacidades técnicas complementarias">
+            {technicalCapabilities.map(([title, copy, icon], index) => (
+              <article key={title}>
+                <div><span>{String(index + 1).padStart(2, '0')}</span>{icon}</div>
+                <h3>{title}</h3>
+                <p>{copy}</p>
+              </article>
+            ))}
           </div>
         </section>
 
@@ -324,7 +377,7 @@ function App() {
             <div className="about__content">
               <p className="eyebrow"><span /> Nosotros</p>
               <h2>Una iniciativa profesional con <em>visión técnica.</em></h2>
-              <p className="about__lead">XAVIER Ingeniería Civil es una iniciativa profesional enfocada en proyectos, supervisión y construcción de ingeniería civil.</p>
+              <p className="about__lead">XAVA Ingeniería Civil es una iniciativa profesional enfocada en proyectos, supervisión y construcción de ingeniería civil.</p>
               <p>Estamos construyendo una forma de trabajo basada en la planeación, la precisión y el seguimiento responsable de cada etapa.</p>
             </div>
           </div>
@@ -375,11 +428,11 @@ function App() {
 
       <footer className="footer">
         <div className="container footer__main">
-          <a className="brand brand--footer" href="#inicio"><BrandMark /><span className="brand__text"><strong>XAVIER</strong><small>INGENIERÍA CIVIL</small></span></a>
+          <a className="brand brand--footer" href="#inicio"><BrandMark /><span className="brand__text"><strong>XAVA</strong><small>INGENIERÍA CIVIL</small></span></a>
           <p>{siteConfig.descriptor}</p>
           <a href="#inicio">Volver arriba <span>↑</span></a>
         </div>
-        <div className="container footer__bottom"><span>© {new Date().getFullYear()} XAVIER Ingeniería Civil</span><span>{siteConfig.statusNote}</span></div>
+        <div className="container footer__bottom"><span>© {new Date().getFullYear()} XAVA Ingeniería Civil</span><span>{siteConfig.statusNote}</span></div>
       </footer>
     </>
   )
@@ -437,6 +490,22 @@ function ModelStageVisual() {
 
 function ExecutionStageVisual() {
   return <svg className="story-visual story-visual--execution" viewBox="0 0 420 230"><path className="story-visual__soft" d="M32 196h356M56 196V82h308v114M56 82h308M88 82V42h244v40" /><path d="M86 196v-72h248v72M86 124h248M144 124v72M276 124v72M210 42v154" /><path className="story-visual__accent" d="m56 196 88-72 66 72 66-72 58 72" /></svg>
+}
+
+function RenderCapabilityIcon() {
+  return <svg viewBox="0 0 48 48" aria-hidden="true"><path d="m7 18 17-9 17 9-17 9-17-9Zm0 0v13l17 8 17-8V18M24 27v12" /><path className="capability-icon__accent" d="m12 29 12 6 12-6" /></svg>
+}
+
+function TopographyCapabilityIcon() {
+  return <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="14" r="7" /><path d="M24 21v7M18 28h12M20 28 11 43M28 28l9 15M24 28v15M17 14h14" /><path className="capability-icon__accent" d="M6 38c7-4 12 4 19 0s11 3 17-1" /></svg>
+}
+
+function BudgetCapabilityIcon() {
+  return <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 7h28v34H10zM16 15h16M16 22h7M16 29h7M28 22h4M28 29h4M16 36h16" /><path className="capability-icon__accent" d="M10 7h28v7H10" /></svg>
+}
+
+function DocumentationCapabilityIcon() {
+  return <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 6h18l7 7v29H12zM30 6v8h7M18 21h13M18 27h13M18 33h9" /><path className="capability-icon__accent" d="m30 38 4 4 8-10" /></svg>
 }
 
 export default App
