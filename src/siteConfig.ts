@@ -2,10 +2,10 @@ export const siteConfig = {
   brand: 'XAVIER Ingeniería Civil',
   descriptor: 'Proyectos · Supervisión · Construcción',
   contact: {
-    email: 'contacto@pendiente-de-validar.mx',
-    phoneDisplay: 'Teléfono pendiente de validar',
+    email: '',
+    phoneDisplay: '',
     phoneHref: '',
-    location: 'Ubicación pendiente de validar',
+    location: '',
   },
   statusNote: 'Sitio demostrativo · Proyecto en desarrollo',
 } as const
