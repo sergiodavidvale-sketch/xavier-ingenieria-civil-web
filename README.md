@@ -114,10 +114,11 @@ Estos recursos no representan obras, clientes, ubicaciones ni resultados reales 
 - casos de éxito reales;
 - material autorizado para publicación.
 
-## Decisiones y estado
+## Decisiones, estado y ruta de producto
 
 - [Decision log](docs/decision-log.md)
 - [Project status / handoff](docs/project-status.md)
+- [Product roadmap — de Demo v1.0 a Production v1.0](docs/product-roadmap.md)
 
 ## Roadmap inmediato
 
@@ -141,6 +142,6 @@ Congelar **Demo v1.0** si la auditoría se aprueba. Si no se aprueba, definir ú
 
 ### Después
 
-Sustitución progresiva de assets demo por material real, validado y autorizado.
+Seguir la ruta detallada en [`docs/product-roadmap.md`](docs/product-roadmap.md): identidad final, material real, casos verificados, dominio/correo, formulario funcional, base de solicitudes y clientes, folios, confirmación automática por correo, seguridad, SEO, analytics, QA y **Production v1.0**.
 
 No debe iniciarse una nueva versión automáticamente después de la auditoría.
