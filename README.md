@@ -2,12 +2,12 @@
 
 Landing page visual y funcional para presentar cómo podría verse la futura web de **XAVIER Ingeniería Civil**.
 
-> Estado: **MVP / demo — refinamiento visual V2**. No representa todavía un sitio corporativo definitivo ni confirma la constitución legal, experiencia, clientes, proyectos o datos de contacto de la iniciativa.
+> Estado: **MVP / demo — refinamiento visual V3**. No representa todavía un sitio corporativo definitivo ni confirma la constitución legal, experiencia, clientes, proyectos o datos de contacto de la iniciativa.
 
 ## Alcance
 
 - Landing page de una sola página.
-- Secciones de inicio, servicios, nosotros, diferenciadores, portafolio, proceso y contacto.
+- Secciones de inicio, servicios, nosotros, diferenciadores, capacidades, proceso y contacto.
 - Identidad inicial basada en azul marino, blanco, turquesa y amarillo como acento.
 - Diseño responsive para escritorio, tablet y móvil.
 - Contenido y contacto centralizados y fáciles de editar.
@@ -56,13 +56,13 @@ El sitio genera archivos estáticos en `dist/` y se publica con GitHub Actions e
 
 URL del MVP: <https://sergiodavidvale-sketch.github.io/xavier-ingenieria-civil-web/>
 
-El workflow `.github/workflows/deploy.yml` ejecuta instalación reproducible, lint, typecheck, build y deployment desde la rama predeterminada.
+La rama canónica es `agent/initial-mvp`. El trabajo visual se integra por pull request desde ramas `agent/*`; al llegar a la rama canónica, el workflow `.github/workflows/deploy.yml` ejecuta instalación reproducible, lint, typecheck, build y deployment.
 
 ## Decisiones
 
 - No se muestran proyectos, clientes, trayectoria, certificaciones o testimonios inventados.
-- El portafolio muestra tres conceptos visuales explícitos, sin atribuir obras ejecutadas a XAVIER, hasta validar material real.
-- El formulario se sustituye por datos provisionales para no simular un canal activo.
+- Capacidades muestra tres áreas de trabajo mediante composiciones técnicas propias, sin atribuir obras ejecutadas a XAVIER.
+- El contacto muestra un único estado de próxima disponibilidad para no simular canales activos.
 - La marca tipográfica y la X son una interpretación visual inicial, no un logotipo definitivo aprobado.
 - La fotografía hero es un recurso conceptual generado para el demo y no prueba experiencia ejecutada.
 

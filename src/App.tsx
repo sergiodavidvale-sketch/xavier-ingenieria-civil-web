@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { siteConfig } from './siteConfig'
 
 const navItems = [
@@ -37,21 +37,27 @@ const differentiators = [
   ['04', 'Ejecución', 'Convertir el proyecto en resultados.'],
 ] as const
 
-const portfolioConcepts = [
+const capabilities = [
   {
-    category: 'Obra civil',
-    title: 'Estructuras que responden al contexto',
-    variant: 'portfolio-card--image',
+    number: '01',
+    title: 'Obra civil',
+    copy: 'Estructuras, cimentaciones, adecuaciones y ejecución civil con planeación técnica.',
+    variant: 'capability-card--civil',
+    visual: <CivilCapabilityVisual />,
   },
   {
-    category: 'Supervisión técnica',
-    title: 'Control técnico en cada etapa',
-    variant: 'portfolio-card--grid',
+    number: '02',
+    title: 'Supervisión técnica',
+    copy: 'Control de avance, calidad, coordinación y seguimiento durante cada etapa de obra.',
+    variant: 'capability-card--supervision',
+    visual: <SupervisionCapabilityVisual />,
   },
   {
-    category: 'Infraestructura',
-    title: 'Soluciones pensadas para durar',
-    variant: 'portfolio-card--structure',
+    number: '03',
+    title: 'Infraestructura',
+    copy: 'Soluciones civiles e infraestructura pensadas para responder al contexto del proyecto.',
+    variant: 'capability-card--infrastructure',
+    visual: <InfrastructureCapabilityVisual />,
   },
 ] as const
 
@@ -66,6 +72,8 @@ const process = [
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const menuToggleRef = useRef<HTMLButtonElement>(null)
+  const navigationRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
     const updateHeader = () => setScrolled(window.scrollY > 24)
@@ -73,6 +81,41 @@ function App() {
     window.addEventListener('scroll', updateHeader, { passive: true })
     return () => window.removeEventListener('scroll', updateHeader)
   }, [])
+
+  useEffect(() => {
+    if (!menuOpen) return
+
+    const previousOverflow = document.body.style.overflow
+    const main = document.querySelector('main')
+    const footer = document.querySelector('footer')
+    const desktopQuery = window.matchMedia('(min-width: 761px)')
+
+    document.body.style.overflow = 'hidden'
+    main?.setAttribute('inert', '')
+    footer?.setAttribute('inert', '')
+    navigationRef.current?.querySelector<HTMLAnchorElement>('a')?.focus()
+
+    const closeMenu = () => setMenuOpen(false)
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return
+      closeMenu()
+      window.requestAnimationFrame(() => menuToggleRef.current?.focus())
+    }
+    const handleViewportChange = (event: MediaQueryListEvent) => {
+      if (event.matches) closeMenu()
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    desktopQuery.addEventListener('change', handleViewportChange)
+
+    return () => {
+      document.body.style.overflow = previousOverflow
+      main?.removeAttribute('inert')
+      footer?.removeAttribute('inert')
+      document.removeEventListener('keydown', handleKeyDown)
+      desktopQuery.removeEventListener('change', handleViewportChange)
+    }
+  }, [menuOpen])
 
   return (
     <>
@@ -86,18 +129,19 @@ function App() {
         </a>
 
         <button
-          className="menu-toggle"
+          ref={menuToggleRef}
+          className={`menu-toggle${menuOpen ? ' menu-toggle--open' : ''}`}
           type="button"
           aria-expanded={menuOpen}
           aria-controls="main-navigation"
+          aria-label={menuOpen ? 'Cerrar navegación' : 'Abrir navegación'}
           onClick={() => setMenuOpen((current) => !current)}
         >
-          <span className="sr-only">Abrir navegación</span>
-          <span />
-          <span />
+          <span className="menu-toggle__line" />
+          <span className="menu-toggle__line" />
         </button>
 
-        <nav id="main-navigation" className={`nav${menuOpen ? ' nav--open' : ''}`}>
+        <nav ref={navigationRef} id="main-navigation" className={`nav${menuOpen ? ' nav--open' : ''}`}>
           {navItems.map(([label, id]) => (
             <a key={id} href={`#${id}`} onClick={() => setMenuOpen(false)}>
               {label}
@@ -114,7 +158,7 @@ function App() {
           <div className="container hero__content">
             <h1 className="hero__brand"><strong>XAVIER</strong><span>INGENIERÍA CIVIL</span></h1>
             <p className="hero__claim">Construimos sobre <em>ideas sólidas.</em></p>
-            <p className="hero__lead">Ingeniería y ejecución para convertir ideas en proyectos sólidos.</p>
+            <p className="hero__lead">Ingeniería, supervisión y ejecución con enfoque técnico.</p>
             <p className="hero__descriptor">{siteConfig.descriptor}</p>
             <div className="hero__actions">
               <a className="button button--primary" href="#servicios">Conoce nuestros servicios <ArrowIcon /></a>
@@ -147,9 +191,9 @@ function App() {
         <section className="about section" id="nosotros">
           <div className="container about__grid">
             <div className="about__visual" aria-hidden="true">
-              <div className="x-structure"><span /><span /></div>
-              <p>Forma<br />Función<br />Futuro</p>
-              <small>X / 2026</small>
+              <EngineeringDetailVisual />
+              <div className="about__visual-x">X</div>
+              <div className="about__visual-meta"><span>Revisión técnica</span><strong>Plano · estructura · control</strong></div>
             </div>
             <div className="about__content">
               <p className="eyebrow"><span /> Nosotros</p>
@@ -177,21 +221,21 @@ function App() {
         <section className="portfolio section" id="proyectos">
           <div className="container">
             <SectionHeading
-              kicker="Portafolio"
-              title={<>Una visión del<br /><span>portafolio futuro.</span></>}
-              copy="Tres líneas visuales para anticipar cómo podrán presentarse proyectos reales cuando exista material validado."
+              kicker="Capacidades"
+              title={<>Soluciones para cada<br /><span>etapa del proyecto.</span></>}
+              copy="Tres áreas de trabajo para abordar proyectos civiles con planeación, seguimiento y ejecución."
             />
             <div className="portfolio__grid">
-              {portfolioConcepts.map((concept, index) => (
-                <article className={`portfolio-card ${concept.variant}`} key={concept.category}>
+              {capabilities.map((capability) => (
+                <article className={`portfolio-card ${capability.variant}`} key={capability.title}>
                   <div className="portfolio-card__visual" aria-hidden="true">
-                    <span className="portfolio-card__number">0{index + 1}</span>
-                    <span className="portfolio-card__x">X</span>
+                    <span className="portfolio-card__number">{capability.number}</span>
+                    {capability.visual}
                   </div>
                   <div className="portfolio-card__body">
-                    <span>Concepto de proyecto</span>
-                    <p>{concept.category}</p>
-                    <h3>{concept.title}</h3>
+                    <span>Capacidad {capability.number}</span>
+                    <h3>{capability.title}</h3>
+                    <p>{capability.copy}</p>
                   </div>
                 </article>
               ))}
@@ -219,12 +263,10 @@ function App() {
             <div>
               <p className="eyebrow eyebrow--light"><span /> Hablemos</p>
               <h2>¿Tienes un proyecto<br /><em>en mente?</em></h2>
-              <p>Hablemos de cómo llevarlo a obra.</p>
             </div>
-            <div className="contact__details">
-              <ContactRow label="Correo" value={siteConfig.contact.email} />
-              <ContactRow label="Teléfono" value={siteConfig.contact.phoneDisplay} />
-              <ContactRow label="Ubicación" value={siteConfig.contact.location} />
+            <div className="contact__status">
+              <span aria-hidden="true" />
+              <p>Próximamente habilitaremos nuestros canales de contacto.</p>
             </div>
           </div>
         </section>
@@ -246,10 +288,6 @@ function SectionHeading({ kicker, title, copy }: { kicker: string; title: ReactN
   return <div className="section-heading"><div><p className="eyebrow"><span /> {kicker}</p><h2>{title}</h2></div><p>{copy}</p></div>
 }
 
-function ContactRow({ label, value }: { label: string; value: string }) {
-  return <div className="contact-row"><span>{label}</span><p>{value}</p></div>
-}
-
 function BrandMark() {
   return <svg className="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M5 3h12l7 12L31 3h12L30 24l13 21H31l-7-12-7 12H5l13-21L5 3Z" /><path className="brand-mark__accent" d="m24 15 6 9-6 9-6-9 6-9Z" /></svg>
 }
@@ -268,6 +306,28 @@ function SurveyIcon() {
 
 function BuildIcon() {
   return <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40h32M12 40V20h24v20M18 40V28h12v12M8 20h32M16 20V9h16v11M13 14h22" /></svg>
+}
+
+function EngineeringDetailVisual() {
+  return (
+    <svg className="engineering-detail" viewBox="0 0 640 520">
+      <g className="engineering-detail__grid"><path d="M0 80h640M0 160h640M0 240h640M0 320h640M0 400h640M80 0v520M160 0v520M240 0v520M320 0v520M400 0v520M480 0v520M560 0v520" /></g>
+      <g className="engineering-detail__structure"><path d="M88 422h464M126 422V205h388v217M126 205h388M184 205V128h272v77M184 128h272M214 422V274h212v148M214 274h212M320 128v294" /><path d="m126 422 88-148 106 148 106-148 88 148" /></g>
+      <g className="engineering-detail__dimensions"><path d="M110 455h420M110 447v16M530 447v16M68 190V438M60 190h16M60 438h16" /><circle cx="126" cy="205" r="6" /><circle cx="514" cy="205" r="6" /><circle cx="320" cy="274" r="6" /></g>
+    </svg>
+  )
+}
+
+function CivilCapabilityVisual() {
+  return <svg className="capability-visual" viewBox="0 0 500 260"><path className="capability-visual__soft" d="M36 218h428M92 218V104h316v114M92 104h316M148 104V52h204v52M148 52h204" /><path d="M132 218V142h236v76M132 142h236M202 142v76M298 142v76M72 232h356" /><path className="capability-visual__accent" d="m92 218 110-76 96 76 70-76" /></svg>
+}
+
+function SupervisionCapabilityVisual() {
+  return <svg className="capability-visual" viewBox="0 0 500 260"><path className="capability-visual__soft" d="M58 48h384v170H58zM58 90h384M148 48v170M238 48v170M328 48v170" /><path d="M94 176h52l42-54 55 28 52-64 70 38 48-50" /><circle cx="94" cy="176" r="7" /><circle cx="188" cy="122" r="7" /><circle cx="243" cy="150" r="7" /><circle cx="295" cy="86" r="7" /><circle cx="365" cy="124" r="7" /><path className="capability-visual__accent" d="m350 184 18 18 42-48" /></svg>
+}
+
+function InfrastructureCapabilityVisual() {
+  return <svg className="capability-visual" viewBox="0 0 500 260"><path className="capability-visual__soft" d="M28 216h444M80 216l92-120h156l92 120M172 96h156M114 172h272M196 96l-34 120M304 96l34 120" /><path d="M56 216h388M118 216l80-120h104l80 120M210 96l-22 120M290 96l22 120" /><path className="capability-visual__accent" d="M250 96v120M228 148h44M218 190h64" /></svg>
 }
 
 export default App
