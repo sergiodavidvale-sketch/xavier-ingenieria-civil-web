@@ -2,16 +2,17 @@
 
 Landing page visual y funcional para presentar cómo podría verse la futura web de **XAVIER Ingeniería Civil**.
 
-> Estado: **MVP / demo — refinamiento visual V3**. No representa todavía un sitio corporativo definitivo ni confirma la constitución legal, experiencia, clientes, proyectos o datos de contacto de la iniciativa.
+> Estado: **MVP / demo — V4-A storytelling visual**. No representa todavía un sitio corporativo definitivo ni confirma la constitución legal, experiencia, clientes, proyectos o datos de contacto de la iniciativa.
 
 ## Alcance
 
 - Landing page de una sola página.
-- Secciones de inicio, servicios, nosotros, diferenciadores, capacidades, proceso y contacto.
+- Narrativa de inicio, servicios, proyectos demostrativos, concepto a ejecución, visualización, nosotros, principios, proceso y contacto.
 - Identidad inicial basada en azul marino, blanco, turquesa y amarillo como acento.
 - Diseño responsive para escritorio, tablet y móvil.
 - Contenido y contacto centralizados y fáciles de editar.
-- Imagen hero original generada para este demo; no corresponde a una obra real de XAVIER.
+- Hero con clip WebM temporal derivado de la imagen conceptual original; no corresponde a una obra real de XAVIER.
+- Render y tres escenarios de proyecto estrictamente demostrativos, sin clientes, ubicaciones o resultados atribuidos.
 
 Fuera de alcance: backend, base de datos, CMS, autenticación, formularios con envío, dominio personalizado y cualquier infraestructura productiva.
 
@@ -58,17 +59,42 @@ URL del MVP: <https://sergiodavidvale-sketch.github.io/xavier-ingenieria-civil-w
 
 La rama canónica es `agent/initial-mvp`. El trabajo visual se integra por pull request desde ramas `agent/*`; al llegar a la rama canónica, el workflow `.github/workflows/deploy.yml` ejecuta instalación reproducible, lint, typecheck, build y deployment.
 
+## V4-A — storytelling visual
+
+La V4-A cambia la lectura de “capacidades de una empresa” a “cómo se piensa, visualiza y ejecuta un proyecto”. El recorrido editorial es:
+
+1. hero dinámico;
+2. servicios;
+3. proyectos destacados demostrativos;
+4. secuencia plano → render → obra;
+5. visualización antes de construir;
+6. nosotros, principios, proceso y contacto.
+
+La sección independiente de **Capacidades** se retiró para evitar repetir lo que ya comunican Servicios y Proyectos destacados. Sus tres ámbitos —obra civil, supervisión e infraestructura— se integraron como categorías de los proyectos conceptuales.
+
+### Assets temporales
+
+- `src/assets/xavier-hero-concept.webp`: imagen conceptual generada para la demo. Funciona como fondo/fallback del hero y no documenta una obra real.
+- `src/assets/xavier-hero-demo.webm`: clip VP9 de cinco segundos, sin audio, generado localmente a partir de la imagen conceptual. Usa `autoplay`, `muted`, `loop` y `playsInline`; se monta solo en pantallas mayores a 760 px y cuando el usuario no solicita movimiento reducido.
+- `src/assets/xavier-render-demo.webp`: render conceptual generado para V4-A. Se reutiliza con carga diferida en Proyectos y Visualización; no documenta una obra real.
+- El video final aún no está disponible. Para no descargar material de procedencia o licencia dudosa, V4-A usa el clip simulado anterior. En móvil y con `prefers-reduced-motion` se muestra únicamente el poster. El `source` del `<video>` queda listo para sustituirse por material propio.
+
+Antes de una publicación corporativa deben sustituirse el hero, los tres proyectos conceptuales y el render por video, casos e imágenes propios con permisos y datos verificados.
+
 ## Decisiones
 
-- No se muestran proyectos, clientes, trayectoria, certificaciones o testimonios inventados.
-- Capacidades muestra tres áreas de trabajo mediante composiciones técnicas propias, sin atribuir obras ejecutadas a XAVIER.
+- No se muestran clientes, trayectoria, certificaciones, testimonios o resultados inventados.
+- Los proyectos destacados son escenarios conceptuales rotulados como “Proyecto demostrativo”.
+- Obra civil, supervisión e infraestructura viven dentro de la narrativa de proyectos para evitar una segunda sección redundante de capacidades.
 - El contacto muestra un único estado de próxima disponibilidad para no simular canales activos.
 - La marca tipográfica y la X son una interpretación visual inicial, no un logotipo definitivo aprobado.
 - La fotografía hero es un recurso conceptual generado para el demo y no prueba experiencia ejecutada.
 
 ## Roadmap inmediato
 
-1. Validar identidad y logotipo definitivos.
-2. Confirmar datos reales de contacto y cobertura geográfica.
-3. Incorporar proyectos reales con permisos, fichas e imágenes verificadas.
+1. Sustituir la simulación del hero por video propio optimizado y sin audio.
+2. Incorporar proyectos y renders reales con permisos, fichas e imágenes verificadas.
+3. Validar identidad, logotipo, contacto y cobertura definitivos.
 4. Definir el canal de captación antes de habilitar un formulario.
+
+La comparación interactiva Render vs Obra y cualquier interacción avanzada quedan expresamente fuera de V4-A y reservadas para una posible V4-B.

@@ -1,11 +1,14 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
+import heroPoster from './assets/xavier-hero-concept.webp'
+import heroVideo from './assets/xavier-hero-demo.webm'
+import renderDemo from './assets/xavier-render-demo.webp'
 import { siteConfig } from './siteConfig'
 
 const navItems = [
   ['Inicio', 'inicio'],
   ['Servicios', 'servicios'],
+  ['Proyectos', 'proyectos'],
   ['Nosotros', 'nosotros'],
-  ['Proceso', 'proceso'],
   ['Contacto', 'contacto'],
 ] as const
 
@@ -37,27 +40,54 @@ const differentiators = [
   ['04', 'Ejecución', 'Convertir el proyecto en resultados.'],
 ] as const
 
-const capabilities = [
+const featuredProjects = [
   {
     number: '01',
-    title: 'Obra civil',
-    copy: 'Estructuras, cimentaciones, adecuaciones y ejecución civil con planeación técnica.',
-    variant: 'capability-card--civil',
-    visual: <CivilCapabilityVisual />,
+    category: 'Obra civil industrial',
+    title: 'Sistema estructural conceptual',
+    scope: 'Planeación técnica · estructura · ejecución civil',
+    variant: 'project-card--featured',
+    visual: null,
   },
   {
     number: '02',
-    title: 'Supervisión técnica',
-    copy: 'Control de avance, calidad, coordinación y seguimiento durante cada etapa de obra.',
-    variant: 'capability-card--supervision',
+    category: 'Adecuación / supervisión',
+    title: 'Intervención técnica conceptual',
+    scope: 'Revisión · coordinación · seguimiento',
+    variant: 'project-card--supervision',
     visual: <SupervisionCapabilityVisual />,
   },
   {
     number: '03',
-    title: 'Infraestructura',
-    copy: 'Soluciones civiles e infraestructura pensadas para responder al contexto del proyecto.',
-    variant: 'capability-card--infrastructure',
+    category: 'Infraestructura civil',
+    title: 'Conexión de infraestructura conceptual',
+    scope: 'Criterios técnicos · geometría · integración',
+    variant: 'project-card--infrastructure',
     visual: <InfrastructureCapabilityVisual />,
+  },
+] as const
+
+const conceptStages = [
+  {
+    number: '01',
+    title: 'Conceptualización',
+    copy: 'Alcance, necesidades, criterios técnicos y planeación.',
+    label: 'Plano',
+    visual: <BlueprintStageVisual />,
+  },
+  {
+    number: '02',
+    title: 'Visualización',
+    copy: 'Modelado, representación y renderizado.',
+    label: 'Render',
+    visual: <ModelStageVisual />,
+  },
+  {
+    number: '03',
+    title: 'Ejecución',
+    copy: 'Construcción, supervisión y seguimiento.',
+    label: 'Obra',
+    visual: <ExecutionStageVisual />,
   },
 ] as const
 
@@ -72,6 +102,7 @@ const process = [
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [heroVideoEnabled, setHeroVideoEnabled] = useState(false)
   const menuToggleRef = useRef<HTMLButtonElement>(null)
   const navigationRef = useRef<HTMLElement>(null)
 
@@ -80,6 +111,14 @@ function App() {
     updateHeader()
     window.addEventListener('scroll', updateHeader, { passive: true })
     return () => window.removeEventListener('scroll', updateHeader)
+  }, [])
+
+  useEffect(() => {
+    const videoQuery = window.matchMedia('(min-width: 761px) and (prefers-reduced-motion: no-preference)')
+    const updateVideo = () => setHeroVideoEnabled(videoQuery.matches)
+    updateVideo()
+    videoQuery.addEventListener('change', updateVideo)
+    return () => videoQuery.removeEventListener('change', updateVideo)
   }, [])
 
   useEffect(() => {
@@ -152,17 +191,23 @@ function App() {
 
       <main>
         <section className="hero" id="inicio">
-          <div className="hero__image" role="img" aria-label="Escena conceptual de infraestructura civil en construcción" />
+          <div className="hero__media" role="img" aria-label="Simulación visual conceptual de infraestructura civil en construcción">
+            <div className="hero__image" />
+            {heroVideoEnabled && (
+              <video className="hero__video" autoPlay muted loop playsInline poster={heroPoster} preload="metadata" aria-hidden="true" tabIndex={-1}>
+                <source src={heroVideo} type="video/webm" />
+              </video>
+            )}
+          </div>
           <div className="hero__veil" />
           <div className="technical-grid" />
           <div className="container hero__content">
             <h1 className="hero__brand"><strong>XAVIER</strong><span>INGENIERÍA CIVIL</span></h1>
             <p className="hero__claim">Construimos sobre <em>ideas sólidas.</em></p>
-            <p className="hero__lead">Ingeniería, supervisión y ejecución con enfoque técnico.</p>
             <p className="hero__descriptor">{siteConfig.descriptor}</p>
             <div className="hero__actions">
-              <a className="button button--primary" href="#servicios">Conoce nuestros servicios <ArrowIcon /></a>
-              <a className="button button--ghost" href="#contacto">Contáctanos</a>
+              <a className="button button--primary" href="#proyectos">Conoce nuestros proyectos <ArrowIcon /></a>
+              <a className="button button--ghost" href="#servicios">Nuestros servicios</a>
             </div>
           </div>
           <div className="hero__index" aria-hidden="true"><b>X</b><span>ING / CIV</span></div>
@@ -184,6 +229,87 @@ function App() {
                   <div className="service-card__line" />
                 </article>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="projects section" id="proyectos">
+          <div className="container">
+            <SectionHeading
+              kicker="Proyectos destacados"
+              title={<>Ideas técnicas que toman<br /><span>forma y dirección.</span></>}
+              copy="Ingeniería aplicada a proyectos que exigen planeación, precisión y control."
+            />
+            <div className="projects__editorial">
+              {featuredProjects.map((project, index) => (
+                <article className={`project-card ${project.variant}`} key={project.title}>
+                  <div className="project-card__visual" aria-hidden="true">
+                    {index === 0 ? (
+                      <img src={renderDemo} alt="" loading="lazy" decoding="async" />
+                    ) : project.visual}
+                    <span className="project-card__index">{project.number}</span>
+                    <span className="demo-label">Proyecto demostrativo</span>
+                  </div>
+                  <div className="project-card__body">
+                    <p>{project.category}</p>
+                    <h3>{project.title}</h3>
+                    <span>{project.scope}</span>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="concept section" id="concepto">
+          <div className="container">
+            <SectionHeading
+              kicker="Del concepto a la ejecución"
+              title={<>Pensar, visualizar,<br /><span>hacer realidad.</span></>}
+              copy="Visualizamos cada proyecto antes de llevarlo a obra."
+            />
+            <div className="concept__flow">
+              {conceptStages.map((stage, index) => (
+                <article className="concept-stage" key={stage.title}>
+                  <div className="concept-stage__visual" aria-hidden="true">
+                    {stage.visual}
+                    <span>{stage.label}</span>
+                  </div>
+                  <div className="concept-stage__copy">
+                    <span>{stage.number}</span>
+                    <h3>{stage.title}</h3>
+                    <p>{stage.copy}</p>
+                  </div>
+                  {index < conceptStages.length - 1 && <ArrowIcon />}
+                </article>
+              ))}
+            </div>
+            <p className="concept__note">Secuencia visual demostrativa</p>
+          </div>
+        </section>
+
+        <section className="visualization section" id="visualizacion" aria-labelledby="visualization-title">
+          <div className="container visualization__grid">
+            <div className="visualization__media">
+              <img
+                src={renderDemo}
+                alt="Render conceptual demostrativo de una estructura civil industrial"
+                loading="lazy"
+                decoding="async"
+              />
+              <span className="demo-label">Render demostrativo</span>
+              <div className="visualization__reticle" aria-hidden="true"><span /><span /></div>
+            </div>
+            <div className="visualization__content">
+              <p className="eyebrow eyebrow--light"><span /> Visualización y renderizado</p>
+              <h2 id="visualization-title">Visualización antes de <em>construir.</em></h2>
+              <p>Los modelos y renders permiten anticipar espacios, materiales y decisiones antes de entrar a obra.</p>
+              <dl className="visualization__details">
+                <div><dt>01</dt><dd>Lectura espacial</dd></div>
+                <div><dt>02</dt><dd>Materialidad</dd></div>
+                <div><dt>03</dt><dd>Decisiones técnicas</dd></div>
+              </dl>
+              <small>Visual conceptual temporal · pendiente de sustituir por material propio</small>
             </div>
           </div>
         </section>
@@ -213,31 +339,6 @@ function App() {
             <div className="principles__grid">
               {differentiators.map(([number, title, copy]) => (
                 <article key={title}><span>{number}</span><h3>{title}</h3><p>{copy}</p></article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="portfolio section" id="proyectos">
-          <div className="container">
-            <SectionHeading
-              kicker="Capacidades"
-              title={<>Soluciones para cada<br /><span>etapa del proyecto.</span></>}
-              copy="Tres áreas de trabajo para abordar proyectos civiles con planeación, seguimiento y ejecución."
-            />
-            <div className="portfolio__grid">
-              {capabilities.map((capability) => (
-                <article className={`portfolio-card ${capability.variant}`} key={capability.title}>
-                  <div className="portfolio-card__visual" aria-hidden="true">
-                    <span className="portfolio-card__number">{capability.number}</span>
-                    {capability.visual}
-                  </div>
-                  <div className="portfolio-card__body">
-                    <span>Capacidad {capability.number}</span>
-                    <h3>{capability.title}</h3>
-                    <p>{capability.copy}</p>
-                  </div>
-                </article>
               ))}
             </div>
           </div>
@@ -318,16 +419,24 @@ function EngineeringDetailVisual() {
   )
 }
 
-function CivilCapabilityVisual() {
-  return <svg className="capability-visual" viewBox="0 0 500 260"><path className="capability-visual__soft" d="M36 218h428M92 218V104h316v114M92 104h316M148 104V52h204v52M148 52h204" /><path d="M132 218V142h236v76M132 142h236M202 142v76M298 142v76M72 232h356" /><path className="capability-visual__accent" d="m92 218 110-76 96 76 70-76" /></svg>
-}
-
 function SupervisionCapabilityVisual() {
   return <svg className="capability-visual" viewBox="0 0 500 260"><path className="capability-visual__soft" d="M58 48h384v170H58zM58 90h384M148 48v170M238 48v170M328 48v170" /><path d="M94 176h52l42-54 55 28 52-64 70 38 48-50" /><circle cx="94" cy="176" r="7" /><circle cx="188" cy="122" r="7" /><circle cx="243" cy="150" r="7" /><circle cx="295" cy="86" r="7" /><circle cx="365" cy="124" r="7" /><path className="capability-visual__accent" d="m350 184 18 18 42-48" /></svg>
 }
 
 function InfrastructureCapabilityVisual() {
   return <svg className="capability-visual" viewBox="0 0 500 260"><path className="capability-visual__soft" d="M28 216h444M80 216l92-120h156l92 120M172 96h156M114 172h272M196 96l-34 120M304 96l34 120" /><path d="M56 216h388M118 216l80-120h104l80 120M210 96l-22 120M290 96l22 120" /><path className="capability-visual__accent" d="M250 96v120M228 148h44M218 190h64" /></svg>
+}
+
+function BlueprintStageVisual() {
+  return <svg className="story-visual story-visual--blueprint" viewBox="0 0 420 230"><path className="story-visual__grid" d="M0 46h420M0 92h420M0 138h420M0 184h420M70 0v230M140 0v230M210 0v230M280 0v230M350 0v230" /><path d="M60 185h300M88 185V88h244v97M88 88h244M130 88V52h160v36M166 185v-58h88v58M210 52v133" /><path className="story-visual__accent" d="M58 204h304M58 198v12M362 198v12M48 80v112M42 80h12M42 192h12" /></svg>
+}
+
+function ModelStageVisual() {
+  return <svg className="story-visual story-visual--model" viewBox="0 0 420 230"><path className="story-visual__soft" d="m72 158 140 52 136-64-140-52-136 64Zm0 0v-52l136-62 140 50v52" /><path d="m104 143 106 40 106-50-108-39-104 49Zm0 0v-43l104-48 108 38v43M208 52v42M104 100l104 38 108-48" /><path className="story-visual__accent" d="m208 138 108-48v43l-106 50v-45Z" /></svg>
+}
+
+function ExecutionStageVisual() {
+  return <svg className="story-visual story-visual--execution" viewBox="0 0 420 230"><path className="story-visual__soft" d="M32 196h356M56 196V82h308v114M56 82h308M88 82V42h244v40" /><path d="M86 196v-72h248v72M86 124h248M144 124v72M276 124v72M210 42v154" /><path className="story-visual__accent" d="m56 196 88-72 66 72 66-72 58 72" /></svg>
 }
 
 export default App
