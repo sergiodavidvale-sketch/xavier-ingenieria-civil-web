@@ -52,6 +52,12 @@ Ningún recurso conceptual debe atribuirse a una obra, cliente, ubicación o res
 - casos de éxito;
 - permisos de publicación.
 
+## Product roadmap
+
+La ruta acordada desde la demo actual hasta un sitio corporativo productivo y una futura capa de captación/gestión comercial está documentada en [`product-roadmap.md`](product-roadmap.md).
+
+Incluye como etapas posteriores: identidad final, material real, casos verificados, dominio y correo corporativo, formulario funcional, base de solicitudes/clientes, generación de folios, confirmación automática por correo, privacidad/seguridad, SEO, analytics y QA de producción.
+
 ## Next session
 
 La siguiente sesión debe comenzar con:
