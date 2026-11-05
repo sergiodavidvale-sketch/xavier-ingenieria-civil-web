@@ -12,11 +12,12 @@ Master index of corporate/formalization documents, version lineage and evidence.
 | DOC-004 | `XAVA_Notaria_V2.docx` (also generated as `XAVA_Brief_Notaria_V2_Ejecutivo.docx`) | 2026-11-05 | Founders / latest internal brief | CURRENT_INTERNAL | [Sanitized summary](briefs/notary-instructions-v2-summary.md) | Latest executive notary brief; **delivery unconfirmed** |
 | DOC-005 | `REQUISITOS SOCIEDAD.doc` | Received 2026-11-05 | Notary 20 / external information and quote | RECEIVED | [Sanitized source review](notary/NTR-001/SOURCE_REVIEW.md) | Source claims and pricing require confirmation |
 | DOC-006 | `FORMASACV.doc` | Received 2026-11-05 | Notary 20 / external questionnaire | RECEIVED / SOURCE_UNCHANGED | [A–M field matrix](notary/NTR-001/FORM_FIELD_MATRIX.md) | Separate working copy DOC-007 created; original remains unchanged |
-| DOC-007 | `FORMASACV_XAVA_Borrador_V01.docx` | Created 2026-11-05 | XAVA / working copy based on DOC-006, DOC-002 and DOC-004 | DRAFT / NOT_APPROVED / NOT_SENT | [Sanitized draft summary](notary/NTR-001/DRAFT_V01_SUMMARY.md) | Word file delivered in conversation only; private archival storage unverified |
+| DOC-007 | `FORMASACV_XAVA_Borrador_V01.docx` | Created 2026-11-05 | XAVA / first working copy | SUPERSEDED_DRAFT / NOT_SENT | [V01 summary](notary/NTR-001/DRAFT_V01_SUMMARY.md) | Replaced by DOC-008; no notary submission |
+| DOC-008 | `FORMASACV_XAVA_Borrador_V02_Cotejado.docx` | Created 2026-11-05 | XAVA / reconciled with full internal brief DOC-002 + DOC-004 + original DOC-006 | DRAFT / NOT_APPROVED / NOT_SENT | [V02 summary](notary/NTR-001/DRAFT_V02_SUMMARY.md) | Latest private working copy, not in public GitHub; durable backup unverified |
 
 ## Draft control
 
-**DOC-007 now exists** as the first Word working draft. The original DOC-006 remains unchanged. A created draft is **not** a completed/approved/submitted form. Any revised copy must get a new version and documented relationship; do not silently replace V01.
+**DOC-008 (V02) is the latest Word working draft**; DOC-007 (V01) is preserved as a superseded draft. DOC-006 remains the original external form. Neither draft is an approved or sent application. Version status is independent from legal validation.
 
 ## Source-of-truth and status rules
 
