@@ -42,6 +42,15 @@ Evidence class: internal work; not official incorporation.
 - All form sections A–M retained. Two-page visual QA performed; no formal submission/approval recorded.
 - Original binary remains outside GitHub; private durable archive still unverified.
 
+## 2026-11-05 — Personal identity and fiscal evidence received; form V03 corrected
+
+- Four original PDF documents were provided: two personal SAT tax-status certificates and two certified CURP documents (DOC-010–DOC-013).
+- RFC/CURP were cross-checked privately and **two transcription errors** in the preceding form edition were corrected.
+- New private working form **DOC-009 / V03** created; DOC-008/V02 marked superseded without submission. The Word was rendered and visually reviewed as two pages.
+- The fiscal source documents contain historical dated information; one older source must be refreshed before treating it as current. No personal fiscal status or identifiers were published here.
+- A private downloadable ZIP with DOC-009 and four original PDF attachments was created for user review, **not** sent to the notary or archived in GitHub.
+- No notary submission, approval, payment or incorporation is evidenced by this update.
+
 ## Next event to record
 
 Written quotation confirmation, original-file private storage confirmation, filled draft creation, submission of the requested data, denomination request filed/decided, or notary's response — **only when evidenced**.
