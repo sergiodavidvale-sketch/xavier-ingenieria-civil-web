@@ -20,7 +20,7 @@ For any task involving shareholders, capital, name authorization, notary, SAT, b
 3. Read [DOCUMENT_REGISTER.md](DOCUMENT_REGISTER.md) to identify actual current editions and their origin.
 4. Read [OPEN_ITEMS.md](OPEN_ITEMS.md) and [FORMALIZATION_LOG.md](FORMALIZATION_LOG.md).
 5. For work on Notary 20's materials, read [NTR-001/README.md](notary/NTR-001/README.md), [SOURCE_REVIEW.md](notary/NTR-001/SOURCE_REVIEW.md), then [FORM_FIELD_MATRIX.md](notary/NTR-001/FORM_FIELD_MATRIX.md).
-6. Consult the matching [brief summaries](briefs/); do not mistake them for binary originals.
+6. Consult the matching [brief notarial V2](briefs/notary-instructions-v2-summary.md); do not mistake them for binary originals.
 7. Apply [SOURCE_PRECEDENCE.md](SOURCE_PRECEDENCE.md) and [DATA_CLASSIFICATION.md](DATA_CLASSIFICATION.md) before responding or committing.
 
 **Never assume chat context is current.** If an original is not available in approved private storage, request that it be supplied again. Filename + Markdown summary cannot recreate an exact received `.doc`.
