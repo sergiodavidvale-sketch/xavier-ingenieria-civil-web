@@ -21,12 +21,14 @@
 | ACT-015 | Confirm final identity before domain/repository rename | Founders | PENDING | Brand decision |
 | ACT-016 | Confirm 2026 quotation: MXN 14,150 vs 14,500; advance 5,500 vs 5,800; exact rights above MXN 50,000; fiscal treatment | Founders / notary | PENDING | Written itemized quote for XAVA |
 | ACT-017 | Appoint and validate comisario; obtain required private information | Founders / notary | PENDING | Candidate accepted and role clarified |
-| ACT-018 | Finish private applicant/shareholder data: actual address, current contact, nationality, civil status and remaining attachments | Each participant / founders | IN_PROGRESS | RFC/CURP now evidenced in private DOC-009; other personal fields still require direct verification |
+| ACT-018 | Finish private applicant/shareholder data: current address/contact, marital regime, occupation and remaining attachments | Each participant / founders | IN_PROGRESS | INEs received; current private domiciles and other fields require direct confirmation. DOC-014 V04 is working copy |
 | ACT-019 | Establish reliable private storage and retrieval of DOC-002/004/005/006 and subsequent filled forms | Founders / document custodian | PENDING | Confirmed access-controlled location / retention convention |
 | ACT-020 | Verify SAT fiscal-address evidence and company enrollment requirements independently | Company / accountant | PENDING | Current official requirements checked |
-| ACT-021 | Review/complete/approve/send separate versioned FORMASACV copy | Founders / notary | IN_PROGRESS | DOC-009 V03 prepared and visually checked; pending current personal evidence, legal choices, approval and delivery |
+| ACT-021 | Review/complete/approve/send separate versioned FORMASACV copy | Founders / notary | IN_PROGRESS | DOC-014 V04 prepared and visually checked; pending missing evidence, corporate legal choices, approval and delivery |
 
 | ACT-022 | Obtain updated SAT CSF and privately verify current tax-status data where historical evidence is insufficient | Relevant shareholder / accountant | PENDING | Current official CSF provided; review notary's freshness requirements |
+
+| ACT-023 | Obtain reverse side of majority shareholder's INE | Majority shareholder / founders | PENDING | Clear private image or PDF of INE reverse, verified to match front side |
 
 ## Update rule
 
