@@ -34,6 +34,7 @@
 - Lists power categories: litigation/collections, administration, labor administration, acts of ownership/disposal, negotiable instruments, bank-account opening/cancellation, granting powers. These are **selection prompts**, not pre-approved legal powers.
 - The capital section asks whether capital is fully paid, when payment occurs and contains a claim about minimum payment when not fully paid. Treat this as form text requiring notarial validation, not independent legal advice.
 - Requests a comisario name and RFC. Appointment/eligibility are pending.
+- The separate requirements note requests up to five name candidates, whereas the questionnaire visibly provides fewer dedicated blank lines. Confirm whether the extra alternatives should be supplied in an attachment; do not drop existing candidates.
 - **Price printed on this form:** honorarios MXN 14,150 + IVA, plus MXN 587 registration rights; **advance printed:** MXN 5,500.
 - Form also requests personal data and spouse information. The completed form is sensitive and may not be stored in this public repo.
 
