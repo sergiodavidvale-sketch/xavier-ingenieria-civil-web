@@ -80,3 +80,12 @@ If a source contains both useful corporate information and sensitive data:
 ## Stop rule
 
 If uncertain whether a value is safe to publish, do not commit it. Record a generic placeholder/status and request a deliberate classification decision.
+
+## Notary questionnaire / source handling
+
+- The files `REQUISITOS SOCIEDAD.doc` and `FORMASACV.doc` may contain personal, fiscal, payment-recipient or banking information, even if the document title looks generic. **Do not commit the originals**.
+- A filled form, ID scan, marriage certificate, tax-status certificate, address proof, spouse information, payment receipt or screen capture of account/CLABE details is `INTERNAL-SENSITIVE` and cannot be published here.
+- Public-safe summaries may include generic fees, differences between competing quote totals, list of fields, general proposed capital and corporate type. Do not include payment account details, personal IDs or precise residence data.
+- Preserve external originals unchanged. Create a separately versioned private copy for pre-filling, with `BORRADOR — NO ENVIAR` until approved.
+- An upload inside a chat is not automatically a verified long-term archive. Confirm private storage before asserting that a document can be recovered in future sessions.
+- `.gitignore` reduces accidental inclusion but is not a security boundary: forced commits, issues, PR bodies and screenshots can leak data. Manually inspect every change before merging.

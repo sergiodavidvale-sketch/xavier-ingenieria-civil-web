@@ -1,14 +1,16 @@
 # XAVA — Corporate Current State
 
-**Last updated:** 2026-11-04
+**Last updated:** 2026-11-05
 
 ## Current phase
 
-**Pre-notary corporate formation preparation**
+**Notary intake received; S.A. de C.V. questionnaire mapping and preparation.**
 
-Status: `INTERNALLY_APPROVED / PENDING NOTARY VALIDATION`
+Status: `INTERNALLY_APPROVED / NOTARY_INTAKE_RECEIVED / PENDING NOTARY VALIDATION`
 
-The founders have completed and consolidated an internal constitution brief and prepared a shorter set of notary instructions. The next operational milestone is the notary review of the proposed corporate structure.
+XAVA's founders prepared internal constitution and notary instruction briefs. On 2026-11-05, a notary was contacted and two files were received: `REQUISITOS SOCIEDAD.doc` (requirements/quote) and `FORMASACV.doc` (intake form). Their sanitized review and field mapping are now recorded as [NTR-001](notary/NTR-001/README.md).
+
+**Not evidenced:** submitted denomination application, authorized denomination, quote accepted, advance paid, completed form delivered, notarized deed or confirmed SAT filing.
 
 ## Current proposed structure
 
@@ -22,55 +24,46 @@ The founders have completed and consolidated an internal constitution brief and 
 - Proposed governance: **sole administrator**
 - Proposed legal representation: **majority shareholder as sole administrator / legal representative**
 - Proposed social domicile: **Monterrey, Nuevo León**
-- Geographic commercial ambition: **Monterrey metropolitan area with ability to work elsewhere in Mexico**
-- Initial staffing expectation: **approximately 5 workers**, subject to actual operations and labor/accounting review.
+- Commercial ambition: Monterrey metropolitan area with ability to work elsewhere in Mexico.
+- Staffing plan: approximately **5 workers**, conditional on actual operations and labor/accounting review.
+
+All above are internal intentions, not incorporation facts.
 
 ## Capital checkpoint
 
 - Proposed total social capital: **MXN 153,598.50**
 - Target ownership split: **90 / 10**
-- The amounts recorded in the working brief do not mathematically reproduce the 90 / 10 split exactly.
+- Contribution amounts in the private working brief sum to the total but do **not** produce exactly the stated 90 / 10 ratio.
 
-**Status:** `PENDING NOTARY VALIDATION`
+Status: `PENDING NOTARY VALIDATION`.
 
-The notary must reconcile share count, nominal value, fixed/variable capital structure, ownership proportions, and contribution amounts before execution.
+Resolve share count, nominal value, fixed/variable structure, actual contribution amounts and payment schedule before approving a filled notary form.
 
-## Active documents
+## Active and received documents
 
-- Constitution Brief V2 — current internal source.
-- Notary Instructions V1 — current executive instruction set for notary review.
+- **DOC-002:** Constitution Brief V2 — current internal background source.
+- **DOC-004:** Notary Instructions V2 — latest internal executive brief; **sending to notary not confirmed**.
+- **DOC-005:** `REQUISITOS SOCIEDAD.doc` — external notary requirements and quote, received.
+- **DOC-006:** `FORMASACV.doc` — external notary intake form, received; not yet filled.
+- **DOC-003:** Notary Instructions V1 — historical, superseded by DOC-004.
 
-See `DOCUMENT_REGISTER.md`.
+See [DOCUMENT_REGISTER.md](DOCUMENT_REGISTER.md). The original Word files are **not in GitHub**. A long-term private archive has not yet been confirmed.
 
-## Immediate next milestone
+## Next operational gate
 
-Meet with a notary experienced in corporate/mercantile matters to:
+1. Confirm current, written, itemized quotation and advance (the two external files differ).
+2. Resolve pending comisario, capital/share/payment and intended power decisions.
+3. Confirm all A–M fields with [FORM_FIELD_MATRIX.md](notary/NTR-001/FORM_FIELD_MATRIX.md).
+4. Locate originals in approved private storage (or re-upload) and create a separate, clearly marked private draft.
+5. Verify identity/attachments privately; obtain founders' review and notarial guidance before delivery.
+6. Record delivery/acceptance separately. Do not mark any notarial filing completed without evidence.
 
-- validate the proposed S.A. de C.V.;
-- request/validate denomination authorization process;
-- review capital/share structure;
-- draft the corporate purpose;
-- define powers of the sole administrator/legal representative;
-- prepare the draft bylaws/deed;
-- identify missing documents and expected fees/timelines.
+See [OPEN_ITEMS.md](OPEN_ITEMS.md).
 
-## What is not yet official
+## Not yet official
 
-The following remain proposals or internally approved decisions until externally validated/executed:
+No incorporation, corporate RFC/e.firma, corporate bank account, employer registration, SIROC registration, public-procurement registration, or official corporate denomination is evidenced here.
 
-- legal entity existence;
-- legal denomination;
-- legal form;
-- capital/share structure;
-- bylaws;
-- powers;
-- RFC of the company;
-- corporate e.firma;
-- bank account;
-- employer registration;
-- SIROC registrations;
-- public-procurement registrations.
+## Digital-product boundary
 
-## Product link
-
-The website must continue treating corporate/legal/contact data as provisional until the relevant corporate source reaches `EXECUTED` or `OFFICIAL` status.
+Website information remains provisional until verified and suitable for publication. Corporate memory tracking must not modify the React/Vite product or its deployment.

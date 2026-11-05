@@ -1,30 +1,38 @@
 # XAVA — Open Items
 
-This file tracks unresolved actions and decisions. Update status as work progresses.
+**Updated:** 2026-11-05. Canonical action register; dossier NTR-001 links here rather than duplicating to-do ownership.
 
-| ID | Item | Owner | Status | Gate / evidence needed |
+| ID | Item | Responsible role | Status | Required closure evidence |
 |---|---|---|---|---|
-| ACT-001 | Meet with corporate/mercantile notary | Founders | PENDING | Notary consultation completed |
-| ACT-002 | Validate S.A. de C.V. choice | Founders + notary/accountant | PENDING | Professional confirmation |
-| ACT-003 | Process/confirm denomination authorization | Designated applicant/notary | PENDING | Authorization result |
-| ACT-004 | Reconcile 90/10 target with contribution amounts and share structure | Notary + founders | PENDING | Draft share/capital clause |
-| ACT-005 | Draft and approve final corporate purpose | Notary + founders | PENDING | Draft deed/bylaws |
-| ACT-006 | Define formal powers of sole administrator/legal representative | Notary + founders | PENDING | Draft deed/bylaws |
-| ACT-007 | Review draft deed/bylaws before signature | Founders | PENDING | Approved draft |
-| ACT-008 | Execute and register incorporation | Notary/founders | PENDING | Signed deed + registration evidence |
-| ACT-009 | Company RFC and e.firma | Company/representative + advisor | BLOCKED | Incorporation documents available |
-| ACT-010 | Corporate bank onboarding | Company/representative | BLOCKED | Corporate documents/RFC as required |
-| ACT-011 | Nuevo León state registrations/tax setup | Company + accountant | BLOCKED | Company tax setup |
-| ACT-012 | Employer registration / IMSS for employees | Company + labor/accounting advisor | BLOCKED | Operational hiring start |
-| ACT-013 | SIROC process when applicable to construction works | Company + responsible advisor | BLOCKED | Applicable project/work |
-| ACT-014 | Public-procurement registrations/capabilities | Company | BLOCKED | Legal/tax/technical prerequisites |
-| ACT-015 | Confirm final commercial identity before technical repo/domain rename | Founders | PENDING | Brand decision |
+| ACT-001 | Complete notary consultation on received intake | Founders / notary | IN_PROGRESS | Confirmed outcomes, not just receipt of template |
+| ACT-002 | Validate S.A. de C.V. suitability | Founders / notary / accountant | PENDING | Professional assessment |
+| ACT-003 | File or confirm denomination application | Designated applicant / notary | PENDING | Filing receipt and result |
+| ACT-004 | Reconcile 90/10, contributions, nominal shares, fixed/variable capital and payment timing | Founders / notary | PENDING | Approved draft capital/share clause |
+| ACT-005 | Draft and approve corporate purpose | Founders / notary | PENDING | Approved notarial draft |
+| ACT-006 | Define powers individually, including dominio, cambiarios, banking and sub-delegation | Founders / notary | PENDING | Notarial draft and founder approval |
+| ACT-007 | Review draft bylaws/deed before signature | Founders | BLOCKED | Draft delivered and approved |
+| ACT-008 | Execute deed and register company | Founders / notary | BLOCKED | Signature and registration evidence |
+| ACT-009 | Company RFC and e.firma | Company representative / advisor | BLOCKED | Applicable incorporation documentation |
+| ACT-010 | Corporate bank onboarding | Company representative | BLOCKED | Required corporate documentation |
+| ACT-011 | Nuevo León state tax/registration matters | Company / accountant | BLOCKED | Legal/tax prerequisites |
+| ACT-012 | Employer registration / IMSS when hiring | Company / labor/accounting advisor | BLOCKED | Employment arrangements confirmed |
+| ACT-013 | SIROC when applicable to construction works | Company / advisor | BLOCKED | Applicable project / legal trigger |
+| ACT-014 | Public-procurement eligibility and registrations | Company | BLOCKED | Company and technical prerequisites |
+| ACT-015 | Confirm final identity before domain/repository rename | Founders | PENDING | Brand decision |
+| ACT-016 | Confirm 2026 quotation: MXN 14,150 vs 14,500; advance 5,500 vs 5,800; exact rights above MXN 50,000; fiscal treatment | Founders / notary | PENDING | Written itemized quote for XAVA |
+| ACT-017 | Appoint and validate comisario; obtain required private information | Founders / notary | PENDING | Candidate accepted and role clarified |
+| ACT-018 | Complete private applicant/shareholder/marital/address/contact inputs and attachments for sections A–M | Each participant / founders | PENDING | Private verified inputs, not public GitHub |
+| ACT-019 | Establish reliable private storage and retrieval of DOC-002/004/005/006 and subsequent filled forms | Founders / document custodian | PENDING | Confirmed access-controlled location / retention convention |
+| ACT-020 | Verify SAT fiscal-address evidence and company enrollment requirements independently | Company / accountant | PENDING | Current official requirements checked |
+| ACT-021 | Generate, review, approve and submit a separate versioned copy of FORMASACV | Founders / notary | BLOCKED | DOC-007 created, approved and delivery evidenced |
 
 ## Update rule
 
-When an item closes:
+When closing an action:
 
-- change status to `DONE`;
-- add the supporting source to `DOCUMENT_REGISTER.md`;
-- record the event in `FORMALIZATION_LOG.md`;
-- update `CURRENT_STATE.md` if it changes the current phase.
+1. Link evidence/doc ID; no assumed completion.
+2. Update `FORMALIZATION_LOG.md` with date and event.
+3. Update `DOCUMENT_REGISTER.md` if a document version/status changed.
+4. Update `notary/NTR-001/FORM_FIELD_MATRIX.md` for affected fields.
+5. Update `CURRENT_STATE.md` only if current phase changes.
+6. Keep private identifiers and external binary originals out of this public repository.

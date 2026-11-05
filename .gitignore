@@ -4,11 +4,27 @@ dist
 *.local
 *.log
 
-# Corporate-memory sensitive originals — never commit to this public repo
+# Corporate memory: redact rather than commit originals or sensitive working files
 docs/company-memory/private/
 docs/company-memory/raw/
+docs/company-memory/**/originals/
+docs/company-memory/**/working/
+docs/company-memory/**/*.doc
 docs/company-memory/**/*.docx
+docs/company-memory/**/*.docm
+docs/company-memory/**/*.odt
 docs/company-memory/**/*.pdf
+docs/company-memory/**/*.rtf
+docs/company-memory/**/*.zip
+docs/company-memory/**/*.7z
+docs/company-memory/**/*.xlsx
+docs/company-memory/**/*.xls
+docs/company-memory/**/*.png
+docs/company-memory/**/*.jpg
+docs/company-memory/**/*.jpeg
+docs/company-memory/**/*.webp
 docs/company-memory/**/*.p12
+docs/company-memory/**/*.pfx
+docs/company-memory/**/*.pem
 docs/company-memory/**/*.key
 docs/company-memory/**/*.cer
