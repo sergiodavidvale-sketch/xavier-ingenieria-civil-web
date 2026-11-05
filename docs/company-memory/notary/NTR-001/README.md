@@ -1,7 +1,7 @@
 # NTR-001 — Notary 20 intake and S.A. de C.V. questionnaire
 
 **Opened:** 2026-11-05  
-**Status:** `RECEIVED / DRAFT_V03_CREATED / PENDING_REVIEW` (no approved or sent form and no payment confirmed)  
+**Status:** `RECEIVED / DRAFT_V04_CREATED / PENDING_REVIEW` (no approved or sent form and no payment confirmed)  
 **Scope:** pre-incorporation intake, quotations, required documents and form preparation for XAVA.  
 **Data class:** public-safe sanitized metadata. **No original binaries or completed personal-data forms in this public repository.**
 
@@ -18,7 +18,9 @@ These original `.doc` files and private working drafts were supplied/generated i
 
 - [SOURCE_REVIEW.md](SOURCE_REVIEW.md) — what each notary source actually says, contradictions, and questions to clarify.
 - [FORM_FIELD_MATRIX.md](FORM_FIELD_MATRIX.md) — each section/field of `FORMASACV.doc`, proposed source, current status and next validation.
-- [DRAFT_V03_SUMMARY.md](DRAFT_V03_SUMMARY.md) — **current** private Word working copy, checked against received CSF/CURP PDFs, not approved/sent.
+- [DRAFT_V04_SUMMARY.md](DRAFT_V04_SUMMARY.md) — **current** private Word working copy including INE review, not approved/sent.
+- [INE_SOURCES_REGISTER.md](INE_SOURCES_REGISTER.md) — sanitized index of two personal ID files.
+- [DRAFT_V03_SUMMARY.md](DRAFT_V03_SUMMARY.md) — prior private working copy, superseded, not sent.
 - [IDENTITY_SOURCES_REGISTER.md](IDENTITY_SOURCES_REGISTER.md) — public-safe metadata for four newly received personal documents.
 - [DRAFT_V02_SUMMARY.md](DRAFT_V02_SUMMARY.md) — previous private Word working copy, superseded by V03 without submission.
 - [DRAFT_V01_SUMMARY.md](DRAFT_V01_SUMMARY.md) — historical DOC-007, superseded by V02 without submission.
@@ -30,7 +32,7 @@ These original `.doc` files and private working drafts were supplied/generated i
 
 1. Recover the sources: read this file, source review, field matrix, `../../CURRENT_STATE.md`, `../../DECISIONS.md`, and `../../SOURCE_PRECEDENCE.md`.
 2. Confirm the private location and integrity of the original notary files **before editing**; if unavailable, ask for re-upload. Filename alone is not a retrievable reference.
-3. Preserve `FORMASACV.doc` unchanged as the received external source. Work only in a **separate** private versioned copy (current: DOC-009 V03) locally or in approved private storage.
+3. Preserve `FORMASACV.doc` unchanged as the received external source. Work only in a **separate** private versioned copy (current: DOC-014 V04) locally or in approved private storage.
 4. Consult the **complete private** DOC-002 and DOC-004 when available, not only their sanitized GitHub summaries. Fill fields supported by an internal approved source. Enter personal identifiers, domicile, marital details, spouse data and bank/tax information **only in the private working copy**, never in GitHub.
 5. For missing/uncertain fields, use a visible private placeholder and keep a corresponding matrix status; do not infer, autofill, or silently reconcile.
 6. Have founders approve the completed draft; obtain professional confirmation on legal choices (comisario, shares, paid-in capital, powers and final corporate purpose).
@@ -42,7 +44,7 @@ These original `.doc` files and private working drafts were supplied/generated i
 ## Versioning convention
 
 - Intake source: `DOC-005` / `DOC-006` (immutable external originals).
-- Working copy: **DOC-009 CREATED** — `XAVA_FORMASACV_V03_Datos_Cotejados.docx`, status `DRAFT / NOT_APPROVED / NOT_SENT`, latest private version; DOC-008 and DOC-007 superseded without submission. Original binaries not stored in GitHub.
+- Working copy: **DOC-014 CREATED** — `XAVA_FORMASACV_V04_INE_Cotejadas.docx`, status `DRAFT / NOT_APPROVED / NOT_SENT`, latest private version; DOC-007–DOC-009 superseded without submission. Original binaries not stored in GitHub.
 - New correction: increment `V02`, `V03`, etc.; do not overwrite prior sent copies.
 - Delivery and feedback: log separately; `DRAFT` ≠ `APPROVED` ≠ `SENT` ≠ `ACCEPTED`.
 

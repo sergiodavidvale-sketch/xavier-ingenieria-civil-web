@@ -27,7 +27,7 @@ For any task involving shareholders, capital, name authorization, notary, SAT, b
 
 ## Private source-data architecture
 
-The founders approved a second **private** repository for structured personal identity/fiscal data extracted into Markdown. See [PRIVATE_MEMORY_BRIDGE.md](PRIVATE_MEMORY_BRIDGE.md) for its intended scope, source precedence and secure recovery protocol. At this checkpoint that repo is **planned, not yet provisioned**; do not claim exact personal records can already be fetched from GitHub.
+The founders approved a second **private** repository for structured personal identity/fiscal data extracted into Markdown. See [PRIVATE_MEMORY_BRIDGE.md](PRIVATE_MEMORY_BRIDGE.md) for its intended scope, source precedence and secure recovery protocol. **Now active:** the private repo was created, verified `private`, and all 13 Markdown/config files were re-fetched from GitHub on 2026-11-05. Future access requires current authorization and visibility verification. Exact personal data must never be copied here.
 
 ## Status and source meaning
 

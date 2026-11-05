@@ -25,7 +25,7 @@ Do not assume chat history reflects the current corporate state. Keep sensitive 
 
 ### Private identity-data memory
 
-For requests needing exact shareholder RFC, CURP, INE or dated SAT details, read `docs/company-memory/PRIVATE_MEMORY_BRIDGE.md`. The proposed private repository is `sergiodavidvale-sketch/xava-corporate-memory`, **not yet created/verified** at the time of this checkpoint. Do not assume it exists. When access is available, verify private visibility and fetch field-level values from its source-grounded Markdown. Never copy private values into this public repo, its PRs, logs or website.
+For requests needing exact shareholder RFC, CURP, INE or dated SAT details, read `docs/company-memory/PRIVATE_MEMORY_BRIDGE.md`. The private repository `sergiodavidvale-sketch/xava-corporate-memory` is **created and imported** (13 files verified on 2026-11-05). Always reverify its `private` visibility and authorized access in each new session before fetching exact field-level values. Read `AGENTS.md`, `CURRENT_STATE.md`, and `sources/SOURCE_REGISTER.md` there first. Never copy private values into this public repo, its PRs, logs or website.
 
 ### Notary forms and external documents
 
