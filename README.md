@@ -119,6 +119,7 @@ Estos recursos no representan obras, clientes, ubicaciones ni resultados reales 
 - [Decision log](docs/decision-log.md)
 - [Project status / handoff](docs/project-status.md)
 - [Product roadmap — de Demo v1.0 a Production v1.0](docs/product-roadmap.md)
+- [Corporate memory — formación y formalización](docs/company-memory/README.md)
 
 ## Roadmap inmediato
 
