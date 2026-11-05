@@ -1,49 +1,46 @@
 # XAVA — Public/private corporate memory bridge
 
-**Documented:** 2026-11-05  
-**Status:** `PLANNED / PRIVATE REPO NOT YET CREATED`
+**Updated:** 2026-11-05  
+**Status:** `CONNECTED / VERIFIED PRIVATE REPOSITORY`
 
-## Two-repository decision
+## Two-repository architecture
 
-Founders approved two distinct persistence surfaces:
+1. **PUBLIC:** `sergiodavidvale-sketch/xavier-ingenieria-civil-web` — XAVA digital product and sanitized corporate/formalization status, decisions and document IDs.
+2. **PRIVATE:** `sergiodavidvale-sketch/xava-corporate-memory` — exact, extracted shareholder identity/fiscal fields in Markdown, with source IDs and issue dates.
 
-1. **Public** `sergiodavidvale-sketch/xavier-ingenieria-civil-web` remains the source of truth for the digital product and public-safe corporate workflow status.
-2. **Private (planned)** `sergiodavidvale-sketch/xava-corporate-memory` is intended to hold extracted, field-level shareholder identity and tax data in Markdown, with source provenance and dated snapshots.
+**Verification checkpoint:** On 2026-11-05 the connected GitHub client confirmed `visibility: private` and write/read access, then re-fetched **13 expected files** from `main` after import. Revalidate permission and privacy in future sessions.
 
-**Important:** As of this checkpoint, the GitHub private repository has not been verified as created or populated. A local starter package with Markdown files was generated separately. Do not claim this GitHub link exists or its content can be fetched until verified through authenticated GitHub repository metadata.
+## Division of authority
 
-## What is stored where?
-
-| Domain | Public repo | Private repo, once established |
+| Category | Public | Private |
 |---|---|---|
-| React/Vite site, deployment, visual roadmap | Canonical | Not duplicated |
-| Corporate milestones, non-sensitive decisions, tasks | Sanitized canonical summary | Cross-reference as needed |
-| Person-level RFC, CURP, INE credential data | **Never** | Source-grounded Markdown only, private and access-controlled |
-| Personal domiciles and historic SAT contact/status | **Never** | Dated source snapshots; never assume current |
-| Named shareholder records and sensitive notary-form entries | Role-level metadata only | Private files, referenced by document/field IDs |
-| Original INE, CURP, CSF PDF, completed Word forms | Not stored | **Not stored by default**; separate controlled private archive needed |
-| Source index | Public-safe DOC IDs | DOC IDs plus actual extracted values and provenance |
+| Website, deploy, product roadmap | Canonical | Not duplicated |
+| Public-safe formalization status | Sanitized | Cross-referenced |
+| RFC, CURP, INE/voter ID fields | **Never** | Structured Markdown with dated source |
+| Historical SAT records / personal domiciles | **Never** | Dated snapshots, not current assertions |
+| Notary form field mapping | Redacted A–M outline | Individual values + source mapping |
+| Original images, certificates, signed forms | No | **Not uploaded by default**; separate approved private storage needed |
 
-## Synchronization contract
+## Shared identifiers and synchronization
 
-- Reuse stable source IDs `DOC-###`, dossier `NTR-001` and open-item IDs `ACT-###`.
-- The public repo may record receipt, verification, draft/approval/sent status and blockers **without exposing personal values**.
-- Do **not** automatically mirror private Markdown into the public repo. There is no one-way sync or Git submodule configured.
-- The private repo is authoritative for exact extracted *personal* values **subject to source date**, while a later genuine official document can supersede historical records.
-- Public corporate plans remain internally approved intentions until notary/authority confirmation.
+- Maintain consistent IDs `DOC-###`, `NTR-001` and `ACT-###`.
+- No automatic replication, Git submodule, source embed, or sync from private into public.
+- Never copy private person-level values into this public repo, its issues/PRs/workflows, website or telemetry.
+- Public business arrangements are internally proposed until notary/authority evidence.
+- Private Markdown reflects **values from documents at their issuance dates**, not perpetual currency or legal validation.
 
-## Recovery steps
+## Recovery protocol for future sessions
 
-1. Read this document and the public company-memory `CURRENT_STATE.md` / `DOCUMENT_REGISTER.md`.
-2. If exact person-level values are needed, use the **authorized connected GitHub client** to locate `sergiodavidvale-sketch/xava-corporate-memory`.
-3. Verify `visibility: private` and authorized read access before opening any private files; otherwise stop and ask the owner to establish or authorize the private repository.
-4. If available, read its `AGENTS.md`, `README.md`, `CURRENT_STATE.md`, `sources/SOURCE_REGISTER.md` and relevant shareholder files.
-5. Extract only requested fields; preserve status and issue date. Do not copy private values into this public repository, its issues/PRs, logs or website.
-6. Never suggest that a Markdown value replaces an original government PDF for a formal notarial submission.
+1. Read the public `AGENTS.md`, `docs/company-memory/CURRENT_STATE.md`, `DOCUMENT_REGISTER.md` and this bridge.
+2. For person-level fields, use the authorized GitHub connection to access `sergiodavidvale-sketch/xava-corporate-memory`.
+3. **Check `visibility: private` and permissions** before reading/writing. If not accessible or visibility changes, stop. Do not use public search as a substitute.
+4. Read private `AGENTS.md`, `SECURITY.md`, `CURRENT_STATE.md`, `sources/SOURCE_REGISTER.md`, and only the shareholder profile required for the current task.
+5. Preserve original source ID, issue/observation date and verification status. If a later official document supersedes a historical snapshot, do not silently erase older provenance.
+6. Update only sanitized milestones back in the public repo. Keep privately sourced values out of logs, PR descriptions and public documents.
+7. A Markdown transcription does **not** replace original INE, CURP or SAT documents when a notary or authority requests them.
 
-## Creation/import checkpoint
+## Verified import and outstanding storage gap
 
-- GitHub connection currently supports file editing on **existing** repositories but not creating repositories.
-- The owner must create a **private** repository with the target name, or connect an already-created authorized private repo.
-- The prepared local Markdown starter package can then be imported. Confirm the resulting repository's privacy **before the first commit/push**.
-- Once created and verified, update this document from `PLANNED` to `CONNECTED`, and add an import commit reference, without exposing private data.
+The private repo **is active** and contains 13 imported Markdown/config files, including two personal shareholder profiles and source/capital/notary records.
+
+**Outstanding:** Original PDFs, photos and completed Word forms still need a separate, access-controlled long-term archive. GitHub stores extracted values, not certified government documents. The latest notary working form remains a private draft, not a legal filing.
