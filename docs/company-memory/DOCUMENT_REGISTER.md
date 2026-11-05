@@ -14,15 +14,18 @@ Master index of corporate/formalization documents, version lineage and evidence.
 | DOC-006 | `FORMASACV.doc` | Received 2026-11-05 | Notary 20 / external questionnaire | RECEIVED / SOURCE_UNCHANGED | [A–M field matrix](notary/NTR-001/FORM_FIELD_MATRIX.md) | Separate working copy DOC-007 created; original remains unchanged |
 | DOC-007 | `FORMASACV_XAVA_Borrador_V01.docx` | Created 2026-11-05 | XAVA / first working copy | SUPERSEDED_DRAFT / NOT_SENT | [V01 summary](notary/NTR-001/DRAFT_V01_SUMMARY.md) | Replaced by DOC-008; no notary submission |
 | DOC-008 | `FORMASACV_XAVA_Borrador_V02_Cotejado.docx` | Created 2026-11-05 | XAVA / full-brief reconciliation | SUPERSEDED_DRAFT / NOT_SENT | [V02 summary](notary/NTR-001/DRAFT_V02_SUMMARY.md) | Replaced by DOC-009; no notary submission |
-| DOC-009 | `XAVA_FORMASACV_V03_Datos_Cotejados.docx` | Created 2026-11-05 | XAVA / private working form sourced from DOC-006 and identity evidence | DRAFT / NOT_APPROVED / NOT_SENT | [V03 summary](notary/NTR-001/DRAFT_V03_SUMMARY.md) | Current private draft; corrected two identity-key transcription errors; not uploaded to GitHub |
+| DOC-009 | `XAVA_FORMASACV_V03_Datos_Cotejados.docx` | Created 2026-11-05 | XAVA / private working form sourced from DOC-006 and identity evidence | SUPERSEDED_DRAFT / NOT_SENT | [V03 summary](notary/NTR-001/DRAFT_V03_SUMMARY.md) | Superseded by DOC-014; previous errors corrected; never sent |
 | DOC-010 | SAT CSF — majority shareholder | Received 2026-11-05 | External personal tax document | RECEIVED / PRIVATE | [Evidence metadata](notary/NTR-001/IDENTITY_SOURCES_REGISTER.md) | Exact original only in private user attachments; no public identifiers |
 | DOC-011 | SAT CSF — minority shareholder | Received 2026-11-05 | External personal tax document | RECEIVED / PRIVATE / UPDATE_REQUIRED | [Evidence metadata](notary/NTR-001/IDENTITY_SOURCES_REGISTER.md) | Historical document; obtain updated version privately |
 | DOC-012 | Certified CURP — majority shareholder | Received 2026-11-05 | External personal identity document | RECEIVED / PRIVATE | [Evidence metadata](notary/NTR-001/IDENTITY_SOURCES_REGISTER.md) | Identity key corrected in private DOC-009 |
-| DOC-013 | Certified CURP — minority shareholder | Received 2026-11-05 | External personal identity document | RECEIVED / PRIVATE | [Evidence metadata](notary/NTR-001/IDENTITY_SOURCES_REGISTER.md) | Identity key corrected in private DOC-009 |
+| DOC-013 | Certified CURP — minority shareholder | Received 2026-11-05 | External personal identity document | RECEIVED / PRIVATE | [Evidence metadata](notary/NTR-001/IDENTITY_SOURCES_REGISTER.md) | Referenced in private DOC-014 |
+| DOC-014 | `XAVA_FORMASACV_V04_INE_Cotejadas.docx` | Created 2026-11-05 | XAVA / private working copy with INE evidence | DRAFT / NOT_APPROVED / NOT_SENT | [V04 summary](notary/NTR-001/DRAFT_V04_SUMMARY.md) | Latest private draft; not submitted or durably archived |
+| DOC-015 | INE front-side image — majority shareholder | Received 2026-11-05 | Personal identity source | RECEIVED / FRONT_ONLY | [Evidence metadata](notary/NTR-001/INE_SOURCES_REGISTER.md) | Reverse side not provided |
+| DOC-016 | INE front/back PDF — minority shareholder | Received 2026-11-05 | Personal identity source | RECEIVED / BOTH_SIDES | [Evidence metadata](notary/NTR-001/INE_SOURCES_REGISTER.md) | Source remains private |
 
 ## Draft control
 
-**DOC-009 (V03) is the latest Word working draft**; DOC-008 and DOC-007 are historical superseded drafts and DOC-006 remains the unchanged external original. All three working editions are unapproved and unsent. Personal supporting documents DOC-010–DOC-013 are referenced here as public-safe metadata only.
+**DOC-014 (V04) is the current private Word working draft**; DOC-007–DOC-009 are historical drafts, all never submitted, and DOC-006 remains the unchanged external original. Personal supporting documents DOC-010–DOC-013 and DOC-015–DOC-016 are only referenced by sanitized metadata.
 
 ## Source-of-truth and status rules
 
@@ -35,7 +38,7 @@ Master index of corporate/formalization documents, version lineage and evidence.
 
 ## Storage and retrieval
 
-The original Word/.doc files, private working drafts through DOC-009 and four personal PDF documents were supplied/generated in ChatGPT conversations; **permanent private storage location is currently `NOT_CONFIGURED` / `UNVERIFIED`**.
+The original Word/.doc files, private working drafts through DOC-014, four personal PDF documents and two INE source files were supplied/generated in ChatGPT conversations; **permanent private storage location is currently `NOT_CONFIGURED` / `UNVERIFIED`**.
 
 Future recovery of the original binary requires a verified approved private repository/storage location or a fresh upload. A sanitized summary is **not** a byte-for-byte reconstruction and cannot substitute for the notary's form layout.
 
