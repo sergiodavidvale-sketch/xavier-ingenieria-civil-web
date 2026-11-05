@@ -4,7 +4,7 @@
 
 **Source class:** Approved internal / working instruction
 
-**Status:** `CURRENT`
+**Status:** `SUPERSEDED` — replaced by DOC-004 Notary Instructions V2 on 2026-11-05.
 
 **Date:** 2026-11-04
 
