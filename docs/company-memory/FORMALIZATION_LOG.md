@@ -60,6 +60,14 @@ Evidence class: internal work; not official incorporation.
 - A private ZIP for user custody includes V04 and the previously received personal evidence, but was **not** sent to the notary or saved in a verified durable storage location.
 - No official incorporation, payment, denomination filing, completed form approval or notary acceptance evidenced.
 
+## 2026-11-05 — Original Notaría 20 form completed as draft V05
+
+- DOC-017 prefilled directly on the original DOC-006 layout, retaining A–M, and exported as private .doc and .docx.
+- All supported business and shareholder fields were transferred from the verified private corporate-memory source, without publishing their values here.
+- Shares/value/exhibition, comisario, special powers and unresolved biographical or current contact information remain explicitly pending.
+- Three-page visual QA completed. No approval, notary delivery, payment, authorization or filing has been established.
+- Public repository stores sanitized metadata only; generated Word binaries are held by the user outside GitHub.
+
 ## Next event to record
 
 Written quotation confirmation, original-file private storage confirmation, filled draft creation, submission of the requested data, denomination request filed/decided, or notary's response — **only when evidenced**.
