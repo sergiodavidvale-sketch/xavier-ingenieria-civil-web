@@ -64,3 +64,18 @@ When a new source replaces an older one:
 - mark the old entry `SUPERSEDED` in `DOCUMENT_REGISTER.md`;
 - identify the replacement;
 - update affected summaries and decisions.
+
+## External-source nuance: notary intake materials (NTR-001)
+
+A notary's **blank form** or information sheet is a relevant external source for what that office asks applicants to supply, but is **not itself**:
+
+- a founder-approved choice;
+- proof that the proposed company was incorporated;
+- proof of authorization from Secretaría de Economía;
+- an official SAT requirement;
+- a signed/advisor-approved legal opinion;
+- a payment receipt.
+
+When comparing external quotes, retain both original values and create an unresolved item; do not average or silently choose one. Legal/fiscal assertions must be distinguished from notary-office procedural requests and checked with the competent professional or primary authority before being promoted to `OFFICIAL`.
+
+When a current internal brief is revised, mark the earlier **edition** `SUPERSEDED` while preserving unrelated current corporate-background sources.
