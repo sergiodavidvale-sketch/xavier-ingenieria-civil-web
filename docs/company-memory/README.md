@@ -25,6 +25,10 @@ For any task involving shareholders, capital, name authorization, notary, SAT, b
 
 **Never assume chat context is current.** If an original is not available in approved private storage, request that it be supplied again. Filename + Markdown summary cannot recreate an exact received `.doc`.
 
+## Private source-data architecture
+
+The founders approved a second **private** repository for structured personal identity/fiscal data extracted into Markdown. See [PRIVATE_MEMORY_BRIDGE.md](PRIVATE_MEMORY_BRIDGE.md) for its intended scope, source precedence and secure recovery protocol. At this checkpoint that repo is **planned, not yet provisioned**; do not claim exact personal records can already be fetched from GitHub.
+
 ## Status and source meaning
 
 - `PROPOSED` — under discussion.

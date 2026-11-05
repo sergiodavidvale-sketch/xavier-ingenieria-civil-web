@@ -68,6 +68,10 @@ See [OPEN_ITEMS.md](OPEN_ITEMS.md).
 
 No incorporation, corporate RFC/e.firma, corporate bank account, employer registration, SIROC registration, public-procurement registration, or official corporate denomination is evidenced here.
 
+## Private-data persistence decision
+
+Founders approved two separate GitHub repositories: this public digital-product repository and a planned private Markdown repository for exact personal records and source provenance. The private repository has **not yet been verified as created**, so its source-data recovery is not active. See [PRIVATE_MEMORY_BRIDGE.md](PRIVATE_MEMORY_BRIDGE.md).
+
 ## Digital-product boundary
 
 Website information remains provisional until verified and suitable for publication. Corporate memory tracking must not modify the React/Vite product or its deployment.
