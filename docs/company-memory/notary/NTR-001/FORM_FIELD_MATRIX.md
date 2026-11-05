@@ -2,7 +2,7 @@
 
 **Source form:** DOC-006, `FORMASACV.doc`; keep original unchanged.  
 **Prepared:** 2026-11-05.  
-**Working copy:** DOC-014 V04 **created after checking the full briefs, CSFs, CURPs and INEs**. Not approved, transmitted or durably archived; V01–V03 are historical.  
+**Working copy:** DOC-017 V05 **prefilled on Notaría 20's original format from full briefs and dated, verified private identity sources**. Not approved, transmitted or durably archived; V01–V04 are historical.  
 **Purpose:** map every form section A–M to approved XAVA data, pending inputs and specific validation. Do not place completed personal-information fields here.
 
 ## Field statuses
@@ -21,7 +21,7 @@
 | ID | Form section/field | Candidate/source in XAVA | Status | Next step / owner |
 |---|---|---|---|---|
 | NTR001-A-01 | Applicant name | Majority partner completed internal brief; proposed as applicant in private DOC-008 | TO_CONFIRM | Confirm actual applicant for SE filing |
-| NTR001-A-02 | Applicant address, CURP, RFC | RFC/CURP verified previously; the proposed applicant's INE domicile from DOC-015 entered privately in DOC-014; differs from an earlier CSF fiscal address | TO_CONFIRM | Verify current personal domicile privately |
+| NTR001-A-02 | Applicant address, CURP, RFC | RFC/CURP verified previously; the proposed applicant's INE domicile from DOC-015 entered privately in DOC-017; differs from an earlier CSF fiscal address | TO_CONFIRM | Verify current personal domicile privately |
 | NTR001-A-03 | Applicant phone/email | Brief inventory says contact details available, but values not in public summary | NEEDS_PRIVATE_INPUT | Transfer exact contact information privately |
 | NTR001-B-01 | Denomination choice #1 | XAVA; recorded as preferred in DOC-002/DOC-004 and entered in DOC-008 | DRAFT_FROM_BRIEF | Confirm final order before submitting |
 | NTR001-B-02 | Denomination choices #2–5 | XADA; FRADA; FRACXA; XAFRA; all provided in original DOC-002 and transferred into DOC-008 | DRAFT_FROM_BRIEF | Validate order and how to attach extra two names |
@@ -52,14 +52,14 @@
 | NTR001-K-02 | Shares allocated per shareholder | 90/10 target; not reconciled to contributions | NOTARY_REVIEW | Founders/notary reconcile |
 | NTR001-K-03 | Monetary value per shareholder | Individual contributions in original private DOC-002 retained in DOC-009 without alteration | NOTARY_REVIEW | Reconcile contributions, share counts and 90/10 objective |
 | NTR001-L-01 | Each shareholder: name, nationality, civil status/marital regime | Names corroborated with INEs; nationality proposed and birth dates visible privately; marital regime still unknown | NEEDS_PRIVATE_INPUT | Confirm marital status/regime privately |
-| NTR001-L-02 | Birthplace/date, occupation and RFC | INE birth dates and CSF RFC verified privately in DOC-014; birthplace and occupations not established | NEEDS_PRIVATE_INPUT | Confirm birthplace and occupation |
-| NTR001-L-03 | Address, ID, CURP, telephone/email | INE domicile and identity metadata entered in private DOC-014; historic CSF domiciles differ and no current residential address is asserted | NEEDS_PRIVATE_INPUT | Confirm current addresses/contact privately |
+| NTR001-L-02 | Birthplace/date, occupation and RFC | INE birth dates and CSF RFC verified privately in DOC-017; birthplace and occupations not established | NEEDS_PRIVATE_INPUT | Confirm birthplace and occupation |
+| NTR001-L-03 | Address, ID, CURP, telephone/email | INE domicile and identity metadata entered in private DOC-017; historic CSF domiciles differ and no current residential address is asserted | NEEDS_PRIVATE_INPUT | Confirm current addresses/contact privately |
 | NTR001-L-04 | Spouse's name if married | Private; conditional | NEEDS_PRIVATE_INPUT | Confirm applicability and fill privately |
 | NTR001-M-01 | ID both sides for both shareholders | DOC-015 majority INE front only; DOC-016 minority INE front and reverse | NEEDS_PRIVATE_INPUT | Obtain majority INE reverse and verify quality |
 | NTR001-M-02 | Current tax-status certificates for shareholders and comisario | Two personal SAT CSFs now RECEIVED (DOC-010/DOC-011), but one is historical and must be refreshed; comisario not designated | NEEDS_PRIVATE_INPUT | Obtain updated evidence and later comisario's CSF |
 | NTR001-M-03 | Updated marriage certificates where applicable | Private attachments | NEEDS_PRIVATE_INPUT | Gather securely if applicable |
 | NTR001-M-04 | Spouse ID where applicable | Private attachments | NEEDS_PRIVATE_INPUT | Gather securely if applicable |
-| NTR001-M-05 | Completed notary format | DOC-014/V04 updated with both INEs and earlier CSF/CURP evidence; still incomplete, unapproved and unsent | NEEDS_PRIVATE_INPUT | Remaining private fields and legal approval before sending |
+| NTR001-M-05 | Completed notary format | DOC-017/V05 updated with both INEs and earlier CSF/CURP evidence; still incomplete, unapproved and unsent | NEEDS_PRIVATE_INPUT | Remaining private fields and legal approval before sending |
 
 ## Cross-document controls
 
@@ -80,4 +80,4 @@ Before producing a document described as 'completed', resolve:
 4. capital/share/payment mechanics and intended powers;
 5. missing evidentiary attachments.
 
-Both INEs were reviewed privately. **DOC-014/V04 is the current private working draft** with corroborated identity/birth data and source-qualified domicile details. V01–V03 were not sent. Reverse of majority INE, current contacts, fiscal documents and unresolved corporate decisions remain pending; V04 is `DRAFT / NOT_APPROVED / NOT_SENT`.
+Both INEs were reviewed privately. **DOC-017/V05 is the current private working draft** with corroborated identity/birth data and source-qualified domicile details. V01–V04 were not sent. Reverse of majority INE, current contacts, fiscal documents and unresolved corporate decisions remain pending; V05 is `DRAFT / NOT_APPROVED / NOT SENT`.
