@@ -2,7 +2,7 @@
 
 **Source form:** DOC-006, `FORMASACV.doc`; keep original unchanged.  
 **Prepared:** 2026-11-05.  
-**Working copy:** DOC-008 V02 **created after checking the complete private briefs**, not approved, transmitted or durably archived. DOC-007 V01 is historical.  
+**Working copy:** DOC-009 V03 **created after checking the complete private briefs and newly supplied official personal documents**. Not approved, transmitted or durably archived; V01/V02 are historical.  
 **Purpose:** map every form section A–M to approved XAVA data, pending inputs and specific validation. Do not place completed personal-information fields here.
 
 ## Field statuses
@@ -21,7 +21,7 @@
 | ID | Form section/field | Candidate/source in XAVA | Status | Next step / owner |
 |---|---|---|---|---|
 | NTR001-A-01 | Applicant name | Majority partner completed internal brief; proposed as applicant in private DOC-008 | TO_CONFIRM | Confirm actual applicant for SE filing |
-| NTR001-A-02 | Applicant address, CURP, RFC | CURP appears in original private DOC-002 and has been transcribed into private DOC-008. Applicant's personal address and RFC value still require cotejo; CSF inventoried as available | NEEDS_PRIVATE_INPUT | Verify personal address and transcribe RFC from CSF privately |
+| NTR001-A-02 | Applicant address, CURP, RFC | RFC and CURP verified from DOC-010/DOC-012 and entered privately in DOC-009; CSF fiscal address is historical, not proven current domicile | TO_CONFIRM | Verify applicant's current address privately |
 | NTR001-A-03 | Applicant phone/email | Brief inventory says contact details available, but values not in public summary | NEEDS_PRIVATE_INPUT | Transfer exact contact information privately |
 | NTR001-B-01 | Denomination choice #1 | XAVA; recorded as preferred in DOC-002/DOC-004 and entered in DOC-008 | DRAFT_FROM_BRIEF | Confirm final order before submitting |
 | NTR001-B-02 | Denomination choices #2–5 | XADA; FRADA; FRACXA; XAFRA; all provided in original DOC-002 and transferred into DOC-008 | DRAFT_FROM_BRIEF | Validate order and how to attach extra two names |
@@ -50,16 +50,16 @@
 | NTR001-J-01 | Shareholders of other nationality | No confirmed answer in public memory | TO_CONFIRM | Founders verify |
 | NTR001-K-01 | Nominal value per share | Not determined | NOTARY_REVIEW | Notary proposes viable allotment |
 | NTR001-K-02 | Shares allocated per shareholder | 90/10 target; not reconciled to contributions | NOTARY_REVIEW | Founders/notary reconcile |
-| NTR001-K-03 | Monetary value per shareholder | Individual amounts recorded in private original DOC-002 and transferred into private DOC-008 without changes | NOTARY_REVIEW | Reconcile contributions, share counts and 90/10 objective |
+| NTR001-K-03 | Monetary value per shareholder | Individual contributions in original private DOC-002 retained in DOC-009 without alteration | NOTARY_REVIEW | Reconcile contributions, share counts and 90/10 objective |
 | NTR001-L-01 | Each shareholder: name, nationality, civil status/marital regime | Both full names present in original private DOC-002 and entered in private DOC-008; nationality and marital regime not expressly defined | NEEDS_PRIVATE_INPUT | Verify only missing personal fields |
-| NTR001-L-02 | Birthplace/date, occupation and RFC | Private source; not in public memory | NEEDS_PRIVATE_INPUT | Each shareholder privately verifies |
-| NTR001-L-03 | Address, ID, CURP, telephone/email | Both CURPs and identification availability documented in original private DOC-002; CURPs entered into private DOC-008. Individual addresses and contact values not captured in source text | NEEDS_PRIVATE_INPUT | Verify precise addresses, ID numbers, contact values privately |
+| NTR001-L-02 | Birthplace/date, occupation and RFC | Both personal RFCs verified from DOC-010/DOC-011 in DOC-009; birth details and occupation not documented conclusively | NEEDS_PRIVATE_INPUT | Confirm only birth/occupation fields privately |
+| NTR001-L-03 | Address, ID, CURP, telephone/email | Both CURPs cross-checked with DOC-012/DOC-013 and corrected in private DOC-009; CSF registered addresses copied as dated references, not current residence; contacts require confirmation | NEEDS_PRIVATE_INPUT | Verify current residential address, ID and contact privately |
 | NTR001-L-04 | Spouse's name if married | Private; conditional | NEEDS_PRIVATE_INPUT | Confirm applicability and fill privately |
 | NTR001-M-01 | ID both sides for both shareholders | Official IDs marked AVAILABLE in internal DOC-002 inventory | TO_CONFIRM | Check scan front/back, validity and secure attachment |
-| NTR001-M-02 | Current tax-status certificates for shareholders and comisario | Founder RFC/CSF marked AVAILABLE in DOC-002; comisario not yet designated | NEEDS_PRIVATE_INPUT | Confirm updated founder PDF and later obtain comisario certificate |
+| NTR001-M-02 | Current tax-status certificates for shareholders and comisario | Two personal SAT CSFs now RECEIVED (DOC-010/DOC-011), but one is historical and must be refreshed; comisario not designated | NEEDS_PRIVATE_INPUT | Obtain updated evidence and later comisario's CSF |
 | NTR001-M-03 | Updated marriage certificates where applicable | Private attachments | NEEDS_PRIVATE_INPUT | Gather securely if applicable |
 | NTR001-M-04 | Spouse ID where applicable | Private attachments | NEEDS_PRIVATE_INPUT | Gather securely if applicable |
-| NTR001-M-05 | Completed notary format | DOC-008 private V02 exists with brief-based values transferred; still not complete/approved/sent | NEEDS_PRIVATE_INPUT | Cotejo of truly missing personal fields; validate powers/shares/comisario before sending |
+| NTR001-M-05 | Completed notary format | DOC-009 V03 privately updated with official RFC/CURP; still incomplete, unapproved, unsent | NEEDS_PRIVATE_INPUT | Complete actual address/contact/civil fields and obtain professional validation before sending |
 
 ## Cross-document controls
 
@@ -80,4 +80,4 @@ Before producing a document described as 'completed', resolve:
 4. capital/share/payment mechanics and intended powers;
 5. missing evidentiary attachments.
 
-The original full brief was revisited and **DOC-008 V02 is now the current private working draft**. Known personal identifiers already available in DOC-002 were transferred privately (not exposed here). Genuine unknowns remain subject to documentary/legal verification. V01 (DOC-007) is superseded, not sent. V02 remains `DRAFT / NOT_APPROVED / NOT_SENT`.
+New official identity documents were reviewed privately. **DOC-009 V03 is the current private draft** with both RFC/CURP keys verified and two prior transcription errors corrected. V01/V02 are superseded and were not sent. Personal current-address and tax-status checks are still pending; DOC-009 remains `DRAFT / NOT_APPROVED / NOT_SENT`.
