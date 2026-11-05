@@ -22,3 +22,16 @@ For any task related to corporate formation, shareholders, capital, notary work,
 8. Apply `DATA_CLASSIFICATION.md` before committing or exposing corporate data.
 
 Do not assume chat history reflects the current corporate state. Keep sensitive originals outside this public repository.
+
+### Notary forms and external documents
+
+For any request about a received notary form, quotation, requirements, pre-filling or submission, read `docs/company-memory/notary/NTR-001/README.md`, `SOURCE_REVIEW.md`, and `FORM_FIELD_MATRIX.md` before drafting or editing.
+
+- The current executive brief is **DOC-004 (V2)**; DOC-003 is superseded.
+- `REQUISITOS SOCIEDAD.doc` (DOC-005) and `FORMASACV.doc` (DOC-006) are external source documents, not government-verified legal rules.
+- Original binary files are **not held in GitHub**. Confirm a private source location or request re-upload before producing an exact edited form.
+- Do not copy personal identifiers, private address, bank numbers, payment instructions, or unredacted form answers into GitHub, logs, issues, pull requests, or review comments.
+- Preserve original questionnaires unchanged, and create separately versioned, private working copies.
+- Record intake, approval, sending, and notary acceptance as distinct events; do not infer progress from the existence of documents.
+- Keep the digital-product frontend unchanged unless expressly requested.
+
