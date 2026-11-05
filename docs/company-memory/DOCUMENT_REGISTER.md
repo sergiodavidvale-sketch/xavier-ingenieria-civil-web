@@ -22,11 +22,12 @@ Master index of corporate/formalization documents, version lineage and evidence.
 | DOC-014 | `XAVA_FORMASACV_V04_INE_Cotejadas.docx` | Created 2026-11-05 | XAVA / private working copy with INE evidence | SUPERSEDED_DRAFT / NOT_SENT | [V04 summary](notary/NTR-001/DRAFT_V04_SUMMARY.md) | Replaced by DOC-017; never sent |
 | DOC-015 | INE front-side image — majority shareholder | Received 2026-11-05 | Personal identity source | RECEIVED / FRONT_ONLY | [Evidence metadata](notary/NTR-001/INE_SOURCES_REGISTER.md) | Reverse side not provided |
 | DOC-016 | INE front/back PDF — minority shareholder | Received 2026-11-05 | Personal identity source | RECEIVED / BOTH_SIDES | [Evidence metadata](notary/NTR-001/INE_SOURCES_REGISTER.md) | Source remains private |
-| DOC-017 | Notaría 20 A–M questionnaire V05 (private .doc and .docx) | Created 2026-11-05 | XAVA / source-grounded filled template | DRAFT / NOT APPROVED / NOT SENT | [V05 summary](notary/NTR-001/DRAFT_V05_SUMMARY.md) | Current draft; original template unchanged; binary files not in public GitHub |
+| DOC-017 | Notaría 20 A–M questionnaire V05 (private .doc and .docx) | Created 2026-11-05 | XAVA / source-grounded filled template | SUPERSEDED_DRAFT / NOT SENT | [V05 summary](notary/NTR-001/DRAFT_V05_SUMMARY.md) | Replaced by DOC-018, never submitted |
+| DOC-018 | Notaría 20 A–M questionnaire V06 (private .doc and .docx) | Created 2026-11-05 | XAVA / clarified governance and no additional powers for minority shareholder | DRAFT / NOT APPROVED / NOT SENT | [V06 summary](notary/NTR-001/DRAFT_V06_SUMMARY.md) | Current private draft; original template remains unchanged |
 
 ## Draft control
 
-**DOC-017 (V05) is the current private Word working draft**; DOC-007–DOC-014 are historical superseded drafts, all never submitted, and DOC-006 remains the unchanged external original. Personal supporting documents DOC-010–DOC-013 and DOC-015–DOC-016 are only referenced by sanitized metadata.
+**DOC-018 (V06) is the current private Word working draft**; DOC-007–DOC-017 are historical superseded drafts, all never submitted, and DOC-006 remains the unchanged external original. Personal supporting documents DOC-010–DOC-013 and DOC-015–DOC-016 are only referenced by sanitized metadata.
 
 ## Source-of-truth and status rules
 
@@ -39,7 +40,7 @@ Master index of corporate/formalization documents, version lineage and evidence.
 
 ## Storage and retrieval
 
-The original Word/.doc files, private working drafts through DOC-017, four personal PDF documents and two INE source files were supplied/generated in ChatGPT conversations; **permanent private storage location is currently `NOT_CONFIGURED` / `UNVERIFIED`**.
+The original Word/.doc files, private working drafts through DOC-018, four personal PDF documents and two INE source files were supplied/generated in ChatGPT conversations; **permanent private storage location is currently `NOT_CONFIGURED` / `UNVERIFIED`**.
 
 Future recovery of the original binary requires a verified approved private repository/storage location or a fresh upload. A sanitized summary is **not** a byte-for-byte reconstruction and cannot substitute for the notary's form layout.
 

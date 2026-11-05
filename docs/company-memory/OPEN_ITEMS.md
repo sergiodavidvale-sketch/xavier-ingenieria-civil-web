@@ -20,8 +20,8 @@
 | ACT-014 | Public-procurement eligibility and registrations | Company | BLOCKED | Company and technical prerequisites |
 | ACT-015 | Confirm final identity before domain/repository rename | Founders | PENDING | Brand decision |
 | ACT-016 | Confirm 2026 quotation: MXN 14,150 vs 14,500; advance 5,500 vs 5,800; exact rights above MXN 50,000; fiscal treatment | Founders / notary | PENDING | Written itemized quote for XAVA |
-| ACT-017 | Appoint and validate comisario; obtain required private information | Founders / notary | PENDING | Candidate accepted and role clarified |
-| ACT-018 | Finish private applicant/shareholder data: current address/contact, marital regime, occupation and remaining attachments | Each participant / founders | IN_PROGRESS | INEs received; current private domiciles and other fields require direct confirmation. DOC-017 V05 is working copy |
+| ACT-017 | Appoint and validate eligible comisario; obtain required private information | Founders / notary | PENDING | Minority shareholder is administrator's sibling and cannot be comisario (LGSM art. 165); eligible candidate accepted |
+| ACT-018 | Finish private applicant/shareholder data: current address/contact, marital regime, occupation and remaining attachments | Each participant / founders | IN_PROGRESS | INEs received; current private domiciles and other fields require direct confirmation. DOC-018 V06 is working copy |
 | ACT-019 | Establish reliable private storage and retrieval of DOC-002/004/005/006 and subsequent filled forms | Founders / document custodian | PENDING | Confirmed access-controlled location / retention convention |
 | ACT-020 | Verify SAT fiscal-address evidence and company enrollment requirements independently | Company / accountant | PENDING | Current official requirements checked |
 | ACT-021 | Review/complete/approve/send separate versioned FORMASACV copy | Founders / notary | IN_PROGRESS | DOC-017 V05 prepared and visually checked; pending missing evidence, corporate legal choices, approval and delivery |

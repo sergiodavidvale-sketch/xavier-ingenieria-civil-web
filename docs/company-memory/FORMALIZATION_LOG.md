@@ -68,6 +68,14 @@ Evidence class: internal work; not official incorporation.
 - Three-page visual QA completed. No approval, notary delivery, payment, authorization or filing has been established.
 - Public repository stores sanitized metadata only; generated Word binaries are held by the user outside GitHub.
 
+## 2026-11-05 — Roles clarified; revised private form DOC-018 / V06
+
+- Founders clarified majority shareholder as proposed sole administrator, legal representative and day-to-day manager; minority shareholder only shareholder, no attorney-in-fact or management position.
+- Notary to validate whether a separate formal Gerente appointment is needed; no special powers automatically assumed.
+- Comisario must be eligible; sibling of administrator cannot hold that role under LGSM art. 165.
+- Updated private .doc/.docx from the notary form, preserving three pages and fields A–M; V05 superseded without submission.
+- No notarial filing, legal appointment or payment was made by this documentation update.
+
 ## Next event to record
 
 Written quotation confirmation, original-file private storage confirmation, filled draft creation, submission of the requested data, denomination request filed/decided, or notary's response — **only when evidenced**.
