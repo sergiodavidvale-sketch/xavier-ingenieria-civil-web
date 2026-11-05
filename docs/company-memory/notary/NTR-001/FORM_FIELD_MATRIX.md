@@ -2,7 +2,7 @@
 
 **Source form:** DOC-006, `FORMASACV.doc`; keep original unchanged.  
 **Prepared:** 2026-11-05.  
-**Target:** private, versioned working copy; **not created yet**.  
+**Working copy:** DOC-007 V01 **created** in a private Word output; not approved, transmitted or privately archived in a verified durable location.  
 **Purpose:** map every form section A–M to approved XAVA data, pending inputs and specific validation. Do not place completed personal-information fields here.
 
 ## Field statuses
@@ -59,7 +59,7 @@
 | NTR001-M-02 | Current tax-status certificates for shareholders and comisario | Private attachments | NEEDS_PRIVATE_INPUT | Gather securely when required |
 | NTR001-M-03 | Updated marriage certificates where applicable | Private attachments | NEEDS_PRIVATE_INPUT | Gather securely if applicable |
 | NTR001-M-04 | Spouse ID where applicable | Private attachments | NEEDS_PRIVATE_INPUT | Gather securely if applicable |
-| NTR001-M-05 | Completed notary format | Not created yet | NEEDS_PRIVATE_INPUT | Generate private draft after validation |
+| NTR001-M-05 | Completed notary format | Working draft DOC-007 exists, but form is not complete | NEEDS_PRIVATE_INPUT | Complete remaining fields; founders/notary validate before sending |
 
 ## Cross-document controls
 
@@ -80,4 +80,4 @@ Before producing a document described as 'completed', resolve:
 4. capital/share/payment mechanics and intended powers;
 5. missing evidentiary attachments.
 
-An earlier partially filled draft may be produced with conspicuous `PENDIENTE` markers, but must be labeled `BORRADOR — NO ENVIAR` and registered only when it actually exists.
+An earlier partially filled draft **DOC-007 V01 has been created** with conspicuous `PENDIENTE` markers and a `BORRADOR — NO ENVIAR` warning. It remains `DRAFT / NOT_APPROVED / NOT_SENT`, and must not be treated as a completed questionnaire.
