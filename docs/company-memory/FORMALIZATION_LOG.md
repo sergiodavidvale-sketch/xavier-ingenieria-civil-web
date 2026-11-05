@@ -33,6 +33,15 @@ Evidence class: internal work; not official incorporation.
 - Draft visually reviewed as two pages; status is `DRAFT / NOT_APPROVED / NOT_SENT`.
 - No secure long-term archive verified; Word itself is intentionally **not** uploaded to public GitHub.
 
+## 2026-11-05 — Reconciled notary questionnaire with full source brief (DOC-008)
+
+- Founders identified excessive generic pending fields in DOC-007 V01. Source documents rechecked: full private Constitution Brief V2, Notary Executive Brief V2 and repo summaries.
+- A corrected private working copy **DOC-008 — `FORMASACV_XAVA_Borrador_V02_Cotejado.docx`** was created. DOC-007 is **SUPERSEDED_DRAFT** (not sent).
+- Previously available identity/CURP and company-level fiscal-address details were transferred to the private Word. The public repo contains **no personal identifier values**.
+- Operational administration, representation and bank-account signing intent were entered as proposals subject to notarial legal drafting; no comisario or share count was invented.
+- All form sections A–M retained. Two-page visual QA performed; no formal submission/approval recorded.
+- Original binary remains outside GitHub; private durable archive still unverified.
+
 ## Next event to record
 
 Written quotation confirmation, original-file private storage confirmation, filled draft creation, submission of the requested data, denomination request filed/decided, or notary's response — **only when evidenced**.
