@@ -4,3 +4,11 @@ dist
 *.local
 *.log
 
+# Corporate-memory sensitive originals — never commit to this public repo
+docs/company-memory/private/
+docs/company-memory/raw/
+docs/company-memory/**/*.docx
+docs/company-memory/**/*.pdf
+docs/company-memory/**/*.p12
+docs/company-memory/**/*.key
+docs/company-memory/**/*.cer
