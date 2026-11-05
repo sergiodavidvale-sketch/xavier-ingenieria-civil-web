@@ -10,7 +10,7 @@ Status: `INTERNALLY_APPROVED / NOTARY_INTAKE_RECEIVED / PENDING NOTARY VALIDATIO
 
 XAVA's founders prepared internal constitution and notary instruction briefs. On 2026-11-05, a notary was contacted and two files were received: `REQUISITOS SOCIEDAD.doc` (requirements/quote) and `FORMASACV.doc` (intake form). Their sanitized review and field mapping are now recorded as [NTR-001](notary/NTR-001/README.md).
 
-**Draft created:** DOC-007 (private Word working copy, not completed or sent). **Not evidenced:** submitted denomination application, authorized denomination, quote accepted, advance paid, completed form delivered, notarized deed or confirmed SAT filing.
+**Latest draft created:** DOC-008 (private Word working copy V02, reconciled with full brief; not completed/approved/sent). DOC-007 V01 superseded. **Not evidenced:** submitted denomination application, authorized denomination, quote accepted, advance paid, completed form delivered, notarized deed or confirmed SAT filing.
 
 ## Current proposed structure
 
@@ -45,7 +45,8 @@ Resolve share count, nominal value, fixed/variable structure, actual contributio
 - **DOC-004:** Notary Instructions V2 — latest internal executive brief; **sending to notary not confirmed**.
 - **DOC-005:** `REQUISITOS SOCIEDAD.doc` — external notary requirements and quote, received.
 - **DOC-006:** `FORMASACV.doc` — original external form, unchanged.
-- **DOC-007:** `FORMASACV_XAVA_Borrador_V01.docx` — separate private draft created on 2026-11-05, pending validation; not stored as binary in GitHub.
+- **DOC-007:** `FORMASACV_XAVA_Borrador_V01.docx` — earlier working draft, superseded by V02, never submitted.
+- **DOC-008:** `FORMASACV_XAVA_Borrador_V02_Cotejado.docx` — newest private working draft, prefilled using full original brief; not approved or sent and not stored in GitHub.
 - **DOC-003:** Notary Instructions V1 — historical, superseded by DOC-004.
 
 See [DOCUMENT_REGISTER.md](DOCUMENT_REGISTER.md). The original Word files are **not in GitHub**. A long-term private archive has not yet been confirmed.
@@ -55,7 +56,7 @@ See [DOCUMENT_REGISTER.md](DOCUMENT_REGISTER.md). The original Word files are **
 1. Confirm current, written, itemized quotation and advance (the two external files differ).
 2. Resolve pending comisario, capital/share/payment and intended power decisions.
 3. Confirm all A–M fields with [FORM_FIELD_MATRIX.md](notary/NTR-001/FORM_FIELD_MATRIX.md).
-4. Locate originals and DOC-007 in approved private storage (or re-upload). DOC-007 V01 is already created as a **draft**, not yet a completed/approved form.
+4. Locate originals and DOC-007 in approved private storage (or re-upload). DOC-008 V02 is already created as the current **draft**, not yet a completed/approved form.
 5. Verify identity/attachments privately; obtain founders' review and notarial guidance before delivery.
 6. Record delivery/acceptance separately. Do not mark any notarial filing completed without evidence.
 
