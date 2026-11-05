@@ -1,66 +1,55 @@
 # XAVA — Company Memory
 
-## Purpose
+Persistent, **public-safe** corporate context for XAVA Ingeniería Civil. This folder exists alongside the existing React/Vite digital product; it is **not** a legal filing system, a sensitive document vault, or a substitute for original notary documents or professional legal/accounting advice.
 
-This directory is the persistent, public-safe corporate memory for XAVA Ingeniería Civil.
+## Current focus (2026-11-05)
 
-It exists to preserve continuity across future work sessions without depending on chat history. It does **not** replace signed legal documents, official authority records, tax records, banking records, or professional legal/accounting advice.
+Notary intake received and mapped: [**NTR-001 — Notary 20, S.A. de C.V.**](notary/NTR-001/README.md).
 
-The repository remains primarily the digital-product repository. This directory is a separate documentation layer for corporate formation and formalization context.
-
-## Scope
-
-Track, in sanitized form:
-
-- current corporate-formation status;
-- approved internal decisions;
-- open questions and blockers;
-- formalization milestones;
-- existence and status of external briefs/documents;
-- summaries of current working briefs;
-- links between corporate decisions and the digital product.
-
-Do not store personal identifiers, signatures, credentials, banking data, full signed deeds, or other sensitive originals in this public repository.
+- DOC-005: received `REQUISITOS SOCIEDAD.doc` (external requirements/quote)
+- DOC-006: received `FORMASACV.doc` (A–M form)
+- DOC-004: latest XAVA executive notary brief V2, current internally; not confirmed delivered
+- No filled notarial form, payment or official denomination result evidenced.
 
 ## Recovery protocol
 
-Before working on any task related to corporate formation, partners/shareholders, capital, notary work, SAT, bank onboarding, IMSS, SIROC, public procurement, legal identity, or corporate data:
+For any task involving shareholders, capital, name authorization, notary, SAT, bank, IMSS, SIROC, public procurement or XAVA's legal status:
 
-1. Read `CURRENT_STATE.md`.
-2. Read `CORPORATE_PROFILE.md`.
-3. Read `DECISIONS.md`.
-4. Read `DOCUMENT_REGISTER.md`.
-5. Read `OPEN_ITEMS.md`.
-6. Consult `FORMALIZATION_LOG.md` for chronology.
-7. Consult the relevant summary under `briefs/`.
-8. Apply `SOURCE_PRECEDENCE.md` if two sources conflict.
-9. Apply `DATA_CLASSIFICATION.md` before adding or exposing information.
+1. Read [CURRENT_STATE.md](CURRENT_STATE.md).
+2. Read [CORPORATE_PROFILE.md](CORPORATE_PROFILE.md) and [DECISIONS.md](DECISIONS.md).
+3. Read [DOCUMENT_REGISTER.md](DOCUMENT_REGISTER.md) to identify actual current editions and their origin.
+4. Read [OPEN_ITEMS.md](OPEN_ITEMS.md) and [FORMALIZATION_LOG.md](FORMALIZATION_LOG.md).
+5. For work on Notary 20's materials, read [NTR-001/README.md](notary/NTR-001/README.md), [SOURCE_REVIEW.md](notary/NTR-001/SOURCE_REVIEW.md), then [FORM_FIELD_MATRIX.md](notary/NTR-001/FORM_FIELD_MATRIX.md).
+6. Consult the matching [brief summaries](briefs/); do not mistake them for binary originals.
+7. Apply [SOURCE_PRECEDENCE.md](SOURCE_PRECEDENCE.md) and [DATA_CLASSIFICATION.md](DATA_CLASSIFICATION.md) before responding or committing.
 
-Do not assume chat context is the current source of truth.
+**Never assume chat context is current.** If an original is not available in approved private storage, request that it be supplied again. Filename + Markdown summary cannot recreate an exact received `.doc`.
 
-## Status vocabulary
-
-Use these states consistently:
+## Status and source meaning
 
 - `PROPOSED` — under discussion.
-- `INTERNALLY_APPROVED` — agreed by the founders but not yet externally validated.
-- `ADVISOR_VALIDATED` — reviewed/confirmed by the relevant professional.
-- `EXECUTED` — formally signed or carried out.
-- `OFFICIAL` — evidenced by an authority/fedatario-issued record.
-- `SUPERSEDED` — replaced by a newer source.
-- `PENDING` — awaiting action or decision.
+- `INTERNALLY_APPROVED` — founders agreed, subject to professional checks.
+- `ADVISOR_VALIDATED` — relevant advisor reviewed the precise point.
+- `EXECUTED` — actually signed or carried out with evidence.
+- `OFFICIAL` — evidenced by authority/fedatario.
+- `RECEIVED` — third-party source delivered, no acceptance of its truth implied.
+- `DRAFT`, `APPROVED_FOR_SENDING`, `SENT`, `ACCEPTED`, `SUPERSEDED` — distinct document lifecycle stages.
+- `PENDING` and `BLOCKED` — action states.
 
-## Document classes
+Notary-supplied procedural guidance is an **external source assertion**, not verified law. Later signed/official records control when they exist; see source precedence.
 
-- **Official source:** authority/fedatario-issued evidence.
-- **Approved internal source:** current founder-approved brief or instruction set.
-- **Working source:** draft, proposal, or analysis.
-- **Historical source:** superseded material kept only for traceability.
+## Storage model
 
-See `SOURCE_PRECEDENCE.md` for conflict resolution.
+**Public GitHub:** sanitized facts, summaries, decisions, document metadata, field IDs, statuses and action references.
 
-## Public-repository rule
+**Private storage (not yet established):** unchanged external files, sensitive working copies and signed documents, ideally versioned and access controlled. Record a stable private location only after verification, never a guessed path.
 
-This repository is public. Only public-safe, sanitized corporate context may be committed here.
+Original files received in conversation are **not** automatically backed up permanently by this GitHub repository.
 
-Sensitive originals remain outside this repository and are referenced only through sanitized metadata in `DOCUMENT_REGISTER.md`.
+## Working rules
+
+- Source documents are immutable; work on separately named private drafts.
+- Every new document receives a stable `DOC-###` ID; every notary form field `NTR001-A-01` etc.
+- Treat legal choices and fees as unresolved until explicitly validated.
+- When a private document is created/sent/replaced, record version, event, proof and supersession without exposing identifiers.
+- Protect the frontend from changes driven by provisional legal information.
