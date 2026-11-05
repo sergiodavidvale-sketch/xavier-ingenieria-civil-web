@@ -1,54 +1,32 @@
 # XAVA — Formalization Log
 
-Chronological record of meaningful corporate-formation events. This file records what happened; it is not a decision log.
+Chronological log of what actually happened. Do not equate having received a form with a completed government application.
 
-## 2026-11-04
+## 2026-11-04 — Internal preparation
 
-### Constitution brief completed
+- Founder-completed constitution brief consolidated as **DOC-002** (V2), correcting contradictory initial selections on contributions, market scope, public tenders and governance.
+- Executive notary brief produced as **DOC-003** (V1); later revised.
+- Founders approved a public-safe corporate-memory layer in the digital-product repository.
 
-A founder-completed constitution brief was reviewed and consolidated into a corrected V2.
+Evidence class: internal work; not official incorporation.
 
-Key corrections included:
+## 2026-11-05 — Executive brief revised
 
-- preserving recorded capital/contribution information instead of the contradictory "none for now" entry;
-- confirming both private and public works;
-- resolving public-tender intent to "yes";
-- confirming the proposed sole administrator/legal representative arrangement;
-- keeping the exact legal scope of powers subject to notary drafting.
+- Redesigned notary brief produced as **DOC-004** (V2), replacing the V1 executive edition.
+- Changes focused on layout, clear corporate/fiscal domiciles, capital reconciliation warning and notary deliverables.
+- **No proof of sending or acceptance** of DOC-004 has been supplied.
 
-Status: `INTERNALLY_APPROVED`
+## 2026-11-05 — External notary intake received
 
-### Notary instruction brief prepared
-
-A shorter executive instruction document was produced for use with a notary.
-
-Purpose:
-
-- state the requested company structure;
-- summarize capital/ownership;
-- define proposed administration;
-- summarize requested corporate-purpose scope;
-- ask the notary to draft/validate the deed, share structure, powers, and formalization path.
-
-Status: `CURRENT WORKING INSTRUCTION`
-
-### Persistent corporate memory approved
-
-Decision made to add a sanitized corporate-memory layer to the existing digital-product repository while keeping the repository's primary purpose as the XAVA digital product.
-
-Status: `APPROVED`
+- Founders reported contacting **Notary 20, Monterrey** and provided two external documents: **DOC-005** (`REQUISITOS SOCIEDAD.doc`) and **DOC-006** (`FORMASACV.doc`).
+- DOC-005 includes indicative timing, document requirements, a quote and advance instructions.
+- DOC-006 is an A–M company-formation questionnaire with a comisario, share allocation and powers fields.
+- Different honorarios and advance amounts were observed in the two files; clarification is pending.
+- Started sanitized dossier **NTR-001** to map fields to founders' internal documents and track decisions.
+- No evidence of actual denomination filing, payment, completed questionnaire, signed deed, or SAT registration has been recorded.
 
 ## Next event to record
 
-Notary consultation and its outcome.
+Written quotation confirmation, original-file private storage confirmation, filled draft creation, submission of the requested data, denomination request filed/decided, or notary's response — **only when evidenced**.
 
-When recorded, capture only public-safe facts:
-
-- date;
-- milestone;
-- decisions validated/rejected;
-- documents requested;
-- next actions;
-- status.
-
-Do not commit personal identifiers or sensitive originals.
+For each event record date, document ID, event, source/evidence, owner role and linked open item. Never publish sensitive personal or banking data.
