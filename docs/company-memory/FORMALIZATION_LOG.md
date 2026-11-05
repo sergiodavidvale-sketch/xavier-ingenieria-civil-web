@@ -51,6 +51,15 @@ Evidence class: internal work; not official incorporation.
 - A private downloadable ZIP with DOC-009 and four original PDF attachments was created for user review, **not** sent to the notary or archived in GitHub.
 - No notary submission, approval, payment or incorporation is evidenced by this update.
 
+## 2026-11-05 — INE supporting evidence received; private form V04 produced
+
+- Two INE sources received: majority shareholder front-side photo (DOC-015) and minority shareholder front/back PDF (DOC-016).
+- Names and birth dates checked against prior identity sources; personal INE domiciles transferred with source qualifiers to private draft, without treating them as current SAT-registered domiciles.
+- Corrected private working form **DOC-014/V04** created; DOC-009/V03 superseded without submission. Visual two-page QA performed.
+- Majority shareholder INE reverse side remains missing; notary requests both sides.
+- A private ZIP for user custody includes V04 and the previously received personal evidence, but was **not** sent to the notary or saved in a verified durable storage location.
+- No official incorporation, payment, denomination filing, completed form approval or notary acceptance evidenced.
+
 ## Next event to record
 
 Written quotation confirmation, original-file private storage confirmation, filled draft creation, submission of the requested data, denomination request filed/decided, or notary's response — **only when evidenced**.
