@@ -25,6 +25,14 @@ Evidence class: internal work; not official incorporation.
 - Started sanitized dossier **NTR-001** to map fields to founders' internal documents and track decisions.
 - No evidence of actual denomination filing, payment, completed questionnaire, signed deed, or SAT registration has been recorded.
 
+## 2026-11-05 — First private notary-form working draft created
+
+- Separate Word working copy **DOC-007**, `FORMASACV_XAVA_Borrador_V01.docx`, prepared from the original Notary 20 questionnaire DOC-006 without changing that external source.
+- Preliminary internally supported fields filled, and unresolved fields prominently labeled as pending.
+- Sole-administrator candidate, candidate denominations and corporate-purpose summary carried forward; no powers selected, no share counts invented and no comisario appointed.
+- Draft visually reviewed as two pages; status is `DRAFT / NOT_APPROVED / NOT_SENT`.
+- No secure long-term archive verified; Word itself is intentionally **not** uploaded to public GitHub.
+
 ## Next event to record
 
 Written quotation confirmation, original-file private storage confirmation, filled draft creation, submission of the requested data, denomination request filed/decided, or notary's response — **only when evidenced**.

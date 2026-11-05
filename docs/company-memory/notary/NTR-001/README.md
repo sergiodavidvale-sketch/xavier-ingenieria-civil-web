@@ -1,7 +1,7 @@
 # NTR-001 — Notary 20 intake and S.A. de C.V. questionnaire
 
 **Opened:** 2026-11-05  
-**Status:** `RECEIVED / MAPPING` (no completed form or payment confirmed)  
+**Status:** `RECEIVED / DRAFT_V01_CREATED / PENDING_REVIEW` (no approved or sent form and no payment confirmed)  
 **Scope:** pre-incorporation intake, quotations, required documents and form preparation for XAVA.  
 **Data class:** public-safe sanitized metadata. **No original binaries or completed personal-data forms in this public repository.**
 
@@ -18,6 +18,7 @@ These original `.doc` files were supplied in a conversation on 2026-11-05. **Lon
 
 - [SOURCE_REVIEW.md](SOURCE_REVIEW.md) — what each notary source actually says, contradictions, and questions to clarify.
 - [FORM_FIELD_MATRIX.md](FORM_FIELD_MATRIX.md) — each section/field of `FORMASACV.doc`, proposed source, current status and next validation.
+- [DRAFT_V01_SUMMARY.md](DRAFT_V01_SUMMARY.md) — traceability note for DOC-007, a private Word working copy generated but not approved/sent.
 - [Document register](../../DOCUMENT_REGISTER.md) — canonical ID, version and lifecycle.
 - [OPEN_ITEMS](../../OPEN_ITEMS.md) — one canonical task list; do not duplicate to-do ownership here.
 - [FORMALIZATION_LOG](../../FORMALIZATION_LOG.md) — dated record of receipt, response, delivery, acceptance, signature.
@@ -38,7 +39,7 @@ These original `.doc` files were supplied in a conversation on 2026-11-05. **Lon
 ## Versioning convention
 
 - Intake source: `DOC-005` / `DOC-006` (immutable external originals).
-- Working copy: `DOC-007` **reserved**, e.g. `FORMASACV_XAVA_Borrador_V01.docx`, only create its active document-register entry **when the file actually exists**.
+- Working copy: **DOC-007 CREATED** — `FORMASACV_XAVA_Borrador_V01.docx`, status `DRAFT / NOT_APPROVED / NOT_SENT`, original binary not stored in GitHub.
 - New correction: increment `V02`, `V03`, etc.; do not overwrite prior sent copies.
 - Delivery and feedback: log separately; `DRAFT` ≠ `APPROVED` ≠ `SENT` ≠ `ACCEPTED`.
 
