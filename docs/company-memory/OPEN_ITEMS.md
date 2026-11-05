@@ -21,10 +21,12 @@
 | ACT-015 | Confirm final identity before domain/repository rename | Founders | PENDING | Brand decision |
 | ACT-016 | Confirm 2026 quotation: MXN 14,150 vs 14,500; advance 5,500 vs 5,800; exact rights above MXN 50,000; fiscal treatment | Founders / notary | PENDING | Written itemized quote for XAVA |
 | ACT-017 | Appoint and validate comisario; obtain required private information | Founders / notary | PENDING | Candidate accepted and role clarified |
-| ACT-018 | Complete private applicant/shareholder/marital/address/contact inputs and attachments for sections A–M | Each participant / founders | PENDING | Private verified inputs, not public GitHub |
+| ACT-018 | Finish private applicant/shareholder data: actual address, current contact, nationality, civil status and remaining attachments | Each participant / founders | IN_PROGRESS | RFC/CURP now evidenced in private DOC-009; other personal fields still require direct verification |
 | ACT-019 | Establish reliable private storage and retrieval of DOC-002/004/005/006 and subsequent filled forms | Founders / document custodian | PENDING | Confirmed access-controlled location / retention convention |
 | ACT-020 | Verify SAT fiscal-address evidence and company enrollment requirements independently | Company / accountant | PENDING | Current official requirements checked |
-| ACT-021 | Review/complete/approve/send separate versioned FORMASACV copy | Founders / notary | IN_PROGRESS | DOC-008 V02 prefilled using full brief; only remaining personal checks, professional legal choices, approval and delivery remain |
+| ACT-021 | Review/complete/approve/send separate versioned FORMASACV copy | Founders / notary | IN_PROGRESS | DOC-009 V03 prepared and visually checked; pending current personal evidence, legal choices, approval and delivery |
+
+| ACT-022 | Obtain updated SAT CSF and privately verify current tax-status data where historical evidence is insufficient | Relevant shareholder / accountant | PENDING | Current official CSF provided; review notary's freshness requirements |
 
 ## Update rule
 
