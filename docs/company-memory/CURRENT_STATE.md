@@ -70,6 +70,12 @@ See [OPEN_ITEMS.md](OPEN_ITEMS.md).
 
 No incorporation, corporate RFC/e.firma, corporate bank account, employer registration, SIROC registration, public-procurement registration, or official corporate denomination is evidenced here.
 
+## Private-data persistence active
+
+The separate GitHub repository `sergiodavidvale-sketch/xava-corporate-memory` was verified as **private** and **13 Markdown/config files were imported and re-fetched** on 2026-11-05. It contains structured personal values with source IDs and historical timestamps, but **not** scanned originals. Access is conditional on future authorized connection and a fresh visibility check.
+
+See [PRIVATE_MEMORY_BRIDGE.md](PRIVATE_MEMORY_BRIDGE.md). No personal data is to be added to this public repository.
+
 ## Digital-product boundary
 
 Website information remains provisional until verified and suitable for publication. Corporate memory tracking must not modify the React/Vite product or its deployment.
