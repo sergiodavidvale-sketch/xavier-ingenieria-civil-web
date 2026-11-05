@@ -24,7 +24,7 @@
 | ACT-018 | Complete private applicant/shareholder/marital/address/contact inputs and attachments for sections A–M | Each participant / founders | PENDING | Private verified inputs, not public GitHub |
 | ACT-019 | Establish reliable private storage and retrieval of DOC-002/004/005/006 and subsequent filled forms | Founders / document custodian | PENDING | Confirmed access-controlled location / retention convention |
 | ACT-020 | Verify SAT fiscal-address evidence and company enrollment requirements independently | Company / accountant | PENDING | Current official requirements checked |
-| ACT-021 | Generate, review, approve and submit a separate versioned copy of FORMASACV | Founders / notary | BLOCKED | DOC-007 created, approved and delivery evidenced |
+| ACT-021 | Review/complete/approve/send separate versioned FORMASACV copy | Founders / notary | IN_PROGRESS | DOC-007 created as draft; pending fields, approval and delivery evidence still required |
 
 ## Update rule
 
