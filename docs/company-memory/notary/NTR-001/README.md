@@ -19,6 +19,10 @@ The source is an **18-page draft**, not evidence of formal signing, a deed numbe
 - **Private (authorized only):** `sergiodavidvale-sketch/xava-corporate-memory/notary/NTR-001/DOC-019-proyecto-escritura-FRACXA-completo.md` — full-text extraction of the received draft. Also `GUIA_LECTURA_DOC019_PROYECTO_ESCRITURA.md` (reader guide) and `DOC-020-AUDITORIA_CONTROL_CAMBIOS_V02.md` (complete audit/source lineage).
 - **Original DOC binary:** supplied in the conversation as `7419 SACV 2026 correo.doc`; **not** stored in either GitHub repo. A verified long-term external archive remains an open item.
 
+## New supporting evidence (2026-11-25)
+
+Personal identity and fiscal-source documents for the **proposed comisaria** have been received and indexed as **DOC-021 (INE, both sides)** and **DOC-022 (SAT CSF issued in 2022)**. The confidential values and dated domicile snapshots are available **only** in an authorized private officer file. This does not prove acceptance or eligibility of the appointment.
+
 ## Before signing — factual verification
 
 1. Correct name/CURP/INE/address typos by comparison against verified personal documents, without changing capital or roles back to old internal proposals.
