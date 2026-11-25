@@ -2,7 +2,8 @@
 
 **Opened:** 2026-11-05 · **Updated:** 2026-11-25  
 **Current phase:** `NOTARY_DRAFT_RECEIVED / SELECTED_WORKING_BASELINE / NOT_SIGNED`.  
-**Current primary document:** [DOC-019 — FRACXA constitutive deed and bylaws, sanitized summary](DOC-019-FRACXA-summary.md).
+**Current primary document:** [DOC-019 — FRACXA constitutive deed and bylaws, sanitized summary](DOC-019-FRACXA-summary.md).  
+**Current review:** [DOC-020 — second Word audit by Revisión de Sergio Valerio](DOC-020-REVISION-SERGIO-VALERIO.md), 8 tracked corrections + 48 comments, not yet sent.
 
 ## Current direction
 
@@ -14,8 +15,8 @@ The source is an **18-page draft**, not evidence of formal signing, a deed numbe
 
 ## Source locations
 
-- **Public (this repo):** [sanitized DOC-019 summary](DOC-019-FRACXA-summary.md), document metadata and formalization milestones; no personal identifiers.
-- **Private (authorized only):** `sergiodavidvale-sketch/xava-corporate-memory/notary/NTR-001/DOC-019-proyecto-escritura-FRACXA-completo.md` — full-text extraction of the received notarial draft with original-source transcription errors retained.
+- **Public (this repo):** [sanitized DOC-019 summary](DOC-019-FRACXA-summary.md) and [DOC-020 audit summary](DOC-020-REVISION-SERGIO-VALERIO.md), document metadata and formalization milestones; no personal identifiers.
+- **Private (authorized only):** `sergiodavidvale-sketch/xava-corporate-memory/notary/NTR-001/DOC-019-proyecto-escritura-FRACXA-completo.md` — full-text extraction of the received draft. Also `GUIA_LECTURA_DOC019_PROYECTO_ESCRITURA.md` (reader guide) and `DOC-020-AUDITORIA_CONTROL_CAMBIOS_V02.md` (complete audit/source lineage).
 - **Original DOC binary:** supplied in the conversation as `7419 SACV 2026 correo.doc`; **not** stored in either GitHub repo. A verified long-term external archive remains an open item.
 
 ## Before signing — factual verification

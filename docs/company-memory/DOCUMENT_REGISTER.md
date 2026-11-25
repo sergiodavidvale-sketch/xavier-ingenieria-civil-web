@@ -26,6 +26,7 @@ Master index of corporate/formalization documents, version lineage and evidence.
 | DOC-018 | Notaría 20 A–M questionnaire V06 (private .doc and .docx) | Created 2026-11-05 | XAVA / clarified governance and no additional powers for minority shareholder | SUPERSEDED_DRAFT / NOT SENT | [V06 summary](notary/NTR-001/DRAFT_V06_SUMMARY.md) | Superseded by received notarial project DOC-019, not signed |
 
 | DOC-019 | `7419 SACV 2026 correo.doc` (18-page deed and bylaws) | Received 2026-11-25 | Notaría Pública 20 / external notarial draft | RECEIVED / SELECTED_WORKING_BASELINE / NOT_SIGNED | [Sanitized DOC-019 summary](notary/NTR-001/DOC-019-FRACXA-summary.md) | Full transcription in approved private GitHub repo; name FRACXA, capital MXN 153,000, governance and powers as drafted; no execution proof |
+| DOC-020 | `FRACXA_Escritura_Revision_Sergio_Valerio_V02.docx` | Created 2026-11-25 | Source-grounded review copy of DOC-019 | REVIEW_DRAFT / NOT_SENT / NOT_SIGNED | [DOC-020 sanitized audit](notary/NTR-001/DOC-020-REVISION-SERGIO-VALERIO.md) | 8 tracked changes, 48 comments; author `Revisión de Sergio Valerio`; Word binary delivered to user, not in GitHub |
 
 ## Draft control
 
@@ -42,7 +43,7 @@ Master index of corporate/formalization documents, version lineage and evidence.
 
 ## Storage and retrieval
 
-The original Word/.doc files, private working drafts through DOC-018 plus original Notaría 20 project DOC-019, four personal PDF documents and two INE source files were supplied/generated in ChatGPT conversations; **permanent private storage location is currently `NOT_CONFIGURED` / `UNVERIFIED`**.
+The original Word/.doc files, private working drafts through DOC-018, original Notaría 20 project DOC-019 and the review DOC-020, four personal PDF documents and two INE source files were supplied/generated in ChatGPT conversations; **permanent private storage location is currently `NOT_CONFIGURED` / `UNVERIFIED`**.
 
 Future recovery of the original binary requires a verified approved private repository/storage location or a fresh upload. A sanitized summary is **not** a byte-for-byte reconstruction and cannot substitute for the notary's form layout.
 

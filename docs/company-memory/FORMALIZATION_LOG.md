@@ -86,6 +86,15 @@ Evidence class: internal work; not official incorporation.
 - Objective name/CURP errors and claims of payment/appointment acceptance must be checked before signing.
 - **No signature, RPC folio, SAT corporate RFC, final bank account or legal incorporation evidence** provided.
 
+## 2026-11-25 — Second audit of DOC-019 with Word reviewer identity corrected
+
+- Delivered `DOC-020` (V02) as an editable Word review of Notaría 20's draft, without altering the current FRACXA economic/governance proposals.
+- **8** native Word tracked corrections (5 prior + 3 new), **48** comment anchors (35 prior + 13 new).
+- Reviewer identity in revision/comment markup changed to **Revisión de Sergio Valerio**.
+- Additional observations cover annual administrator tenure vs original appointment, majority voting, minority rights, labor delegation, financial reporting, deposit of share titles, electronic assemblies, arbitration impartiality, and drafting defects.
+- QA: rejecting all revisions recovers the exact converted original text across 245 paragraphs; 15-page visual render inspected. No actual notary acceptance or sending evidenced.
+- Complete audit/reading guide documented in authorized private repo; public metadata: [DOC-020](notary/NTR-001/DOC-020-REVISION-SERGIO-VALERIO.md).
+
 ## Next event to record
 
 Corrected notary draft; actual authorization annex; factual confirmation of capital exhibition; verified powers and comisaria; signed deed; RPC registration; corporate SAT RFC — **record only when evidenced**.

@@ -38,6 +38,9 @@
 
 DOC-002/004 (former XAVA briefs) and DOC-018/V06 (form excluding minority shareholder from powers) are **not** current instructions. On 2026-11-25 the user selected DOC-019 Notaría 20's FRACXA proposal as baseline, subject to factual corrections/verification before signing.
 
+| ACT-028 | Review DOC-020 findings with notary: administrator term, minority rights, labor powers and arbitration | Founders / notary | REVIEW_BEFORE_SIGNING | Written reply and corrected final notary draft |
+| ACT-029 | Review/accept or reject all 8 tracked changes and resolve 48 comments from DOC-020 | Founders / notary | PENDING | Decisions on Word changes and comments, final corrected deed, evidence of approval |
+
 ## Update rule
 
 When closing an action:

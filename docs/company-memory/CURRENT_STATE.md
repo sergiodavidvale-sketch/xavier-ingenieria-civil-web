@@ -3,7 +3,9 @@
 **Updated:** 2026-11-25.  
 **Source:** Notaría Pública 20 draft received from user; see [DOC-019 summary](notary/NTR-001/DOC-019-FRACXA-summary.md).
 **Phase:** notarial constitutive deed / bylaws **draft delivered for review**; user chose to proceed on this **notary proposal** instead of older internal briefs.  
-**Status:** `NOTARY_DRAFT_RECEIVED / WORKING_BASELINE_SELECTED / NOT_SIGNED / NOT_REGISTERED`.
+**Status:** `NOTARY_DRAFT_RECEIVED / REVIEW_DOC020_CREATED / WORKING_BASELINE_SELECTED / NOT_SIGNED / NOT_REGISTERED`.
+
+**Latest review artifact:** [DOC-020 — second audited Word](notary/NTR-001/DOC-020-REVISION-SERGIO-VALERIO.md), with **8 accept/reject revisions**, **48 anchored comments**, reviewer label **Revisión de Sergio Valerio**. Editable Word was provided privately but **has not been sent to the notary**. The 18-page notarial source DOC-019 remains the primary baseline, not replaced by an executed deed.
 
 ## Current proposal — as written by notary
 
@@ -40,7 +42,7 @@ The draft cites a company-name authorization; its original annex has not been in
 - Confirm comisaria acceptance/eligibility and official company-name authorization annex.
 - Verify the final corrected project before signatures and record RPC/SAT milestones after evidence.
 
-See [OPEN_ITEMS.md](OPEN_ITEMS.md).
+See [OPEN_ITEMS.md](OPEN_ITEMS.md); the new documentary review requirements are also summarized in [DOC-020](notary/NTR-001/DOC-020-REVISION-SERGIO-VALERIO.md).
 
 ## Corporate web / brand boundary
 
