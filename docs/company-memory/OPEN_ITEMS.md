@@ -28,7 +28,7 @@
 
 | ACT-022 | Obtain updated SAT CSF and privately verify current tax-status data where historical evidence is insufficient | Relevant shareholder / accountant | PENDING | Current official CSF provided; review notary's freshness requirements |
 
-| ACT-023 | Obtain reverse side of majority shareholder's INE | Majority shareholder / founders | PENDING | Clear private image or PDF of INE reverse, verified to match front side |
+| ACT-023 | Obtain reverse side of majority shareholder's INE | Majority shareholder / founders | COMPLETE_EVIDENCE_RECEIVED | Front/reverse documented privately 2026-11-25; notary must confirm ID field format before replacing DOC-019 placeholder |
 
 | ACT-024 | Correct name/identity/data entry errors in DOC-019 notary draft | Founders / notary | URGENT | Corrected project compared against official personal documents |
 | ACT-025 | Independently verify notary-stated company-name authorization | Founders / notary | PENDING | Actual annex or official confirmation |
