@@ -1,15 +1,15 @@
 # XAVA — Document Register
 
-**Updated:** 2026-11-05
+**Updated:** 2026-11-25
 
 Master index of corporate/formalization documents, version lineage and evidence. This **public** GitHub repository stores only sanitized descriptions and summaries. Document titles/filenames are metadata, **not links proving that their binary files can be retrieved**.
 
 | ID | Document / original filename | Date (created or received) | Class / origin | Lifecycle status | Public-repo artifact | Replaces / notes |
 |---|---|---|---|---|---|---|
 | DOC-001 | Constitution Brief V1 (interactive) | Before 2026-11-04 | Founders / internal | SUPERSEDED | No original | Replaced by DOC-002 |
-| DOC-002 | `Brief_de_Constitucion_XAVA_V2_Consolidado.docx` | 2026-11-04 | Founders / approved internal | CURRENT_INTERNAL | [Sanitized summary](briefs/constitution-brief-v2-summary.md) | Corporate background; not approved by notary |
+| DOC-002 | `Brief_de_Constitucion_XAVA_V2_Consolidado.docx` | 2026-11-04 | Founders / approved internal | HISTORICAL_INTERNAL | [Sanitized summary](briefs/constitution-brief-v2-summary.md) | Historical founder brief; superseded as baseline by DOC-019 |
 | DOC-003 | `XAVA_Instrucciones_para_Notaria_V1.docx` | 2026-11-04 | Founders / internal | SUPERSEDED | [Historical summary](briefs/notary-instructions-v1-summary.md) | Replaced by DOC-004 |
-| DOC-004 | `XAVA_Notaria_V2.docx` (also generated as `XAVA_Brief_Notaria_V2_Ejecutivo.docx`) | 2026-11-05 | Founders / latest internal brief | CURRENT_INTERNAL | [Sanitized summary](briefs/notary-instructions-v2-summary.md) | Latest executive notary brief; **delivery unconfirmed** |
+| DOC-004 | `XAVA_Notaria_V2.docx` (also generated as `XAVA_Brief_Notaria_V2_Ejecutivo.docx`) | 2026-11-05 | Founders / latest internal brief | HISTORICAL_INTERNAL | [Sanitized summary](briefs/notary-instructions-v2-summary.md) | Historical executive brief; DOC-019 now governs review; **delivery unconfirmed** |
 | DOC-005 | `REQUISITOS SOCIEDAD.doc` | Received 2026-11-05 | Notary 20 / external information and quote | RECEIVED | [Sanitized source review](notary/NTR-001/SOURCE_REVIEW.md) | Source claims and pricing require confirmation |
 | DOC-006 | `FORMASACV.doc` | Received 2026-11-05 | Notary 20 / external questionnaire | RECEIVED / SOURCE_UNCHANGED | [A–M field matrix](notary/NTR-001/FORM_FIELD_MATRIX.md) | Separate working copy DOC-007 created; original remains unchanged |
 | DOC-007 | `FORMASACV_XAVA_Borrador_V01.docx` | Created 2026-11-05 | XAVA / first working copy | SUPERSEDED_DRAFT / NOT_SENT | [V01 summary](notary/NTR-001/DRAFT_V01_SUMMARY.md) | Replaced by DOC-008; no notary submission |
@@ -23,15 +23,17 @@ Master index of corporate/formalization documents, version lineage and evidence.
 | DOC-015 | INE front-side image — majority shareholder | Received 2026-11-05 | Personal identity source | RECEIVED / FRONT_ONLY | [Evidence metadata](notary/NTR-001/INE_SOURCES_REGISTER.md) | Reverse side not provided |
 | DOC-016 | INE front/back PDF — minority shareholder | Received 2026-11-05 | Personal identity source | RECEIVED / BOTH_SIDES | [Evidence metadata](notary/NTR-001/INE_SOURCES_REGISTER.md) | Source remains private |
 | DOC-017 | Notaría 20 A–M questionnaire V05 (private .doc and .docx) | Created 2026-11-05 | XAVA / source-grounded filled template | SUPERSEDED_DRAFT / NOT SENT | [V05 summary](notary/NTR-001/DRAFT_V05_SUMMARY.md) | Replaced by DOC-018, never submitted |
-| DOC-018 | Notaría 20 A–M questionnaire V06 (private .doc and .docx) | Created 2026-11-05 | XAVA / clarified governance and no additional powers for minority shareholder | DRAFT / NOT APPROVED / NOT SENT | [V06 summary](notary/NTR-001/DRAFT_V06_SUMMARY.md) | Current private draft; original template remains unchanged |
+| DOC-018 | Notaría 20 A–M questionnaire V06 (private .doc and .docx) | Created 2026-11-05 | XAVA / clarified governance and no additional powers for minority shareholder | SUPERSEDED_DRAFT / NOT SENT | [V06 summary](notary/NTR-001/DRAFT_V06_SUMMARY.md) | Superseded by received notarial project DOC-019, not signed |
+
+| DOC-019 | `7419 SACV 2026 correo.doc` (18-page deed and bylaws) | Received 2026-11-25 | Notaría Pública 20 / external notarial draft | RECEIVED / SELECTED_WORKING_BASELINE / NOT_SIGNED | [Sanitized DOC-019 summary](notary/NTR-001/DOC-019-FRACXA-summary.md) | Full transcription in approved private GitHub repo; name FRACXA, capital MXN 153,000, governance and powers as drafted; no execution proof |
 
 ## Draft control
 
-**DOC-018 (V06) is the current private Word working draft**; DOC-007–DOC-017 are historical superseded drafts, all never submitted, and DOC-006 remains the unchanged external original. Personal supporting documents DOC-010–DOC-013 and DOC-015–DOC-016 are only referenced by sanitized metadata.
+**DOC-019 — the 18-page received Notaría 20 FRACXA constitutive deed/bylaws — is now the working baseline selected on 2026-11-25.** DOC-002/004 and DOC-018 remain historical; the notary draft has **not been signed or registered**. Personal supporting documents DOC-010–DOC-013 and DOC-015–DOC-016 are only referenced by sanitized metadata.
 
 ## Source-of-truth and status rules
 
-- The **latest current internal executive brief** is DOC-004. DOC-002 remains current as a distinct corporate background brief; it is not replaced by DOC-004.
+- **DOC-019 is the current working proposal**. DOC-002 (founder planning), DOC-004 (old notarial instructions) and DOC-018 (old intake) remain **historical**, not instructions for revising the current draft.
 - DOC-005/DOC-006 are **external inputs**, not official government rules and not proof the notary endorsed XAVA's draft choices.
 - Separate document statuses: `RECEIVED`, `DRAFT`, `INTERNAL_REVIEW`, `APPROVED_FOR_SENDING`, `SENT`, `ACCEPTED`, `SUPERSEDED`.
 - Capture **version**, date, origin, source document ID, private storage location when confirmed, approval owner, transmission date, recipient role, response and replacement ID whenever these events occur.
@@ -40,7 +42,7 @@ Master index of corporate/formalization documents, version lineage and evidence.
 
 ## Storage and retrieval
 
-The original Word/.doc files, private working drafts through DOC-018, four personal PDF documents and two INE source files were supplied/generated in ChatGPT conversations; **permanent private storage location is currently `NOT_CONFIGURED` / `UNVERIFIED`**.
+The original Word/.doc files, private working drafts through DOC-018 plus original Notaría 20 project DOC-019, four personal PDF documents and two INE source files were supplied/generated in ChatGPT conversations; **permanent private storage location is currently `NOT_CONFIGURED` / `UNVERIFIED`**.
 
 Future recovery of the original binary requires a verified approved private repository/storage location or a fresh upload. A sanitized summary is **not** a byte-for-byte reconstruction and cannot substitute for the notary's form layout.
 
