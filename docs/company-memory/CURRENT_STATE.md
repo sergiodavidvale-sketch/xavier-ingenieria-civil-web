@@ -1,83 +1,53 @@
-# XAVA — Corporate Current State
+# FRACXA formation — current corporate state (public-safe)
 
-**Last updated:** 2026-11-05
+**Updated:** 2026-11-25.  
+**Source:** Notaría Pública 20 draft received from user; see [DOC-019 summary](notary/NTR-001/DOC-019-FRACXA-summary.md).
+**Phase:** notarial constitutive deed / bylaws **draft delivered for review**; user chose to proceed on this **notary proposal** instead of older internal briefs.  
+**Status:** `NOTARY_DRAFT_RECEIVED / WORKING_BASELINE_SELECTED / NOT_SIGNED / NOT_REGISTERED`.
 
-## Current phase
+## Current proposal — as written by notary
 
-**Notary intake received; S.A. de C.V. questionnaire mapping and preparation.**
+| Element | Current working draft |
+|---|---|
+| Legal denomination | **FRACXA, S.A. de C.V.** |
+| Company form | Sociedad Anónima de Capital Variable |
+| Social domicile | Monterrey, Nuevo León |
+| Minimum fixed capital | **MXN 153,000** |
+| Shares | **306**, nominal **MXN 500**, series A |
+| Majority shareholder | **275 shares (89.8693%)** |
+| Minority shareholder | **31 shares (10.1307%)** |
+| Sole administrator and general manager | Majority shareholder |
+| General attorney-in-fact | Minority shareholder, broad powers under draft |
+| Supervisory comisaria | Nominated in draft; acceptance/eligibility to verify |
+| Duration | Indefinite |
 
-Status: `INTERNALLY_APPROVED / NOTARY_INTAKE_RECEIVED / PENDING NOTARY VALIDATION`
+Notary draft provides broad corporate purpose and says capital is **fully paid in cash**. Treat this as **draft language to verify against actual facts**, not a receipt. The legal form and structure are **proposed**, not executed.
 
-XAVA's founders prepared internal constitution and notary instruction briefs. On 2026-11-05, a notary was contacted and two files were received: `REQUISITOS SOCIEDAD.doc` (requirements/quote) and `FORMASACV.doc` (intake form). Their sanitized review and field mapping are now recorded as [NTR-001](notary/NTR-001/README.md).
+The draft cites a company-name authorization; its original annex has not been independently inspected. Deed number/date, notarial final signing and Registry Mercantile folio have not been supplied.
 
-**Latest draft created:** DOC-018 (private Notaría 20 form V06 clarifying administrator/manager/shareholder roles; not approved or sent). Earlier drafts DOC-007–DOC-017 superseded, none sent. **Not evidenced:** submitted denomination application, authorized denomination, quote accepted, advance paid, completed form delivered, notarized deed or confirmed SAT filing.
+## Precedence and historical context
 
-## Current proposed structure
+- **DOC-019** received 2026-11-25 is the **working baseline selected** by user.
+- **DOC-002/004** former XAVA formation briefs and **DOC-018/V06** internal form remain historical only; do not reintroduce the old 90/10 target, MXN 153,598.50 capitalization, or removal of minority shareholder attorney-in-fact without a *new* request.
+- Official ID and tax evidence continue to control correction of **clerical name/CURP errors** in the draft.
+- A **signed deed or actual registry/authority record**, if subsequently received, takes precedence over all drafts.
 
-- Commercial brand: **XAVA Ingeniería Civil**
-- Proposed legal form: **S.A. de C.V.**
-- Proposed shareholders: **2**
-- Target ownership split: **90 / 10**
-- Preferred legal denomination: **XAVA**
-- Main activity: **civil works and engineering services**
-- Market: **private and public works**
-- Proposed governance: **sole administrator**
-- Proposed legal representation: **majority shareholder as sole administrator / legal representative**
-- Proposed social domicile: **Monterrey, Nuevo León**
-- Commercial ambition: Monterrey metropolitan area with ability to work elsewhere in Mexico.
-- Staffing plan: approximately **5 workers**, conditional on actual operations and labor/accounting review.
+## Necessary checks before signing
 
-All above are internal intentions, not incorporation facts.
-
-## Capital checkpoint
-
-- Proposed total social capital: **MXN 153,598.50**
-- Target ownership split: **90 / 10**
-- Contribution amounts in the private working brief sum to the total but do **not** produce exactly the stated 90 / 10 ratio.
-
-Status: `PENDING NOTARY VALIDATION`.
-
-Resolve share count, nominal value, fixed/variable structure, actual contribution amounts and payment schedule before approving a filled notary form.
-
-## Active and received documents
-
-- **DOC-002:** Constitution Brief V2 — current internal background source.
-- **DOC-004:** Notary Instructions V2 — latest internal executive brief; **sending to notary not confirmed**.
-- **DOC-005:** `REQUISITOS SOCIEDAD.doc` — external notary requirements and quote, received.
-- **DOC-006:** `FORMASACV.doc` — original external form, unchanged.
-- **DOC-007:** `FORMASACV_XAVA_Borrador_V01.docx` — earlier working draft, superseded by V02, never submitted.
-- **DOC-008:** `FORMASACV_XAVA_Borrador_V02_Cotejado.docx` — historical draft, superseded; not sent.
-- **DOC-009:** `XAVA_FORMASACV_V03_Datos_Cotejados.docx` — superseded V03, not sent.
-- **DOC-014:** `XAVA_FORMASACV_V04_INE_Cotejadas.docx` — historical, superseded by DOC-017, not sent.
-- **DOC-017:** Notaría 20 questionnaire V05, historical, superseded and not sent.
-- **DOC-018:** Notaría 20 questionnaire V06, majority shareholder proposed sole administrator, legal representative and day-to-day manager; minority shareholder only investor, **not** attorney-in-fact. [Sanitized summary](notary/NTR-001/DRAFT_V06_SUMMARY.md).
-- **DOC-015–DOC-016:** INE supporting evidence received privately. Majority shareholder front only; minority shareholder front and back.
-- **DOC-010–DOC-013:** two SAT CSF documents and two certified CURP documents received as private evidence; one historical CSF requires an updated version; original files not in public GitHub.
-- **DOC-003:** Notary Instructions V1 — historical, superseded by DOC-004.
-
-See [DOCUMENT_REGISTER.md](DOCUMENT_REGISTER.md). The original Word files are **not in GitHub**. A long-term private archive has not yet been confirmed.
-
-## Next operational gate
-
-1. Confirm current, written, itemized quotation and advance (the two external files differ).
-2. Resolve pending comisario, capital/share/payment and intended power decisions.
-3. Confirm all A–M fields with [FORM_FIELD_MATRIX.md](notary/NTR-001/FORM_FIELD_MATRIX.md), using the new private identity/CSF evidence and checking source recency.
-4. Preserve originals and DOC-018 V06 in approved private storage (or re-upload). V06 is the current **draft**, not approved/sent. Obtain missing INE reverse and updated tax evidence as required.
-5. Verify identity/attachments privately; obtain founders' review and notarial guidance before delivery.
-6. Record delivery/acceptance separately. Do not mark any notarial filing completed without evidence.
+- Correct material identification errors in the notary draft against official documents (no identifiers published here).
+- Confirm that amounts declared fully paid were actually contributed and received.
+- Ensure founders understand and approve the granted powers and financial/third-party guarantee clauses.
+- Confirm comisaria acceptance/eligibility and official company-name authorization annex.
+- Verify the final corrected project before signatures and record RPC/SAT milestones after evidence.
 
 See [OPEN_ITEMS.md](OPEN_ITEMS.md).
 
-## Not yet official
+## Corporate web / brand boundary
 
-No incorporation, corporate RFC/e.firma, corporate bank account, employer registration, SIROC registration, public-procurement registration, or official corporate denomination is evidenced here.
+Existing public website and internal product brand remain **XAVA Ingeniería Civil** for now. **FRACXA is the legal denomination in the notary draft**. No frontend asset, public contact, domain, repo name or digital-product text will be automatically renamed.
 
-## Private-data persistence active
+The precise current legal/person-level documents and the complete DOC-019 transcription live in the authorized **private** `xava-corporate-memory` GitHub repository. This public repo contains only sanitized summaries and tracking; no original binaries or personal IDs.
 
-The separate GitHub repository `sergiodavidvale-sketch/xava-corporate-memory` was verified as **private** and **13 Markdown/config files were imported and re-fetched** on 2026-11-05. It contains structured personal values with source IDs and historical timestamps, but **not** scanned originals. Access is conditional on future authorized connection and a fresh visibility check.
+## Still not proven
 
-See [PRIVATE_MEMORY_BRIDGE.md](PRIVATE_MEMORY_BRIDGE.md). No personal data is to be added to this public repository.
-
-## Digital-product boundary
-
-Website information remains provisional until verified and suitable for publication. Corporate memory tracking must not modify the React/Vite product or its deployment.
+There is **no evidence in this repository** of executed escritura, RPC registration, corporate SAT RFC/e.firma, company bank account, IMSS registration, SIROC or other post-incorporation registrations.
