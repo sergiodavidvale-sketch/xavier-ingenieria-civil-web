@@ -2,14 +2,11 @@
 
 Persistent, **public-safe** corporate context for XAVA Ingeniería Civil. This folder exists alongside the existing React/Vite digital product; it is **not** a legal filing system, a sensitive document vault, or a substitute for original notary documents or professional legal/accounting advice.
 
-## Current focus (2026-11-05)
+## Current focus (2026-11-25)
 
-Notary intake received and mapped: [**NTR-001 — Notary 20, S.A. de C.V.**](notary/NTR-001/README.md).
+**Notaría Pública 20 sent a constitutive deed/bylaws draft** for **FRACXA, S.A. de C.V.**, and the user chose to proceed with that notarial proposal rather than older internal briefs. This is **DOC-019 / SELECTED_WORKING_BASELINE**, not a signed deed or registered company. See [NTR-001 — current DOC-019 summary](notary/NTR-001/DOC-019-FRACXA-summary.md).
 
-- DOC-005: received `REQUISITOS SOCIEDAD.doc` (external requirements/quote)
-- DOC-006: received `FORMASACV.doc` (A–M form)
-- DOC-004: latest XAVA executive notary brief V2, current internally; not confirmed delivered
-- No filled notarial form, payment or official denomination result evidenced.
+The full 18-page text was saved as Markdown **only in the authorized private repo**. DOC-002/004 and DOC-018 remain historical. The brand XAVA website is unchanged until a separate decision.
 
 ## Recovery protocol
 
@@ -20,7 +17,7 @@ For any task involving shareholders, capital, name authorization, notary, SAT, b
 3. Read [DOCUMENT_REGISTER.md](DOCUMENT_REGISTER.md) to identify actual current editions and their origin.
 4. Read [OPEN_ITEMS.md](OPEN_ITEMS.md) and [FORMALIZATION_LOG.md](FORMALIZATION_LOG.md).
 5. For work on Notary 20's materials, read [NTR-001/README.md](notary/NTR-001/README.md), [SOURCE_REVIEW.md](notary/NTR-001/SOURCE_REVIEW.md), then [FORM_FIELD_MATRIX.md](notary/NTR-001/FORM_FIELD_MATRIX.md).
-6. Consult the matching [brief notarial V2](briefs/notary-instructions-v2-summary.md); do not mistake them for binary originals.
+6. For current notarial work, consult [DOC-019 summary](notary/NTR-001/DOC-019-FRACXA-summary.md) and verify the private full transcription; use the [earlier brief V2](briefs/notary-instructions-v2-summary.md) **only for history**. Never treat Markdown as the original Word binary.
 7. Apply [SOURCE_PRECEDENCE.md](SOURCE_PRECEDENCE.md) and [DATA_CLASSIFICATION.md](DATA_CLASSIFICATION.md) before responding or committing.
 
 **Never assume chat context is current.** If an original is not available in approved private storage, request that it be supplied again. Filename + Markdown summary cannot recreate an exact received `.doc`.

@@ -2,6 +2,8 @@
 
 Use this hierarchy whenever two sources disagree.
 
+**Current dated direction (2026-11-25):** the user selected Notaría 20's draft **DOC-019 FRACXA** as the **working proposal** replacing prior internal founder briefs (DOC-002/004 and V06/DOC-018). This is a *choice of draft*, not an official signed or registered result. **Verified identity source data remain preferred for correcting obvious CURP/name transcription mistakes**. An actual executed deed/official authorization later supersedes every draft.
+
 ## 1. Official / executed sources
 
 Highest precedence.

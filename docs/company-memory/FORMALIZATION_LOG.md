@@ -76,8 +76,18 @@ Evidence class: internal work; not official incorporation.
 - Updated private .doc/.docx from the notary form, preserving three pages and fields A–M; V05 superseded without submission.
 - No notarial filing, legal appointment or payment was made by this documentation update.
 
+## 2026-11-25 — Notaría 20 delivered constitutive deed draft; new baseline selected
+
+- Majority shareholder reported having delivered the company request to Notaría Pública 20; founders received **DOC-019**, an 18-page `7419 SACV 2026 correo.doc` draft with deed and bylaws.
+- The document proposes **FRACXA, S.A. de C.V.**, fixed capital MXN 153,000 / 306 shares (275 majority, 31 minority), a sole administrator/general manager, a separate general attorney-in-fact for minority shareholder and a nominated comisaria.
+- The notary draft refers to company-name authorization; its actual annex has not been inspected separately.
+- User subsequently instructed: **proceed with notary's proposal, not the older XAVA brief**. Documented as `SELECTED_WORKING_BASELINE` (not formal legal execution).
+- Full text transcribed into authorized **private** GitHub memory; this public repo holds only a sanitized [DOC-019 summary](notary/NTR-001/DOC-019-FRACXA-summary.md).
+- Objective name/CURP errors and claims of payment/appointment acceptance must be checked before signing.
+- **No signature, RPC folio, SAT corporate RFC, final bank account or legal incorporation evidence** provided.
+
 ## Next event to record
 
-Written quotation confirmation, original-file private storage confirmation, filled draft creation, submission of the requested data, denomination request filed/decided, or notary's response — **only when evidenced**.
+Corrected notary draft; actual authorization annex; factual confirmation of capital exhibition; verified powers and comisaria; signed deed; RPC registration; corporate SAT RFC — **record only when evidenced**.
 
 For each event record date, document ID, event, source/evidence, owner role and linked open item. Never publish sensitive personal or banking data.
