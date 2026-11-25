@@ -31,11 +31,11 @@ For requests needing exact shareholder RFC, CURP, INE or dated SAT details, read
 
 For any request about a received notary form, quotation, requirements, pre-filling or submission, read `docs/company-memory/notary/NTR-001/README.md`, `SOURCE_REVIEW.md`, and `FORM_FIELD_MATRIX.md` before drafting or editing.
 
-- The current executive brief is **DOC-004 (V2)**; DOC-003 is superseded.
+- **Current working source (2026-11-25): DOC-019 FRACXA notarial draft**, summarized at `docs/company-memory/notary/NTR-001/DOC-019-FRACXA-summary.md`; full text in private GitHub repository. User selected notary proposal over older DOC-002/004 and DOC-018/V06. No executed deed or RPC registration proven.
 - `REQUISITOS SOCIEDAD.doc` (DOC-005) and `FORMASACV.doc` (DOC-006) are external source documents, not government-verified legal rules.
 - Original binary files are **not held in GitHub**. Confirm a private source location or request re-upload before producing an exact edited form.
 - Do not copy personal identifiers, private address, bank numbers, payment instructions, or unredacted form answers into GitHub, logs, issues, pull requests, or review comments.
-- Preserve original questionnaires unchanged, and create separately versioned, private working copies.
+- Preserve original questionnaires and deeds unchanged; archive full **private** text with source and version when authorized, and keep a sanitized public cross-reference. For current deed review, use DOC-019; the A–M intake form is historical.
 - Record intake, approval, sending, and notary acceptance as distinct events; do not infer progress from the existence of documents.
 - Keep the digital-product frontend unchanged unless expressly requested.
 
