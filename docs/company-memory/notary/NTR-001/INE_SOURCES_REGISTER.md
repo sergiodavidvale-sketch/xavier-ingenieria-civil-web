@@ -4,7 +4,7 @@
 
 | ID | Document type | Owner role | Available sides | Current use |
 |---|---|---|---|---|
-| DOC-015 | INE credential photo | Majority shareholder | Front received; reverse **not supplied** | Private name, birth-date, domicile and ID verification |
+| DOC-015 | INE credential photos | Majority shareholder | Front **and reverse received** (completed 2026-11-25) | Private identity verification and back-side machine-readable field; notary to verify IDMEX/OCR selection |
 | DOC-016 | INE credential PDF | Minority shareholder | Front and reverse received | Private name, birth-date, domicile and ID verification |
 
 ## Verification summary
@@ -13,7 +13,7 @@
 - The two INE cards contain **different** Monterrey addresses; tax-status documents previously received show different registered fiscal addresses. Do not silently overwrite one source with another.
 - The proposed XAVA fiscal address resembles one of the INE addresses; **this is not equivalent to an authorized SAT fiscal domicile or a CFDI proof**.
 - Card dates indicate no expiry as of the November 2026 source review, but originals/quality and any legal eligibility must be checked by the notary.
-- The reverse side of DOC-015 remains an explicit requirement to collect because the notary requested both sides.
+- The reverse side of DOC-015 was received on 2026-11-25. The outstanding task is confirming with the notary which identifier is requested in DOC-019; **no actual identifier appears in this public record**.
 
 ## Restrictions
 
