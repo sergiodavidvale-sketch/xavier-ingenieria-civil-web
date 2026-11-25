@@ -1,55 +1,42 @@
-# NTR-001 — Notary 20 intake and S.A. de C.V. questionnaire
+# NTR-001 — Notaría Pública 20: from intake to FRACXA deed draft
 
-**Opened:** 2026-11-05  
-**Status:** `RECEIVED / DRAFT_V06_CREATED / PENDING_REVIEW` (no approved or sent form and no payment confirmed)  
-**Scope:** pre-incorporation intake, quotations, required documents and form preparation for XAVA.  
-**Data class:** public-safe sanitized metadata. **No original binaries or completed personal-data forms in this public repository.**
+**Opened:** 2026-11-05 · **Updated:** 2026-11-25  
+**Current phase:** `NOTARY_DRAFT_RECEIVED / SELECTED_WORKING_BASELINE / NOT_SIGNED`.  
+**Current primary document:** [DOC-019 — FRACXA constitutive deed and bylaws, sanitized summary](DOC-019-FRACXA-summary.md).
 
-## Sources
+## Current direction
 
-- **DOC-005** — `REQUISITOS SOCIEDAD.doc`: notary-supplied guidance on document requirements, approximate timing, fees, tax-registration instructions and payment details. **Private original not archived here.**
-- **DOC-006** — `FORMASACV.doc`: notary-supplied S.A. de C.V. questionnaire, sections A–M, including shareholder/power information. **Private original not archived here.**
-- **DOC-002** — internal incorporation brief V2, summarized under `../../briefs/constitution-brief-v2-summary.md`.
-- **DOC-004** — current notarial executive brief V2, summarized under `../../briefs/notary-instructions-v2-summary.md`.
+On 2026-11-25 the user stated an explicit preference to **continue with the document proposed by Notaría 20**, rather than use XAVA's earlier internal briefs as drafting instructions.
 
-These original `.doc` files and private working drafts were supplied/generated in conversations on 2026-11-05. **Long-term private storage has not been configured or verified.** The repo contains sufficient descriptions for retrieval and reconstruction of the workflow, not the binary files themselves.
+The received project names **FRACXA, S.A. de C.V.**, states minimum fixed capital of MXN 153,000 / 306 shares, and names administrator/gerente, apoderado general and comisaria. This structure differs from earlier drafts. **Do not automatically reapply former capital, name, or prohibition on an attorney-in-fact.**
 
-## Files and roles
+The source is an **18-page draft**, not evidence of formal signing, a deed number or RPC registration. Read [CURRENT_STATE](../../CURRENT_STATE.md), [DOCUMENT_REGISTER](../../DOCUMENT_REGISTER.md), [OPEN_ITEMS](../../OPEN_ITEMS.md) and [DECISIONS](../../DECISIONS.md).
 
-- [SOURCE_REVIEW.md](SOURCE_REVIEW.md) — what each notary source actually says, contradictions, and questions to clarify.
-- [FORM_FIELD_MATRIX.md](FORM_FIELD_MATRIX.md) — each section/field of `FORMASACV.doc`, proposed source, current status and next validation.
-- [DRAFT_V06_SUMMARY.md](DRAFT_V06_SUMMARY.md) — **current** version reflecting sole administrator/operational management vs minority shareholder only, not approved/sent.
-- [DRAFT_V05_SUMMARY.md](DRAFT_V05_SUMMARY.md) — historical V05 superseded without submission.
-- [DRAFT_V04_SUMMARY.md](DRAFT_V04_SUMMARY.md) — historical V04, superseded without submission.
-- [INE_SOURCES_REGISTER.md](INE_SOURCES_REGISTER.md) — sanitized index of two personal ID files.
-- [DRAFT_V03_SUMMARY.md](DRAFT_V03_SUMMARY.md) — prior private working copy, superseded, not sent.
-- [IDENTITY_SOURCES_REGISTER.md](IDENTITY_SOURCES_REGISTER.md) — public-safe metadata for four newly received personal documents.
-- [DRAFT_V02_SUMMARY.md](DRAFT_V02_SUMMARY.md) — previous private Word working copy, superseded by V03 without submission.
-- [DRAFT_V01_SUMMARY.md](DRAFT_V01_SUMMARY.md) — historical DOC-007, superseded by V02 without submission.
-- [Document register](../../DOCUMENT_REGISTER.md) — canonical ID, version and lifecycle.
-- [OPEN_ITEMS](../../OPEN_ITEMS.md) — one canonical task list; do not duplicate to-do ownership here.
-- [FORMALIZATION_LOG](../../FORMALIZATION_LOG.md) — dated record of receipt, response, delivery, acceptance, signature.
+## Source locations
 
-## Operational procedure
+- **Public (this repo):** [sanitized DOC-019 summary](DOC-019-FRACXA-summary.md), document metadata and formalization milestones; no personal identifiers.
+- **Private (authorized only):** `sergiodavidvale-sketch/xava-corporate-memory/notary/NTR-001/DOC-019-proyecto-escritura-FRACXA-completo.md` — full-text extraction of the received notarial draft with original-source transcription errors retained.
+- **Original DOC binary:** supplied in the conversation as `7419 SACV 2026 correo.doc`; **not** stored in either GitHub repo. A verified long-term external archive remains an open item.
 
-1. Recover the sources: read this file, source review, field matrix, `../../CURRENT_STATE.md`, `../../DECISIONS.md`, and `../../SOURCE_PRECEDENCE.md`.
-2. Confirm the private location and integrity of the original notary files **before editing**; if unavailable, ask for re-upload. Filename alone is not a retrievable reference.
-3. Preserve `FORMASACV.doc` unchanged as the received external source. Work only in a **separate** private versioned copy (current: DOC-018 V06) locally or in approved private storage.
-4. Consult the **complete private** DOC-002 and DOC-004 when available, not only their sanitized GitHub summaries. Fill fields supported by an internal approved source. Enter personal identifiers, domicile, marital details, spouse data and bank/tax information **only in the private working copy**, never in GitHub.
-5. For missing/uncertain fields, use a visible private placeholder and keep a corresponding matrix status; do not infer, autofill, or silently reconcile.
-6. Have founders approve the completed draft; obtain professional confirmation on legal choices (comisario, shares, paid-in capital, powers and final corporate purpose).
-7. Send only the approved private document through an agreed secure channel. Do not claim delivery until there is confirmation.
-8. Register version, delivery date, recipient role, reply, open observations and acceptance in `DOCUMENT_REGISTER.md` / `FORMALIZATION_LOG.md`. **Do not include private addresses or contact channels in the public log.**
-9. When notary responds, update the matrix and `OPEN_ITEMS.md` first, then the corporate `CURRENT_STATE.md` if the phase actually changes.
-10. Do not edit the website from notary forms; corporate information remains provisional until evidenced and appropriate for public use.
+## Before signing — factual verification
 
-## Versioning convention
+1. Correct name/CURP/INE/address typos by comparison against verified personal documents, without changing capital or roles back to old internal proposals.
+2. Check the draft's claim that the share capital has already been fully paid in cash; confirm actual facts.
+3. Review broad powers for administrator/gerente and general attorney-in-fact, including guarantees and bank/titles/credit.
+4. Confirm nominated comisaria, office acceptance and legal eligibility.
+5. Cotejar original Secretaría de Economía denomination authorization/annex mentioned by notary.
+6. Read corrected deed; only mark signature, RPC and SAT registration done after documentary evidence.
 
-- Intake source: `DOC-005` / `DOC-006` (immutable external originals).
-- Working copy: **DOC-018 CREATED** — original-form V06 in .doc and .docx, status `DRAFT / NOT_APPROVED / NOT_SENT`, latest private version; prior drafts superseded without submission. Original binaries not stored in GitHub.
-- New correction: increment `V02`, `V03`, etc.; do not overwrite prior sent copies.
-- Delivery and feedback: log separately; `DRAFT` ≠ `APPROVED` ≠ `SENT` ≠ `ACCEPTED`.
+## Previous materials — historical, not current baseline
 
-## Privacy and retention
+- [SOURCE_REVIEW.md](SOURCE_REVIEW.md): original Nov 5 requirements/form comparison.
+- [FORM_FIELD_MATRIX.md](FORM_FIELD_MATRIX.md): historical A–M mapping for earlier questionnaire; **superseded as the current operational focus**.
+- [DRAFT_V06_SUMMARY.md](DRAFT_V06_SUMMARY.md): historical internal prefilled form excluding minority attorney-in-fact; **superseded as working premise by DOC-019**.
+- [DRAFT_V05_SUMMARY.md](DRAFT_V05_SUMMARY.md), [DRAFT_V04_SUMMARY.md](DRAFT_V04_SUMMARY.md), [DRAFT_V03_SUMMARY.md](DRAFT_V03_SUMMARY.md), [DRAFT_V02_SUMMARY.md](DRAFT_V02_SUMMARY.md), [DRAFT_V01_SUMMARY.md](DRAFT_V01_SUMMARY.md): historical earlier working forms, preserved for chronology.
+- [IDENTITY_SOURCES_REGISTER.md](IDENTITY_SOURCES_REGISTER.md) and [INE_SOURCES_REGISTER.md](INE_SOURCES_REGISTER.md): public-safe evidence metadata only.
 
-Public GitHub records **redacted context and process metadata only**. Because `.gitignore` is not an access-control mechanism, check the diff and filenames manually before every PR. Establish an access-controlled backup and retrieval process for originals separately; no external private archive is claimed at this time.
+## Logging and security
+
+Use [FORMALIZATION_LOG.md](../../FORMALIZATION_LOG.md) for actual dated events; [OPEN_ITEMS.md](../../OPEN_ITEMS.md) for pending decisions; [DOCUMENT_REGISTER.md](../../DOCUMENT_REGISTER.md) for provenance and version lifecycle. A notary draft's text is a **source claim**, not proof of incorporation, payment or registration.
+
+The public web product remains unchanged and continues to be labeled XAVA unless founders decide on a distinct commercial branding update.
