@@ -103,6 +103,13 @@ Evidence class: internal work; not official incorporation.
 - The person-level extracted data were committed **only** to the private `xava-corporate-memory` repo. This public repo records document IDs/status only; no personal identifiers, addresses, contact values, photos, or originals were published.
 - No acceptance/eligibility confirmation or legal effectiveness of the appointment inferred. FRACXA deed remains unsigned in documented evidence.
 
+## 2026-11-25 — Reverso INE del accionista mayoritario recibido
+
+- Se recibió el reverso de INE previamente faltante (DOC-015), junto con una nueva foto del anverso; ambas caras quedaron registradas en memoria privada.
+- Se extrajo el prefijo/número de la línea mecánica en el expediente personal privado, **sin copiar el identificador aquí**.
+- El proyecto de escritura DOC-019 todavía muestra un marcador en un campo de identificación: confirmar con Notaría 20 si requiere IDMEX, OCR u otra clave y sustituirla en una versión final validada.
+- Se cierra el pendiente de obtención de imagen ACT-023; la rectificación notarial de campos permanece en ACT-024. No hay nueva escritura firmada ni enviada.
+
 ## Next event to record
 
 Corrected notary draft; actual authorization annex; factual confirmation of capital exhibition; verified powers and comisaria; signed deed; RPC registration; corporate SAT RFC — **record only when evidenced**.
