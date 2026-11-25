@@ -27,6 +27,8 @@ Master index of corporate/formalization documents, version lineage and evidence.
 
 | DOC-019 | `7419 SACV 2026 correo.doc` (18-page deed and bylaws) | Received 2026-11-25 | Notaría Pública 20 / external notarial draft | RECEIVED / SELECTED_WORKING_BASELINE / NOT_SIGNED | [Sanitized DOC-019 summary](notary/NTR-001/DOC-019-FRACXA-summary.md) | Full transcription in approved private GitHub repo; name FRACXA, capital MXN 153,000, governance and powers as drafted; no execution proof |
 | DOC-020 | `FRACXA_Escritura_Revision_Sergio_Valerio_V02.docx` | Created 2026-11-25 | Source-grounded review copy of DOC-019 | REVIEW_DRAFT / NOT_SENT / NOT_SIGNED | [DOC-020 sanitized audit](notary/NTR-001/DOC-020-REVISION-SERGIO-VALERIO.md) | 8 tracked changes, 48 comments; author `Revisión de Sergio Valerio`; Word binary delivered to user, not in GitHub |
+| DOC-021 | INE anverso y reverso — comisaria propuesta | Received 2026-11-25 | Personal identity evidence / private | RECEIVED / PRIVATE / VERIFIED_AGAINST_DRAFT | Private `officers/` identity fiche (not mirrored here) | Original photo files not uploaded; contains personal identifiers, keep private |
+| DOC-022 | Constancia SAT — comisaria propuesta, original PDF 3 páginas | Issued 2022-03-09; received 2026-11-25 | Tax identity evidence / private | RECEIVED / HISTORICAL_SNAPSHOT | Private `officers/` identity fiche (not mirrored here) | Fiscal status and domicile are **as of 2022**, not current; request up-to-date CSF |
 
 ## Draft control
 

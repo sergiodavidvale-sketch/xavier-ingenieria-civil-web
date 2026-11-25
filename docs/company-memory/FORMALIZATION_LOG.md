@@ -95,6 +95,14 @@ Evidence class: internal work; not official incorporation.
 - QA: rejecting all revisions recovers the exact converted original text across 245 paragraphs; 15-page visual render inspected. No actual notary acceptance or sending evidenced.
 - Complete audit/reading guide documented in authorized private repo; public metadata: [DOC-020](notary/NTR-001/DOC-020-REVISION-SERGIO-VALERIO.md).
 
+## 2026-11-25 — Comisaria identity and fiscal evidence received
+
+- Received an **INE front and reverse** for the proposed comisaria (DOC-021), and a **SAT fiscal-status certificate issued in March 2022** (DOC-022).
+- Personal name, RFC and CURP were cotejados privately across sources and compared with the nomination in the notary project DOC-019.
+- The INE and the old SAT certificate list **different domiciles**; each is retained as a dated source value in the **private** corporate-memory repository, without suggesting a current address or tax status.
+- The person-level extracted data were committed **only** to the private `xava-corporate-memory` repo. This public repo records document IDs/status only; no personal identifiers, addresses, contact values, photos, or originals were published.
+- No acceptance/eligibility confirmation or legal effectiveness of the appointment inferred. FRACXA deed remains unsigned in documented evidence.
+
 ## Next event to record
 
 Corrected notary draft; actual authorization annex; factual confirmation of capital exhibition; verified powers and comisaria; signed deed; RPC registration; corporate SAT RFC — **record only when evidenced**.

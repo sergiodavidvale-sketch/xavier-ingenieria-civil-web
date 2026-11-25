@@ -20,7 +20,7 @@
 | Minority shareholder | **31 shares (10.1307%)** |
 | Sole administrator and general manager | Majority shareholder |
 | General attorney-in-fact | Minority shareholder, broad powers under draft |
-| Supervisory comisaria | Nominated in draft; acceptance/eligibility to verify |
+| Supervisory comisaria | Nominated in draft; **INE anverso/reverso and historic SAT CSF received (DOC-021/022)**; identity cotejada, acceptance/eligibility and current tax evidence to verify |
 | Duration | Indefinite |
 
 Notary draft provides broad corporate purpose and says capital is **fully paid in cash**. Treat this as **draft language to verify against actual facts**, not a receipt. The legal form and structure are **proposed**, not executed.

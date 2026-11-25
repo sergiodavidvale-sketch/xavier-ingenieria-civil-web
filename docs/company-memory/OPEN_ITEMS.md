@@ -20,7 +20,7 @@
 | ACT-014 | Public-procurement eligibility and registrations | Company | BLOCKED | Company and technical prerequisites |
 | ACT-015 | Decide separate commercial branding XAVA vs proposed legal FRACXA; do not rename web automatically | Founders | PENDING | Distinct legal/brand decision after deed finalization |
 | ACT-016 | Confirm final notarial quote, invoice and registration rights | Founders / notary | PENDING | Written itemized quotation or paid receipt |
-| ACT-017 | Check nominated comisaria's eligibility and acceptance under DOC-019 | Founders / notary | VERIFY_FACTS | Consent and notarial confirmation |
+| ACT-017 | Verify proposed comisaria's eligibility and acceptance; INE/CSF evidence now received privately | Founders / notary | IN_PROGRESS / DOCUMENTS_RECEIVED | Both sides of INE + historical 2022 SAT certificate DOC-021/022 indexed privately; confirm acceptance/legal eligibility and obtain updated CSF if required |
 | ACT-018 | Cross-check founder names and identifiers against official private evidence; correct misspelling and duplicated CURP in DOC-019 | Founders / notary | URGENT_CORRECTIONS | Corrected draft with identifiers verified privately |
 | ACT-019 | Establish reliable private storage and retrieval for original DOC-019 and eventual signed deed | Founders / document custodian | PENDING | Verified access-controlled archive |
 | ACT-020 | Verify SAT fiscal-address evidence and company enrollment requirements independently | Company / accountant | PENDING | Current official requirements checked |
